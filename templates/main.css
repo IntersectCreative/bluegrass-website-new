@@ -1,0 +1,54 @@
+/* Font Styles*/
+body{
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+}
+
+/* Navigation styles */
+
+.dropdown-menu {
+	background-color: #006ea4;
+}
+
+/* Home page styles */
+.jumbotron {
+	background-image: url("images/david-barajas-699040-unsplash.jpg");
+	height: 600px;
+	background-size: cover;
+	color: white;
+	font-weight: bold;
+}
+
+.jumbotron h1 {
+	margin-top: 15%;
+}
+
+.part-of-speech {
+	font-style: italic;
+}
+
+/* Service line styles */
+#service-line-hero {
+	margin-left: 50px;
+	margin-top: 50px;
+	height: 600px;
+}
+
+	/* service line image shape */
+	.cornered {
+		width: 0;
+		height: 0;
+		border-top: 200px solid transparent;
+		border-left: 200px solid #006ea4;
+		border-bottom: 200px solid transparent;
+	}
+	/* service line image shape */
+	.main {
+	    width: 200px;
+	    height: 200px;
+	    background-color: #006ea4;
+	}
+
+
+}
