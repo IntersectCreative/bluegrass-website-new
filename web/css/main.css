@@ -180,4 +180,11 @@ footer {
   border-left: 1px solid white;
   height: 50px; }
 
+.home-about {
+  height: 400px;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /*# sourceMappingURL=main.css.map */

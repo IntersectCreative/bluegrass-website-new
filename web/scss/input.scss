@@ -16,10 +16,10 @@ $fundraising: #00875e;
 $sans-serif: "Gotham";
 
 html, body {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 
 body {
@@ -250,6 +250,14 @@ button {
 .vl {
 border-left: 1px solid white;
 height: 50px;
+}
+
+.home-about {
+	height: 400px;
+	background-color: pink;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 	
