@@ -181,10 +181,15 @@ footer {
   height: 50px; }
 
 .home-about {
-  height: 400px;
-  background-color: pink;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  margin-top: 130px;
+  margin-bottom: 140px; }
+  .home-about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .home-about .img {
+    width: 100%;
+    max-width: 100px;
+    height: auto; }
 
 /*# sourceMappingURL=main.css.map */
