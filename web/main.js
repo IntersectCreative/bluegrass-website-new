@@ -1,8 +1,13 @@
-$(window).on("scroll", function() {
-    if($(window).scrollTop() > 50) {
-        $(".header").addClass("active");
-    } else {
-        //remove the background property so it comes transparent again (defined in your css)
-       $(".header").removeClass("active");
-    }
+$(window).scroll(function () {
+
+  var scrollTop = $(window).scrollTop();
+
+  if (scrollTop > 200) {
+    $('.header').css('display', 'block');
+    $('.header').addClass('fixed-to-top');
+
+  } else if (scrollTop == 0) {
+
+    $('.header').removeClass('fixed-to-top');
+  }
 });

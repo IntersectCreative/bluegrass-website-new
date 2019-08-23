@@ -71,15 +71,10 @@ padding: 5px 5px;
 
 /* navigation */
 
-
-
-.navbar-toggler-icon {
-	background-color: white;
-}
-
 .navbar-toggler {
-	background-color: gray;
+	background-color: transparent;
 }
+
 
 .nav-link {
 	text-transform: uppercase;
@@ -95,7 +90,7 @@ padding: 5px 5px;
 }
 
 .nav-item {
-	color: white;
+	color: white !important;
 }
 
 .nav-icon {
@@ -210,23 +205,40 @@ button {
 }
 
 #service-line-row {
+	text-align: center;
+	align-items: center;
+
+@media only screen and (max-width: 600px) {
+	align-items: center;
+}
+
 
 .discover {
 	font-size: 18px; 
 	font-weight: bold; 
 	text-transform: uppercase;
-	text-align: center;
 	color: #4A4A4A;
+	margin-bottom: 63px !important;
+
+		@media only screen and (max-width: 600px) {
+			margin-bottom: 5px !important;
+}
 }
 
 	.card {
 	border: none;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	width: 190px;
+	height: auto;
 	}
 
 	.card-text {
 	text-transform: uppercase;
+	}
+
+	.row .icon-row {
+	margin-bottom: 204px !important;
 	}
 
 }
@@ -269,6 +281,61 @@ margin-bottom: 140px;
 	}
 
 }
+
+.day-at-bluegrass {
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+	.stat {
+		height: 100px;
+		width: 100px;
+
+		@media only screen and (max-width: 768px){
+			height: 80px;
+			width: 80px;
+			margin-bottom: 25px;
+		}
+
+		@media only screen and (max-width: 992px){
+			height: 80px;
+			width: 80px;
+			margin-bottom: 25px;
+		}
+
+	}
+
+	.row {
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	}
+
+	.experienced-partner {
+
+		@media only screen and (max-width:768px) {
+			margin-top: 30px;
+			}
+	}
+}
+
+.partners {
+	background-color: #006ea4; 
+	height: 156px;
+
+	@media only screen and (max-width: 1049px) {
+			height: 312px;
+			}
+
+	@media only screen and (max-width: 600px) {
+		height: 468px;
+	}
+
+	@media only screen and (max-width: 329px) {
+		height: 936px;
+	}
+	
+}
+
 
 	
 
