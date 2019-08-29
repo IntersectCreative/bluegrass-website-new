@@ -16,14 +16,12 @@ $fundraising: #00875e;
 $sans-serif: "Gotham";
 
 html, body {
+	font-family: $sans-serif;
   width: 100%;
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; 
-}
-
-body {
-	font-family: $sans-serif;
+  overflow: visible;
 }
 
 .lgsw {
@@ -56,23 +54,25 @@ padding: 5px 5px;
 
 .active {
 	background-color: #ffffff;
+	align-items: center;
+	justify-content: center;
 
 
 	 .nav-link {
 		color: #006ea4;
-	 }
-
+	 
 	  .nav-icon {
 		height: 40px;
 		width: 40px;
 	}
+}
 
 }
 
 /* navigation */
 
 .navbar-toggler {
-	background-color: transparent;
+	background-color: #006ea4;
 }
 
 
@@ -90,7 +90,7 @@ padding: 5px 5px;
 }
 
 .nav-item {
-	color: white !important;
+	color: white;
 }
 
 .nav-icon {

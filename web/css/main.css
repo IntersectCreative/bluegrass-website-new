@@ -2,13 +2,12 @@
 /* colors */
 /* font */
 html, body {
+  font-family: "Gotham";
   width: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; }
-
-body {
-  font-family: "Gotham"; }
+  overflow-x: hidden;
+  overflow: visible; }
 
 .lgsw {
   background-color: #FFFFFF;
@@ -36,16 +35,18 @@ body {
   background-color: transparent; }
 
 .active {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center; }
   .active .nav-link {
     color: #006ea4; }
-  .active .nav-icon {
-    height: 40px;
-    width: 40px; }
+    .active .nav-link .nav-icon {
+      height: 40px;
+      width: 40px; }
 
 /* navigation */
 .navbar-toggler {
-  background-color: transparent; }
+  background-color: #006ea4; }
 
 .nav-link {
   text-transform: uppercase;
@@ -59,7 +60,7 @@ body {
   width: 60px; }
 
 .nav-item {
-  color: white !important; }
+  color: white; }
 
 .nav-icon {
   height: 40px;
