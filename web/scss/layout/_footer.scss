@@ -1,0 +1,28 @@
+footer {
+	color: white;
+	height: 809px;
+	width: 100vw;
+	text-shadow: $shadow;
+
+
+	.footer-logo {
+		height: 154px;
+		width: 154px;
+	}
+
+	.footer-social {
+	height: 32px;
+	width: 32px;
+	}
+
+	.footer-contents {
+	background-color: #645c59;
+	}
+
+	.footer-input {
+	border: solid 1px #FFFFFF;
+	box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.50);
+	border-radius: 18px;
+	background-color: transparent;
+	}
+	}
