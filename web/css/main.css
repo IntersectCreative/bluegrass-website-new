@@ -230,6 +230,21 @@ video {
   border-left: 1px solid white;
   height: 50px; }
 
+
+#moreresources {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  #moreresources h3 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #4A4A4A;
+    font-weight: bold; }
+  #moreresources .card {
+    background-color: #615C59;
+    color: #D8D8D8;
+    text-align: left;
+    border-radius: 10px; }
+
 .research-strategize-branchout {
   margin-bottom: 100px;
   margin-top: 160px; }
