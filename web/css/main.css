@@ -9,6 +9,11 @@ html, body {
   overflow-x: hidden;
   overflow: visible; }
 
+.bodyText {
+  font-family: "Gotham";
+  font-size: 14px;
+  color: #4A4A4A; }
+
 .navbar-toggler {
   background-color: #006ea4; }
 
@@ -230,7 +235,6 @@ video {
   border-left: 1px solid white;
   height: 50px; }
 
-
 #moreresources {
   margin-top: 100px;
   margin-bottom: 100px; }
@@ -240,10 +244,8 @@ video {
     color: #4A4A4A;
     font-weight: bold; }
   #moreresources .card {
-    background-color: #615C59;
     color: #D8D8D8;
-    text-align: left;
-    border-radius: 10px; }
+    text-align: left; }
 
 .research-strategize-branchout {
   margin-bottom: 100px;
