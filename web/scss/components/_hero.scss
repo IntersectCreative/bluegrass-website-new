@@ -11,9 +11,10 @@
 .hero-image {
 	width: 100vw;
 	height: 100vh;
-	background-position: center center;
-  background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center center;
+  	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .hero-divider {
@@ -29,11 +30,11 @@ video {
 }
 
 	.hero-copy {
-  top: 65%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  color: white;
+		top: 65%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		position: absolute;
+		color: white;
 	}
 
 	.hero-title {

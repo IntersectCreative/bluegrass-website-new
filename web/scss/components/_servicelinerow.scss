@@ -6,6 +6,8 @@
 	align-items: center;
 }
 
+}
+
 
 .discover {
 	font-size: 18px; 
@@ -16,7 +18,7 @@
 
 		@media only screen and (max-width: 600px) {
 			margin-bottom: 5px !important;
-}
+		}
 }
 
 	.card {
@@ -25,7 +27,7 @@
 	margin-bottom: 20px;
 	width: 190px;
 	height: auto;
-	}
+	
 
 	.card-text {
 	text-transform: uppercase;

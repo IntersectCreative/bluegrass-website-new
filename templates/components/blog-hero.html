@@ -1,0 +1,24 @@
+<div class="blog-hero" style="background-image: url({{ entry.picture.one().getUrl() }});">
+    <div class="blog-hero-inner container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="card ml-5 mb-5">
+                    <div class="card-body">
+                        <p>{{ entry.serviceLine|upper }}</p>
+                        <h2>{{ entry.title }}</h2>
+                        <h3>Do you know when your website needs an update?</h3>
+                        <div class="row mt-3">
+                            <div class="col-2">
+                                <img src="{{ entry.employeePicture.one().getUrl() }}" alt="..." class="">
+                            </div>
+                            <div class="col-10">
+                                <p>{{ entry.employeeName|upper }}<br><i>{{ entry.employeeTitle }}</i><br>{{ entry.dateCreated | date('F j, Y') }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5"></div>
+        </div>
+    </div>
+</div>

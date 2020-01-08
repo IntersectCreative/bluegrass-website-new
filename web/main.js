@@ -13,4 +13,21 @@ $(window).scroll(function () {
     $('.header').removeClass('active');
 
   }
+
 });
+
+
+// Type functionality for Services Pages
+$(function () {
+  $('[data-typer-targets]').typer();
+});
+
+
+//scrolling sidebar for blog and stops before footer
+$(document).ready(function(){
+  $("#sticker").sticky({topSpacing:100, bottomSpacing:3000});
+});
+
+
+
+  

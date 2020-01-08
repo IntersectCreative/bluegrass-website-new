@@ -1,0 +1,28 @@
+.service-line-hero {
+	height: 100vh;
+	width: 100%;
+	background: white;
+	position: relative;
+}
+
+.service-line-hero-copy {
+	text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+	color: white;
+	max-width: 900px;
+
+	h1 {
+	color: #000000;
+	}
+
+	h5 {
+	color: #909496;
+	}
+
+}
+
+
+
+

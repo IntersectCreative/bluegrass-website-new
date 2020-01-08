@@ -14,6 +14,11 @@ html, body {
   font-size: 14px;
   color: #4A4A4A; }
 
+.introText {
+  font-family: "Gotham";
+  font-size: 18px;
+  color: #000000; }
+
 .navbar-toggler {
   background-color: #006ea4; }
 
@@ -53,9 +58,9 @@ html, body {
 
 footer {
   color: white;
-  height: 809px;
   width: 100vw;
-  text-shadow: 0px 2px 4px #000000; }
+  text-shadow: 0px 2px 4px #000000;
+  background-color: #645c59; }
   footer .footer-logo {
     height: 154px;
     width: 154px; }
@@ -74,7 +79,7 @@ button {
   background-image: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 0%, #FFFFFF 100%);
   border: 1px solid #979797;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0 2px 0 0 #FFFFFF;
-  border-radius: 18px !important;
+  border-radius: 8px !important;
   width: 174px;
   color: #4A4A4A;
   object-fit: contain; }
@@ -96,9 +101,10 @@ button {
   background-image: linear-gradient(180deg, #006EA4 0%, #006EA4 48%, #006EA4 100%);
   border: 1px solid #006EA4;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 18px;
-  color: #006ea4;
-  padding: 5px 5px; }
+  border-radius: 8px;
+  color: white;
+  padding: 5px 5px;
+  text-transform: uppercase; }
 
 .hero {
   position: relative;
@@ -112,9 +118,10 @@ button {
 .hero-image {
   width: 100vw;
   height: 100vh;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-attachment: fixed; }
 
 .hero-divider {
   height: 126px;
@@ -173,24 +180,26 @@ video {
   @media only screen and (max-width: 600px) {
     #service-line-row {
       align-items: center; } }
-  #service-line-row .discover {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #4A4A4A;
-    margin-bottom: 63px !important; }
-    @media only screen and (max-width: 600px) {
-      #service-line-row .discover {
-        margin-bottom: 5px !important; } }
-  #service-line-row .card {
-    border: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 190px;
-    height: auto; }
-  #service-line-row .card-text {
+
+.discover {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  margin-bottom: 63px !important; }
+  @media only screen and (max-width: 600px) {
+    .discover {
+      margin-bottom: 5px !important; } }
+
+.card {
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 190px;
+  height: auto; }
+  .card .card-text {
     text-transform: uppercase; }
-  #service-line-row .row .icon-row {
+  .card .row .icon-row {
     margin-bottom: 204px !important; }
 
 .day-at-bluegrass {
@@ -219,7 +228,7 @@ video {
 
 .cta-container {
   height: 1027px;
-  background-color: #000000;
+  background-color: gray;
   color: #FFFFFF;
   text-align: center;
   display: flex;
@@ -259,6 +268,74 @@ video {
     margin-top: 30px;
     color: #4A4A4A; }
 
+.service-line-hero {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  position: relative; }
+
+.service-line-hero-copy {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  color: white;
+  max-width: 900px; }
+  .service-line-hero-copy h1 {
+    color: #000000; }
+  .service-line-hero-copy h5 {
+    color: #909496; }
+
+.section-header {
+  text-transform: uppercase;
+  margin-top: 140px;
+  margin-bottom: 65px; }
+
+.service-line-detail {
+  margin-top: 150px;
+  text-align: left;
+  align-items: center; }
+
+.service-icon-row {
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 300px; }
+
+.icon-box {
+  position: relative;
+  display: block; }
+
+.icon-box img {
+  width: 100%;
+  height: auto; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 8px; }
+
+.icon-box:hover .overlay {
+  opacity: 1; }
+
+.text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
 .home-about {
   margin-top: 130px;
   margin-bottom: 140px; }
@@ -270,5 +347,32 @@ video {
     width: 100%;
     max-width: 100px;
     height: auto; }
+
+.blog-hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  background-image: url(https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+@media only screen and (max-width: 768px) {
+  .blog-hero-inner {
+    content: center; } }
+
+@media only screen and (max-width: 992px) {
+  .sidebar {
+    display: none; } }
+
+.resource-search-bar {
+  background-color: #006ea4;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  text-shadow: 0px 2px 4px #000000; }
 
 /*# sourceMappingURL=main.css.map */

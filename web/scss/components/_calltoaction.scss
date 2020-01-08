@@ -1,16 +1,16 @@
 .cta-container {
 	height: 1027px;
-	background-color: #000000;
+	background-color: gray;
 	color: #FFFFFF;
 	text-align: center;
 	display: flex;
-  align-items: center;
-  justify-content: center;
+	align-items: center;
+	justify-content: center;
 
 	.cta {
-	width: 500px;
-  height: 500px; 
-  text-shadow: $shadow;
+		width: 500px;
+		height: 500px; 
+		text-shadow: $shadow;
 	}
 }
 

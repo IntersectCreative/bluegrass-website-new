@@ -1,0 +1,7 @@
+{% switch entry.level %}
+    {% case 1 %}
+        {% include 'service-lines/service-line.twig' %}
+    {% default %}
+        {% include 'service-lines/services.twig' %}
+{% endswitch %}
+

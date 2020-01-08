@@ -18,15 +18,23 @@ $sans-serif: "Gotham";
 
 html, body {
 	font-family: $sans-serif;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; 
-  overflow: visible;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden; 
+	overflow: visible;
 }
+
+
 
 .bodyText {
 	font-family: $sans-serif;
 	font-size: 14px;
 	color: #4A4A4A;
+}
+
+.introText {
+	font-family: $sans-serif;
+	font-size: 18px;
+	color: #000000;
 }

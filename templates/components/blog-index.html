@@ -1,0 +1,78 @@
+<div class="container mb-5">
+  <div class="row" style="margin-top: 150px;">
+
+{% for entry in craft.entries.section('Blog').limit(1).all() %}
+
+    <div class="col-md-5">
+      <p>{{ entry.serviceLine|upper }}</p>
+      <h2><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h2>
+      <p>
+        {{ entry.blogBody|striptags|slice(0, 250)|default('Read More') }}
+      </p>
+      <p><a href="{{ entry.url }}" style="color:#006ea4; text-decoration:inherit;">Continue Reading ></a></p>
+    </div>
+    <div class="col-md-7 text-center">
+      <img
+        src="{{ entry.picture.one().getUrl() }}"
+        style="width: 500px;"
+      />
+    </div>
+
+  {% endfor %}
+
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md text-left mt-5">
+      <p class="mb-4">THE LATEST</p>
+      <div class="row">
+
+  {% for entry in craft.entries.section('Blog').offset(1).limit(2).all() %}
+
+  <div class="col-md-2">
+    <img
+      class="image"
+      src="/images/branding/Direct/streamline-icon-send-email-envelope@64x64_direct.svg"
+      alt="direct mail icon"
+      style="height:50px; width: 50px;"
+    />
+  </div>
+  <div class="col-md-10">
+    <h3><a href="{{entry.url}}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
+    <p>{{ entry.employeeName }} - 1 week ago</p>
+  </div>
+
+  {% endfor %}
+
+  </div>
+
+    </div>
+    <div class="col-md text-left mt-5">
+      <p class="mb-4">THE GREATEST</p>
+      <div class="row">
+        <div class="col-md-2">
+          <h5 style="color: #006EA4;">01</h5>
+        </div>
+        <div class="col-md-10">
+          <h3>2019 Postal Holidays When the Mail Does Not Go Through</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <h5 style="color: #006EA4;">02</h5>
+        </div>
+        <div class="col-md-10">
+          <h3>How to Calculate the Lifetime Value of a Donor</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <h5 style="color: #006EA4;">03</h5>
+        </div>
+        <div class="col-md-10">
+          <h3>4 Best Practices for Warehouse Receiving</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

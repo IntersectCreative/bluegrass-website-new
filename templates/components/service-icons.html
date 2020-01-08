@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row service-icon-row d-flex justify-content-center">
+
+        {% for block in entry.services.all() %}
+
+        <div class="col-sm-6 col-lg-3 mb-3">
+            <div class="icon-box">
+                <img class="image img-fluid" src="{{ block.icon.one().getUrl() }}" alt="" style="height:125px; width: 125px;">
+                <p class="mt-4">{{ block.servicesName }}</p>
+                <div class="overlay" style="background-color: {{ entry.serviceLineColor }};">
+                    <div class="text">{{ block.hoverCopy }}</div>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+
+    </div>
+</div>
