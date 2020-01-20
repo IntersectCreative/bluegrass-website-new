@@ -1,0 +1,12 @@
+.reach-us-map {
+    @media only screen and (max-width: 600px) {
+        width: 300px;
+        height: auto;
+    }
+}
+
+.location {
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+    }
+}

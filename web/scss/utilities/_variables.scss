@@ -11,9 +11,14 @@ $interactive: #b9d40d;
 $transactional: #7cb854;
 $fundraising: #00875e;
 
+$primary: $bluegrass;
+
+
 /* font */
 
 $sans-serif: "Gotham";
+
+$font-family-base: $sans-serif;
 
 
 html, body {
@@ -24,8 +29,6 @@ html, body {
 	overflow-x: hidden; 
 	overflow: visible;
 }
-
-
 
 .bodyText {
 	font-family: $sans-serif;
@@ -38,3 +41,4 @@ html, body {
 	font-size: 18px;
 	color: #000000;
 }
+

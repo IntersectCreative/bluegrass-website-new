@@ -2,6 +2,24 @@
 	text-align: center;
 	align-items: center;
 
+	.card {
+		border: none;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 190px;
+		height: auto;
+		
+	
+		.card-text {
+		text-transform: uppercase;
+		}
+	
+		.row .icon-row {
+		margin-bottom: 204px !important;
+		}
+	
+	}
+
 @media only screen and (max-width: 600px) {
 	align-items: center;
 }
@@ -21,20 +39,3 @@
 		}
 }
 
-	.card {
-	border: none;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	width: 190px;
-	height: auto;
-	
-
-	.card-text {
-	text-transform: uppercase;
-	}
-
-	.row .icon-row {
-	margin-bottom: 204px !important;
-	}
-
-}

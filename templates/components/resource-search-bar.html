@@ -5,11 +5,10 @@
         <label for="resource-search">Browse Resources By...</label>
       </div>
       <div class="col-md-4 form-inline">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Search resources"
-        />
+        <form action="{{ url('blog/results') }}">
+          <input type="search" name="q" placeholder="Search">
+          <input type="submit" value="Go">
+      </form>
       </div>
     </div>
   </div>
