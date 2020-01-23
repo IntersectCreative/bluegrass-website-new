@@ -1,16 +1,20 @@
 <div class="container">
     <div class="row service-icon-row d-flex justify-content-center">
 
-        {% for block in entry.services.all() %}
+        {% set entries = entry.children().level(2).all() %}
+
+        {% for entry in entries %}
 
         <div class="col-sm-6 col-lg-3 mb-3">
+            <a href="{{ entry.url }}" style="text-decoration: none; color: black;">
             <div class="icon-box">
-                <img class="image img-fluid" src="{{ block.icon.one().getUrl() }}" alt="" style="height:125px; width: 125px;">
-                <p class="mt-4">{{ block.servicesName }}</p>
+                    <img class="image img-fluid" src="{{ entry.icon.one().getUrl() }}" alt="" style="height: 125px; width: 125px;">
+                    <p class="mt-4">{{ entry.title }}</p>
                 <div class="overlay" style="background-color: {{ entry.serviceLineColor }};">
-                    <div class="text">{{ block.hoverCopy }}</div>
+                    <div class="text">{{ entry.hoverCopy }}</div>
                 </div>
             </div>
+        </a>
         </div>
 
         {% endfor %}

@@ -1,0 +1,11 @@
+<div class="partners" style="background: {{ entry.serviceLineColor }};">
+  <div class="row">
+
+    {% for block in companyInfo.partners.all() %}
+
+    <div class="col text-center"><img src="{{ block.icon.one().getUrl() }}" alt="{{ block.partnerName }}"></div>
+
+
+    {% endfor %}
+  </div>
+</div>

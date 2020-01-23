@@ -20,6 +20,16 @@ $sans-serif: "Gotham";
 
 $font-family-base: $sans-serif;
 
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 6.21 !default;
+$h2-font-size: $font-size-base * 1.107 !default;
+$h3-font-size: $font-size-base * 1 !default;
+$h4-font-size: $font-size-base * 1.967 !default;
+$h5-font-size: $font-size-base * 1.107 !default;
+$h6-font-size: $font-size-base * 1.333 !default;
+
+
 
 html, body {
 	font-family: $sans-serif;
@@ -41,4 +51,7 @@ html, body {
 	font-size: 18px;
 	color: #000000;
 }
+
+
+
 

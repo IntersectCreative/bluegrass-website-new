@@ -1,5 +1,5 @@
 .cta-container {
-	height: 1027px;
+	height: auto;
 	background-color: gray;
 	color: #FFFFFF;
 	text-align: center;
@@ -24,3 +24,10 @@ height: 50px;
 	margin-left: 0;
 	margin-right: 0;
 }
+
+#generalContact {
+	display: none;
+	width: auto;
+	height: auto;
+}
+

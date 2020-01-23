@@ -1,7 +1,7 @@
-<div class="cta-container">
+<div class="cta-container d-flex justify-content-center">
 	<div class="cta">
-		<p class="mb-4">CONTACT</p>
-		<h1 clas="mb-3">Do you have a project in mind?</h1>
+		<p class="mt-5 mb-4">CONTACT</p>
+		<h4 clas="mb-3">Do you have a project in mind?</h4>
 		<p class="mb-4">We want to hear about it.</p>
 		<div class="row">
 			<div class="col-lg-6 col-sm-12 text-center mb-3">
@@ -15,7 +15,16 @@
 				<p class="mb-1">Get in touch</p>
 				<p>info@wearebluegrass.com</p>
 			</div>
-		</div class="text-center">
-			<button class="lgsw mt-5">Let's get started</button>
+		</div>
+		<div class="text-center">
+			<button id="generalContactButton" class="lgsw mt-5">Let's get started</button>
+		</div>
 	</div>
+</div>
+
+<div class="container mt-4">
+	<form id="generalContact" class="text-left">
+		<p class="mb-3 font-italic">Tell us a little bit about yourself</p>
+		{{ craft.freeform.form("generalContact").render() }}
+	</form>
 </div>

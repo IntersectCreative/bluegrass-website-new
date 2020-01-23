@@ -28,6 +28,10 @@ $(document).ready(function(){
   $("#sticker").sticky({topSpacing:100, bottomSpacing:3000});
 });
 
+//form drop down
+$("#generalContactButton").click(function(){
+  $("#generalContact").toggle(600);
+});
 
 
   
