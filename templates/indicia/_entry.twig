@@ -1,0 +1,39 @@
+{% extends "_layout" %}
+
+    {% block content %} 
+
+    {% include "/components/navigation.html" %}
+
+    {% include "/components/hero.html" %}
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-7 col-md-12">
+        {% include "/components/services-temporary-body.html" %}
+        </div>
+        <div class="col-lg-5 col-md-12 mt-5 mb-5" >
+            <ul><h5>Presort Standard Permits</h5>
+                <li>Presort Standard - Lexington</li>
+                <li>Presort Standard - Louisville</li>
+                <li>Presort Standard - Cincinnati</li>
+                <li>Presort Standard - Corporate</li>
+            </ul>
+            <ul><h5>Non-profit Presort Standard Permits</h5>
+                <li>Non-profit Presort Standard - Lexington</li>
+                <li>Non-profitPresort Standard - Louisville</li>
+                <li>Non-profitPresort Standard - Cincinnati</li>
+                <li>Non-profitPresort Standard - Corporate</li>
+            </ul>
+        
+        
+        </div>
+
+    </div>
+</div>
+
+    {% include "/components/cta.html" %}
+
+    {% include "/components/footer.html" %}
+
+    {% endblock %}

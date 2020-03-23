@@ -31,10 +31,18 @@ video {
 
 	.hero-copy {
 		top: 65%;
-		left: 40%;
-		transform: translate(-50%, -50%);
+		left: 25%;
+		transform: translate(-25%, -65%);
 		position: absolute;
 		color: white;
+
+		@media only screen and (max-width: 768px) {
+			top: 65%;
+			left: 50%;
+			transform: translate(-50%, -65%);
+			position: absolute;
+			text-align: center;
+		}
 	}
 
 	.hero-title {
@@ -45,8 +53,6 @@ video {
 		margin-bottom: 30px;
 
 		@media only screen and (max-width: 768px) {
-			top: 50%;
-			left: 50%;
 			font-size: 50px;
 			line-height: 60px;
 			} 

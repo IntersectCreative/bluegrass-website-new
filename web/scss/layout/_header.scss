@@ -5,7 +5,15 @@
 	background-color: transparent;
 }
 
-.active {
+.nav-phone {
+	content:url("/images/branding/streamline-icon-phone@64x64_white.svg");
+}
+
+.nav-search {
+	content:url("/images/branding/streamline-icon-search-alternate@64x64_white.svg");
+}
+
+.scrolled {
 	background-color: #ffffff;
 	align-items: center;
 	justify-content: center;
@@ -19,4 +27,15 @@
 	}
 }
 
+.nav-phone {
+	content: url("/images/branding/streamline-icon-phone@64x64_bluegrass.svg");
 }
+
+.nav-search {
+	content: url("/images/branding/streamline-icon-search-alternate@64x64_bluegrass.svg");
+}
+
+}
+
+
+

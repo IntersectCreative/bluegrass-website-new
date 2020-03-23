@@ -1,0 +1,45 @@
+<div class="container mt-5">
+
+{% if entry.children | length %}
+    <h2 class="text-center mb-5">Types of {{ entry.title }}</h2>
+{% endif %}
+
+    <div class="row d-flex justify-content-center mb-5">
+
+    {% if entry.title == "Mailing Lists" %}    
+
+        {% set entries = entry.children().level(3).all() %}
+        
+        {% for entry in entries %}
+        
+        <div class="col-lg-4 col-md-6 col-sm-6 text-center mb-3">
+            <a href="{{ entry.url }}">
+            <img src="{{ entry.subServiceImage.one().getUrl() }}" class="img-fluid"/>
+            <h3 class="mt-2">{{ entry.title }}</h3>
+        </a>
+        </div>
+
+        {% endfor %}
+
+    {% else %}
+
+        {% set entries = entry.children().level(3).all() %}
+
+        {% for entry in entries %}
+
+            <div class="col col-lg-4 text-center mb-3">
+                <a href="#collapse-{{entry.slug}}" data-toggle="collapse"><h3 class="mt-2">{{ entry.title }}</h3></a>
+                <div class="collapse multi-collapse" id="collapse-{{entry.slug}}">
+                    <div class="card card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <a href="{{ entry.url }}" class="mt-3 btn btn-primary">Read More</a>
+                    </div>
+                  </div>
+            </div>
+
+        {% endfor %}
+
+    {% endif %}
+
+    </div>
+</div>

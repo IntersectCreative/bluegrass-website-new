@@ -17,9 +17,26 @@
 
 .nav-item {
 	color: white;
+	text-align: center;
 }
 
 .nav-icon {
 	height: 40px;
 	width: 40px;
+	text-align: center;
 }
+
+.dropdown-item {
+	color: #006ea4 !important;
+	font-family: Gotham-Medium;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.nav-link.blog {
+	color: #006ea4;
+}
+
+
+

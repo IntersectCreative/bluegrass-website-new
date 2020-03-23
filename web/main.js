@@ -5,12 +5,12 @@ $(window).scroll(function () {
   if (scrollTop > 200) {
     $('.header').css('display', 'flex');
     $('.header').addClass('fixed-to-top');
-    $('.header').addClass('active');
+    $('.header').addClass('scrolled');
 
   } else if (scrollTop == 0) {
 
     $('.header').removeClass('fixed-to-top');
-    $('.header').removeClass('active');
+    $('.header').removeClass('scrolled');
 
   }
 
@@ -32,6 +32,7 @@ $(document).ready(function(){
 $("#generalContactButton").click(function(){
   $("#generalContact").toggle(600);
 });
+
 
 
   

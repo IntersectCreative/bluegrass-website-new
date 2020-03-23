@@ -9,7 +9,7 @@
                     <div class="card-body">
                         <p>{{ entry.serviceLine|upper }}</p>
                         <h2>{{ entry.title }}</h2>
-                        <h3>Do you know when your website needs an update?</h3>
+                        <h3>{{ entry.blogLeaderline }}</h3>
                         <div class="row mt-3">
 
                         {% for entry in entry.selectAuthor.all() %}
@@ -20,7 +20,9 @@
                             <div class="col-10">
                                 <p>{{ entry.employeeName|upper }}<br><i>{{ entry.employeeTitle }}</i><br>{{ entry.dateCreated | date('F j, Y') }}</p>
                             </div>
-                            {% endfor %}
+
+                        {% endfor %}
+                        
                         </div>
                     </div>
                 </div>
