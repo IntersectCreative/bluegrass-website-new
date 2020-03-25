@@ -432,6 +432,9 @@ video {
       margin-left: 50px;
       margin-right: 50px; } }
 
+.search-bar {
+  color: red; }
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
