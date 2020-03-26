@@ -121,7 +121,7 @@ footer {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   color: white;
-  padding: 5px 5px;
+  padding: 10px 20px;
   text-transform: uppercase; }
 
 .hero {
@@ -431,9 +431,6 @@ video {
     .services-temporary-body {
       margin-left: 50px;
       margin-right: 50px; } }
-
-.search-bar {
-  color: red; }
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
