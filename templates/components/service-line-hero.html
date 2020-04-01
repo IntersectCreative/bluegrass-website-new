@@ -1,6 +1,6 @@
-<div class="service-line-hero">
+<!-- <div class="service-line-hero">
   <div class="container-fluid">
-    <img src="/images/branding/Logo.png" alt="BIC logo" class="widgetLogo img-fluid" />
+    <img src="/images/art--hero-L-bluegrass.jpg" alt="BIC logo" class="widgetLogo img-fluid" />
     <div class="service-line-hero-copy">
       <h5>{{ entry.parent }}</h5>
       <h1 class="serviceHeader" data-typer-targets="{{ entry.title }}"></h1>
@@ -15,4 +15,23 @@
     </div>
   </div>
   {% include "/components/arrow-down.html" %}
+</div> -->
+
+<div class="service-line-hero" style="background-image:url(/images/art--hero-L-bluegrass.jpg); height: 100vh; width: 100vw; background-size: cover; background-position: center center; background-repeat: no-repeat;">
+    <!-- <img src="/images/art--hero-L-bluegrass.jpg" alt="BIC logo" class="widgetLogo img-fluid" /> -->
+    <div class="container">
+    <div class="service-line-hero-copy">
+      <h5>{{ entry.parent }}</h5>
+      <h1 class="serviceHeader" data-typer-targets="{{ entry.title }}"></h1>
+      <img
+        src="/images/branding/direct_mailinglists_direct.png"
+        class="service-line-icon img-fluid"
+        alt="direct mailing list icon"
+      />
+      <p class="introText">
+       {{ entry.heroSubtitle }}
+      </p>
+    </div>
+  </div>
 </div>
+{% include "/components/arrow-down.html" %}

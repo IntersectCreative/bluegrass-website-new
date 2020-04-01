@@ -1,5 +1,13 @@
 {% extends "_layout" %}
 
     {% block content %} 
-        <h2>Your Privacy</h2>
+
+    {% include "/components/navigation.html" %}
+
+    {% set headerTitle="Your Privacy" %}
+
+    {% include "/components/section-header.html" %}
+
+    {% include "/components/footer.html" %}
+
     {% endblock %}

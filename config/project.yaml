@@ -1,0 +1,2040 @@
+dateModified: 1585163465
+email:
+  fromEmail: mayme.clayton@wearebluegrass.com
+  fromName: wearebluegrass
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  14845e65-d10e-4335-95d6-68c36bfbbbbc:
+    name: Sub-services
+  20ce816e-90cc-47e8-b3ab-eabc0da82703:
+    name: Services
+  636d19c7-1b45-4c83-bb80-ff9a370bc669:
+    name: 'Service Line Details'
+  7bca8b6b-f8c1-4edc-b235-a6509d0aa5d4:
+    name: Common
+  a6a4dfd7-85ec-4401-9660-83f696085bf7:
+    name: General
+  b52e0cd8-87b6-4d28-b736-100b598f0fcc:
+    name: tags
+  cbb81a4a-d66f-4c65-b36d-05b4bba5e406:
+    name: Hero
+  d0828146-8abe-49b5-87cd-3e7f3b6bacdb:
+    name: 'About Us'
+  ef21bb7c-0cae-421f-9c87-a14750432c60:
+    name: Employees
+fields:
+  0b1ed3ee-e3ad-494a-99ab-c6821d4e8400:
+    contentColumnType: text
+    fieldGroup: 636d19c7-1b45-4c83-bb80-ff9a370bc669
+    handle: serviceLineCallout
+    instructions: 'The callout copy for this service line.'
+    name: 'Service Line Callout'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  0c664d0d-025d-46b1-99a5-75b9aab6e905:
+    contentColumnType: text
+    fieldGroup: 20ce816e-90cc-47e8-b3ab-eabc0da82703
+    handle: hoverCopy
+    instructions: 'Enter the hover copy for the Service Line page services section.'
+    name: 'Hover Copy'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  34b58095-e6ee-489d-ba82-405d4f13b032:
+    contentColumnType: text
+    fieldGroup: 7bca8b6b-f8c1-4edc-b235-a6509d0aa5d4
+    handle: activity
+    instructions: 'this is the title'
+    name: activity
+    searchable: true
+    settings:
+      charLimit: '50'
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: Title
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  354d00fb-3f22-4043-b833-d50b13cd3c59:
+    contentColumnType: string
+    fieldGroup: 636d19c7-1b45-4c83-bb80-ff9a370bc669
+    handle: services
+    instructions: 'Select the services icons for this service line'
+    name: Services
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_services}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  3eff2e71-eab9-465a-94be-8eaab3f561ce:
+    contentColumnType: text
+    fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
+    handle: employeeName
+    instructions: 'Enter the name of the employee here.'
+    name: 'Employee Name'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  47f85bb3-0be4-424e-a3f8-01b098ee787a:
+    contentColumnType: string
+    fieldGroup: 14845e65-d10e-4335-95d6-68c36bfbbbbc
+    handle: subServiceImage
+    instructions: 'Select the correct image for these sub-services if applicable.'
+    name: 'Sub-Service Image'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  50fdb6fc-8fed-4a61-99bc-d2fd736b301f:
+    contentColumnType: text
+    fieldGroup: d0828146-8abe-49b5-87cd-3e7f3b6bacdb
+    handle: mission
+    instructions: 'Enter the mission of the company.'
+    name: Mission
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+    contentColumnType: string
+    fieldGroup: cbb81a4a-d66f-4c65-b36d-05b4bba5e406
+    handle: heroImage
+    instructions: 'Choose this page''s hero image or video.'
+    name: 'Hero Image'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:39471bc0-b5e5-47a7-a191-16ce5255b92c'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  5aadd46c-f7e1-468b-81ec-88130171f14e:
+    contentColumnType: text
+    fieldGroup: d0828146-8abe-49b5-87cd-3e7f3b6bacdb
+    handle: future
+    instructions: 'Enter the future of the company.'
+    name: Future
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  6f780888-e048-43cc-ab34-a9a0de59acee:
+    contentColumnType: string
+    fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
+    handle: selectAuthor
+    instructions: 'select the author of this blog post'
+    name: 'Select Author'
+    searchable: true
+    settings:
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      source: null
+      sources:
+        - 'section:e246e0c4-58c0-47a4-a969-e718d2d9536c'
+      targetSiteId: null
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  7a43bd01-e0b4-421b-8574-e3be1b2fb5b9:
+    contentColumnType: text
+    fieldGroup: 7bca8b6b-f8c1-4edc-b235-a6509d0aa5d4
+    handle: blogBody
+    instructions: 'This is the body of the blog'
+    name: 'Blog Body'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  819a02e8-d990-4209-a4a6-fbe645886d75:
+    contentColumnType: text
+    fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
+    handle: blogLeaderline
+    instructions: 'Enter the leaderline for this blog post.'
+    name: 'Blog Leaderline'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  824c29dd-2c54-4ab2-bdc5-cf30d8530204:
+    contentColumnType: text
+    fieldGroup: 636d19c7-1b45-4c83-bb80-ff9a370bc669
+    handle: serviceLineCopy
+    instructions: 'The detailed copy for each service line.'
+    name: 'Service Line Copy'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8608d852-cd56-47f1-ae5f-13a1227de62a:
+    contentColumnType: string
+    fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
+    handle: department
+    instructions: 'Enter the employee''s department here.'
+    name: Department
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Direct Marketing'
+            -
+              - value
+              - 'Direct Marketing'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Interactive
+            -
+              - value
+              - Interactive
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Fundraising
+            -
+              - value
+              - Fundraising
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Fulfillment
+            -
+              - value
+              - Fulfillment
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Transactional
+            -
+              - value
+              - Transactional
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Sales
+            -
+              - value
+              - Sales
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Human Resources'
+            -
+              - value
+              - 'Human Resources'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Accounting
+            -
+              - value
+              - Accounting
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Computer Center'
+            -
+              - value
+              - 'Computer Center'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Receptionist
+            -
+              - value
+              - Receptionist
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  96efe999-ece5-45ed-8a45-6258fbe04a27:
+    contentColumnType: string
+    fieldGroup: d0828146-8abe-49b5-87cd-3e7f3b6bacdb
+    handle: partners
+    instructions: 'Select the partner icons for this service line.'
+    name: Partners
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_partners}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  9b5a46e5-5a48-44b3-9c74-29bb68f92c00:
+    contentColumnType: string(7)
+    fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
+    handle: serviceLineColor
+    instructions: 'Select the color that represents this service line.'
+    name: 'Service Line Color'
+    searchable: true
+    settings:
+      defaultColor: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Color
+  9ef27649-5aa6-4863-9500-c630405c5822:
+    contentColumnType: text
+    fieldGroup: 14845e65-d10e-4335-95d6-68c36bfbbbbc
+    handle: collapsibleText
+    instructions: 'Enter the copy for the collapsible sections'
+    name: 'Collapsible Text'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9f48962b-1e5c-4bec-bf20-bc74b0c9319a:
+    contentColumnType: text
+    fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
+    handle: employeeTitle
+    instructions: 'This is the employees title.'
+    name: 'Employee Title'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a1ddd441-ac97-4eaf-91ad-2014e7c145c7:
+    contentColumnType: string
+    fieldGroup: 7bca8b6b-f8c1-4edc-b235-a6509d0aa5d4
+    handle: serviceLineTag
+    instructions: 'This is the service line tag'
+    name: 'Service Line Tag'
+    searchable: true
+    settings:
+      limit: null
+      localizeRelations: false
+      selectionLabel: 'Add a tag'
+      source: 'taggroup:3660b1ca-721c-4c92-9192-a75c7b82b116'
+      sources: '*'
+      targetSiteId: null
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Tags
+  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+    contentColumnType: text
+    fieldGroup: cbb81a4a-d66f-4c65-b36d-05b4bba5e406
+    handle: heroSubtitle
+    instructions: 'Hero helper text.'
+    name: 'Hero Subtitle'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b6fb8735-f940-46b4-9a17-d96f5b5e0314:
+    contentColumnType: text
+    fieldGroup: d0828146-8abe-49b5-87cd-3e7f3b6bacdb
+    handle: history
+    instructions: 'Enter the history of the company.'
+    name: History
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
+    contentColumnType: text
+    fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
+    handle: servicesTemporaryBody
+    instructions: 'Use this box to complete this service''s page copy.'
+    name: 'Services Temporary Body'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: ''
+      removeNbsp: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+    contentColumnType: text
+    fieldGroup: cbb81a4a-d66f-4c65-b36d-05b4bba5e406
+    handle: heroTitle
+    instructions: 'Enter the title of this page/Hero title.'
+    name: 'Hero Title'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'Hero Title'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c5405c57-c331-45dd-bb73-59075c4bd47e:
+    contentColumnType: string
+    fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
+    handle: getToKnow
+    instructions: ''
+    name: 'Get To Know'
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_gettoknow}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  ca87f3ed-7560-4bd7-9ab8-3e5cdcd4696f:
+    contentColumnType: string
+    fieldGroup: d0828146-8abe-49b5-87cd-3e7f3b6bacdb
+    handle: favicon
+    instructions: 'Add the site''s favicon here.'
+    name: Favicon
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d5956b69-0822-469f-aeb2-183f5df6840c:
+    contentColumnType: string
+    fieldGroup: 636d19c7-1b45-4c83-bb80-ff9a370bc669
+    handle: serviceLineIcon
+    instructions: 'Shaded service line icon'
+    name: 'Service Line Icon'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  dc9c1bf8-0371-4318-82cb-37df37bfa6cf:
+    contentColumnType: string
+    fieldGroup: 20ce816e-90cc-47e8-b3ab-eabc0da82703
+    handle: icon
+    instructions: 'Select the icon for this service.'
+    name: Icon
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  ec549621-6d25-4376-acc1-332b2fa1a9ad:
+    contentColumnType: string
+    fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
+    handle: serviceLine
+    instructions: 'select the service line to which this entry belongs.'
+    name: 'Service Line'
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Direct Marketing'
+            -
+              - value
+              - 'Direct Marketing'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Fulfillment
+            -
+              - value
+              - Fulfillment
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Fundraising
+            -
+              - value
+              - Fundraising
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Interactive
+            -
+              - value
+              - Interactive
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Transactional
+            -
+              - value
+              - Transactional
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  f54f9341-be0d-4841-8d88-649150159747:
+    contentColumnType: string
+    fieldGroup: 7bca8b6b-f8c1-4edc-b235-a6509d0aa5d4
+    handle: picture
+    instructions: 'add an image related to your content'
+    name: Picture
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'add image here'
+      singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  fde17dfc-bbf8-4858-b1c3-372c953b15fd:
+    contentColumnType: string
+    fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
+    handle: employeePicture
+    instructions: 'upload the employees picture .'
+    name: 'Employee Picture'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:2c9440b7-d3e9-4b01-80e1-008c2764a529'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:2c9440b7-d3e9-4b01-80e1-008c2764a529'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+globalSets:
+  207a9f3d-eae3-4bfb-9163-d9ce26c294d1:
+    fieldLayouts:
+      578feb46-a0da-4f3b-99ef-9fda822c675f:
+        tabs:
+          -
+            fields:
+              50fdb6fc-8fed-4a61-99bc-d2fd736b301f:
+                required: false
+                sortOrder: 3
+              5aadd46c-f7e1-468b-81ec-88130171f14e:
+                required: false
+                sortOrder: 4
+              96efe999-ece5-45ed-8a45-6258fbe04a27:
+                required: false
+                sortOrder: 5
+              b6fb8735-f940-46b4-9a17-d96f5b5e0314:
+                required: false
+                sortOrder: 2
+              ca87f3ed-7560-4bd7-9ab8-3e5cdcd4696f:
+                required: false
+                sortOrder: 1
+            name: 'About Us'
+            sortOrder: 1
+          -
+            fields:
+              528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                required: false
+                sortOrder: 1
+              ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                required: false
+                sortOrder: 2
+              bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                required: false
+                sortOrder: 3
+            name: Hero
+            sortOrder: 2
+    handle: companyInfo
+    name: 'Company Info'
+  3c9f4119-fed7-4cb7-bf10-261dd9a2ed4d:
+    handle: branding
+    name: branding
+matrixBlockTypes:
+  c8ecdfa7-18a8-4e9c-b512-292ba270a324:
+    field: c5405c57-c331-45dd-bb73-59075c4bd47e
+    fieldLayouts:
+      5978544f-7018-445e-94e6-a620692cef76:
+        tabs:
+          -
+            fields:
+              07b39559-e59a-467f-b20a-17df32ae52cd:
+                required: false
+                sortOrder: 2
+              3f514041-0d97-4524-932d-0be255042a87:
+                required: false
+                sortOrder: 4
+              7be85f5b-eb08-43a1-bf29-c5ea7462337d:
+                required: false
+                sortOrder: 1
+              9d915956-c7af-4746-8d23-5b9e90ed4d52:
+                required: false
+                sortOrder: 5
+              d2714c0f-df37-4126-9712-9946a29431ce:
+                required: false
+                sortOrder: 3
+              e3f7eee6-8f38-48ae-bc14-bb2481e230a1:
+                required: false
+                sortOrder: 6
+            name: Content
+            sortOrder: 1
+    fields:
+      07b39559-e59a-467f-b20a-17df32ae52cd:
+        contentColumnType: text
+        fieldGroup: null
+        handle: pets
+        instructions: 'Do you have any pets?'
+        name: Pets
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: true
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+          removeEmptyTags: '1'
+          removeInlineStyles: '1'
+          removeNbsp: '1'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+      3f514041-0d97-4524-932d-0be255042a87:
+        contentColumnType: text
+        fieldGroup: null
+        handle: song
+        instructions: 'What is your most played song on your playlist?'
+        name: Song
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: true
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+          removeEmptyTags: '1'
+          removeInlineStyles: '1'
+          removeNbsp: '1'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+      7be85f5b-eb08-43a1-bf29-c5ea7462337d:
+        contentColumnType: text
+        fieldGroup: null
+        handle: favoritePart
+        instructions: 'What is your favorite part about working at Bluegrass?'
+        name: 'Favorite Part'
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: true
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+          removeEmptyTags: '1'
+          removeInlineStyles: '1'
+          removeNbsp: '1'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+      9d915956-c7af-4746-8d23-5b9e90ed4d52:
+        contentColumnType: text
+        fieldGroup: null
+        handle: surprisingFact
+        instructions: 'What is one fact about you that surprises people?'
+        name: 'Surprising Fact'
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: true
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+          removeEmptyTags: '1'
+          removeInlineStyles: '1'
+          removeNbsp: '1'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+      d2714c0f-df37-4126-9712-9946a29431ce:
+        contentColumnType: text
+        fieldGroup: null
+        handle: inspiration
+        instructions: 'Where do you find inspiration?'
+        name: Inspiration
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: true
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+          removeEmptyTags: '1'
+          removeInlineStyles: '1'
+          removeNbsp: '1'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+      e3f7eee6-8f38-48ae-bc14-bb2481e230a1:
+        contentColumnType: text
+        fieldGroup: null
+        handle: chooseBluegrass
+        instructions: 'Why do you think clients should choose to work with Bluegrass?'
+        name: 'Choose Bluegrass'
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: true
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+          removeEmptyTags: '1'
+          removeInlineStyles: '1'
+          removeNbsp: '1'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+    handle: getToKnow
+    name: 'Get to Know'
+    sortOrder: 1
+  f10a2128-7830-4732-9750-f4d2c3e5af68:
+    field: 354d00fb-3f22-4043-b833-d50b13cd3c59
+    fieldLayouts:
+      b47b76d5-b2ca-48fd-8269-361e358fc1ee:
+        tabs:
+          -
+            fields:
+              08d60535-3b7e-4fd4-90d6-7d1ee2e85e83:
+                required: false
+                sortOrder: 1
+              2b25d146-ca37-4b65-bcdf-a27ab60cea19:
+                required: true
+                sortOrder: 4
+              e76b6e90-788e-4b15-adfd-ebade23b415f:
+                required: false
+                sortOrder: 3
+              edb13ee5-fed8-4789-9d73-a215d15065f1:
+                required: false
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      08d60535-3b7e-4fd4-90d6-7d1ee2e85e83:
+        contentColumnType: text
+        fieldGroup: null
+        handle: servicesName
+        instructions: 'Enter the Service Name'
+        name: 'Services Name'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      2b25d146-ca37-4b65-bcdf-a27ab60cea19:
+        contentColumnType: string(255)
+        fieldGroup: null
+        handle: servicesUrl
+        instructions: 'Enter the url for this service.'
+        name: 'Services Url'
+        searchable: true
+        settings:
+          maxLength: '255'
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\Url
+      e76b6e90-788e-4b15-adfd-ebade23b415f:
+        contentColumnType: text
+        fieldGroup: null
+        handle: hoverCopy
+        instructions: 'Enter the copy that will hover over the service icon.'
+        name: 'Hover Copy'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      edb13ee5-fed8-4789-9d73-a215d15065f1:
+        contentColumnType: string
+        fieldGroup: null
+        handle: icon
+        instructions: 'select the icon for this service'
+        name: Icon
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+    handle: servicesDetail
+    name: 'Services Detail'
+    sortOrder: 1
+  f9463bad-288e-4d7e-a514-103f9180311d:
+    field: 96efe999-ece5-45ed-8a45-6258fbe04a27
+    fieldLayouts:
+      cf06de6c-687a-47f7-9843-9965f18bc328:
+        tabs:
+          -
+            fields:
+              50c74d82-38d7-4d43-9661-57f2a1f1175f:
+                required: false
+                sortOrder: 1
+              932efa0f-4ede-4715-bc32-9bbfc914f450:
+                required: false
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      50c74d82-38d7-4d43-9661-57f2a1f1175f:
+        contentColumnType: text
+        fieldGroup: null
+        handle: partnerName
+        instructions: 'Enter the partner''s name for the alt field.'
+        name: 'Partner Name'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      932efa0f-4ede-4715-bc32-9bbfc914f450:
+        contentColumnType: string
+        fieldGroup: null
+        handle: icon
+        instructions: ''
+        name: Icon
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          defaultUploadLocationSubpath: ''
+          limit: ''
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+    handle: partner
+    name: Partner
+    sortOrder: 1
+plugins:
+  feed-me:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.1.2
+  freeform:
+    edition: pro
+    enabled: true
+    schemaVersion: 3.0.5
+    settings:
+      ajaxByDefault: false
+      autoScrollToErrors: true
+      blockedEmails: null
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: null
+      blockedKeywords: null
+      blockedKeywordsError: 'Invalid Entry Data'
+      customErrorMessage: null
+      customHoneypotName: null
+      defaultTemplates: true
+      defaultView: dashboard
+      emailTemplateDirectory: null
+      emailTemplateStorage: db
+      fieldDisplayOrder: name
+      fillWithGet: false
+      footerScripts: false
+      formSubmitDisable: false
+      formSubmitExpiration: null
+      formTemplateDirectory: null
+      formattingTemplate: flexbox.html
+      freeformHoneypot: true
+      freeformHoneypotEnhancement: false
+      hideBannerDemo: false
+      hideBannerOldFreeform: false
+      minimumSubmitTime: null
+      pluginName: null
+      purgableSpamAgeInDays: null
+      purgableSubmissionAgeInDays: null
+      recaptchaBehaviour: display_error
+      recaptchaEnabled: false
+      recaptchaKey: null
+      recaptchaMinScore: 0.5
+      recaptchaSecret: null
+      recaptchaType: v2_checkbox
+      removeNewlines: false
+      renderFormHtmlInCpViews: true
+      salesforce_client_id: null
+      salesforce_client_secret: null
+      salesforce_password: null
+      salesforce_username: null
+      scriptInsertLocation: footer
+      showErrorsForBlockedEmails: false
+      showErrorsForBlockedKeywords: false
+      showTutorial: false
+      spamFolderEnabled: false
+      spamProtectionBehaviour: simulate_success
+      submissionThrottlingCount: null
+      submissionThrottlingTimeFrame: null
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+routes:
+  610b8bba-5f5f-43b3-bc86-d105a8debf5e:
+    siteUid: null
+    sortOrder: 1
+    template: blog/results.html
+    uriParts:
+      - blogs/results
+    uriPattern: blogs/results
+sections:
+  08016667-7ed0-4901-981b-0bcaace95a06:
+    enableVersioning: true
+    entryTypes:
+      39254ccb-b5bb-4e1d-8366-49004154bb40:
+        fieldLayouts:
+          2e152b83-d9d6-4554-bf25-03d6e373bbe1:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 1
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 2
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 3
+                name: Hero
+                sortOrder: 1
+              -
+                fields:
+                  9b5a46e5-5a48-44b3-9c74-29bb68f92c00:
+                    required: false
+                    sortOrder: 2
+                  ec549621-6d25-4376-acc1-332b2fa1a9ad:
+                    required: false
+                    sortOrder: 1
+                name: General
+                sortOrder: 2
+              -
+                fields:
+                  0b1ed3ee-e3ad-494a-99ab-c6821d4e8400:
+                    required: false
+                    sortOrder: 1
+                  824c29dd-2c54-4ab2-bdc5-cf30d8530204:
+                    required: false
+                    sortOrder: 2
+                  d5956b69-0822-469f-aeb2-183f5df6840c:
+                    required: false
+                    sortOrder: 3
+                name: 'Service Line Details'
+                sortOrder: 3
+              -
+                fields:
+                  0c664d0d-025d-46b1-99a5-75b9aab6e905:
+                    required: false
+                    sortOrder: 1
+                  b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
+                    required: false
+                    sortOrder: 3
+                  dc9c1bf8-0371-4318-82cb-37df37bfa6cf:
+                    required: false
+                    sortOrder: 2
+                name: Services
+                sortOrder: 4
+              -
+                fields:
+                  47f85bb3-0be4-424e-a3f8-01b098ee787a:
+                    required: false
+                    sortOrder: 2
+                  9ef27649-5aa6-4863-9500-c630405c5822:
+                    required: false
+                    sortOrder: 1
+                name: Sub-services
+                sortOrder: 5
+        handle: transactional
+        hasTitleField: true
+        name: Transactional
+        sortOrder: 4
+        titleFormat: ''
+        titleLabel: Title
+      3d9440e7-242c-4e2a-83b3-7d5ebd677daf:
+        fieldLayouts:
+          88012549-7a3d-4e87-8bd9-43345383d4df:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 1
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 2
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 3
+                name: Hero
+                sortOrder: 1
+              -
+                fields:
+                  9b5a46e5-5a48-44b3-9c74-29bb68f92c00:
+                    required: false
+                    sortOrder: 2
+                  ec549621-6d25-4376-acc1-332b2fa1a9ad:
+                    required: false
+                    sortOrder: 1
+                name: General
+                sortOrder: 2
+              -
+                fields:
+                  0b1ed3ee-e3ad-494a-99ab-c6821d4e8400:
+                    required: false
+                    sortOrder: 1
+                  824c29dd-2c54-4ab2-bdc5-cf30d8530204:
+                    required: false
+                    sortOrder: 2
+                  d5956b69-0822-469f-aeb2-183f5df6840c:
+                    required: false
+                    sortOrder: 3
+                name: 'Service Line Details'
+                sortOrder: 3
+              -
+                fields:
+                  0c664d0d-025d-46b1-99a5-75b9aab6e905:
+                    required: false
+                    sortOrder: 1
+                  b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
+                    required: false
+                    sortOrder: 3
+                  dc9c1bf8-0371-4318-82cb-37df37bfa6cf:
+                    required: false
+                    sortOrder: 2
+                name: Services
+                sortOrder: 4
+              -
+                fields:
+                  47f85bb3-0be4-424e-a3f8-01b098ee787a:
+                    required: false
+                    sortOrder: 2
+                  9ef27649-5aa6-4863-9500-c630405c5822:
+                    required: false
+                    sortOrder: 1
+                name: Sub-services
+                sortOrder: 5
+        handle: fundraising
+        hasTitleField: true
+        name: Fundraising
+        sortOrder: 3
+        titleFormat: ''
+        titleLabel: Title
+      4016d5d7-4604-42c4-9431-d76e377e7ffa:
+        fieldLayouts:
+          b38dc87c-9e9f-4f3e-a711-a06bdb68d2b7:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 3
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 1
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 2
+                name: Hero
+                sortOrder: 1
+              -
+                fields:
+                  9b5a46e5-5a48-44b3-9c74-29bb68f92c00:
+                    required: true
+                    sortOrder: 2
+                  ec549621-6d25-4376-acc1-332b2fa1a9ad:
+                    required: true
+                    sortOrder: 1
+                name: General
+                sortOrder: 2
+              -
+                fields:
+                  0b1ed3ee-e3ad-494a-99ab-c6821d4e8400:
+                    required: false
+                    sortOrder: 1
+                  824c29dd-2c54-4ab2-bdc5-cf30d8530204:
+                    required: false
+                    sortOrder: 2
+                  d5956b69-0822-469f-aeb2-183f5df6840c:
+                    required: false
+                    sortOrder: 3
+                name: 'Service Line Details'
+                sortOrder: 3
+              -
+                fields:
+                  0c664d0d-025d-46b1-99a5-75b9aab6e905:
+                    required: false
+                    sortOrder: 1
+                  b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
+                    required: false
+                    sortOrder: 3
+                  dc9c1bf8-0371-4318-82cb-37df37bfa6cf:
+                    required: false
+                    sortOrder: 2
+                name: Services
+                sortOrder: 4
+              -
+                fields:
+                  47f85bb3-0be4-424e-a3f8-01b098ee787a:
+                    required: false
+                    sortOrder: 2
+                  9ef27649-5aa6-4863-9500-c630405c5822:
+                    required: false
+                    sortOrder: 1
+                name: Sub-services
+                sortOrder: 5
+        handle: directMarketing
+        hasTitleField: true
+        name: 'Direct Marketing'
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+      79722fe5-363a-4022-97b9-d8fff2ef9999:
+        fieldLayouts:
+          a1b5baf7-1136-444a-ade0-6e8a31e9b200:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 1
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 2
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 3
+                name: Hero
+                sortOrder: 1
+              -
+                fields:
+                  9b5a46e5-5a48-44b3-9c74-29bb68f92c00:
+                    required: false
+                    sortOrder: 2
+                  ec549621-6d25-4376-acc1-332b2fa1a9ad:
+                    required: false
+                    sortOrder: 1
+                name: General
+                sortOrder: 2
+              -
+                fields:
+                  0b1ed3ee-e3ad-494a-99ab-c6821d4e8400:
+                    required: false
+                    sortOrder: 1
+                  824c29dd-2c54-4ab2-bdc5-cf30d8530204:
+                    required: false
+                    sortOrder: 2
+                  d5956b69-0822-469f-aeb2-183f5df6840c:
+                    required: false
+                    sortOrder: 3
+                name: 'Service Line Details'
+                sortOrder: 3
+              -
+                fields:
+                  0c664d0d-025d-46b1-99a5-75b9aab6e905:
+                    required: false
+                    sortOrder: 1
+                  b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
+                    required: false
+                    sortOrder: 3
+                  dc9c1bf8-0371-4318-82cb-37df37bfa6cf:
+                    required: false
+                    sortOrder: 2
+                name: Services
+                sortOrder: 4
+              -
+                fields:
+                  47f85bb3-0be4-424e-a3f8-01b098ee787a:
+                    required: false
+                    sortOrder: 2
+                  9ef27649-5aa6-4863-9500-c630405c5822:
+                    required: false
+                    sortOrder: 1
+                name: Sub-services
+                sortOrder: 5
+        handle: interactive
+        hasTitleField: true
+        name: Interactive
+        sortOrder: 5
+        titleFormat: ''
+        titleLabel: Title
+      c0c66361-4b20-48ad-afdf-7f80f3b74f64:
+        fieldLayouts:
+          267f2220-55fd-486a-a1e7-01b2201c098b:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 1
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 2
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 3
+                name: Hero
+                sortOrder: 1
+              -
+                fields:
+                  9b5a46e5-5a48-44b3-9c74-29bb68f92c00:
+                    required: false
+                    sortOrder: 2
+                  ec549621-6d25-4376-acc1-332b2fa1a9ad:
+                    required: false
+                    sortOrder: 1
+                name: General
+                sortOrder: 2
+              -
+                fields:
+                  0b1ed3ee-e3ad-494a-99ab-c6821d4e8400:
+                    required: false
+                    sortOrder: 1
+                  824c29dd-2c54-4ab2-bdc5-cf30d8530204:
+                    required: false
+                    sortOrder: 2
+                  d5956b69-0822-469f-aeb2-183f5df6840c:
+                    required: false
+                    sortOrder: 3
+                name: 'Service Line Details'
+                sortOrder: 3
+              -
+                fields:
+                  0c664d0d-025d-46b1-99a5-75b9aab6e905:
+                    required: false
+                    sortOrder: 1
+                  b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
+                    required: false
+                    sortOrder: 3
+                  dc9c1bf8-0371-4318-82cb-37df37bfa6cf:
+                    required: false
+                    sortOrder: 2
+                name: Services
+                sortOrder: 4
+              -
+                fields:
+                  47f85bb3-0be4-424e-a3f8-01b098ee787a:
+                    required: false
+                    sortOrder: 2
+                  9ef27649-5aa6-4863-9500-c630405c5822:
+                    required: false
+                    sortOrder: 1
+                name: Sub-services
+                sortOrder: 5
+        handle: fulfillment
+        hasTitleField: true
+        name: Fulfillment
+        sortOrder: 2
+        titleFormat: ''
+        titleLabel: Title
+    handle: services
+    name: Services
+    previewTargets:
+      -
+        label: 'Primary entry page'
+        urlFormat: '{url}'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: service-lines/_entry.twig
+        uriFormat: '{parent.uri}/{slug}'
+    structure:
+      maxLevels: null
+      uid: 4abf996e-d067-4e31-9588-9cba69f0be27
+    type: structure
+  2c65ab2c-f046-4186-8f18-17c67351930a:
+    enableVersioning: true
+    entryTypes:
+      01d28d32-5097-4720-b71a-f9e4c617d3cd:
+        handle: thanks
+        hasTitleField: false
+        name: Thanks
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: thanks
+    name: Thanks
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: thanks/_entry
+        uriFormat: thanks
+    type: single
+  4499d0d0-e729-4c5c-9820-a2ae72bb92dc:
+    enableVersioning: true
+    entryTypes:
+      c8a0f55c-1d2f-462d-af56-0089e7c3cd13:
+        handle: unsubscribed
+        hasTitleField: false
+        name: Unsubscribed
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: unsubscribed
+    name: Unsubscribed
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: unsubscribed/_entry
+        uriFormat: unsubscribed
+    type: single
+  4ddd86a0-8917-4a71-b3f7-2c135a31e7bc:
+    enableVersioning: true
+    entryTypes:
+      e690744d-7c00-4e64-b541-638be2c8e0ed:
+        fieldLayouts:
+          f687c371-034e-4008-91d4-00297ca1ede4:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 1
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 2
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 3
+                name: Hero
+                sortOrder: 1
+        handle: reachUs
+        hasTitleField: false
+        name: 'Reach Us'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: reachUs
+    name: 'Reach Us'
+    previewTargets:
+      -
+        label: 'Primary entry page'
+        urlFormat: '{url}'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: reach-us/_entry.twig
+        uriFormat: reach-us
+    type: single
+  5918c723-2936-4c67-8045-e9e6f270b39b:
+    enableVersioning: true
+    entryTypes:
+      e578ff54-1a28-48e4-9989-165853c4ed6f:
+        fieldLayouts:
+          b79f88ab-221b-4fe6-abbe-1fb384ff9bc0:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 1
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 2
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 3
+                name: Hero
+                sortOrder: 1
+        handle: search
+        hasTitleField: false
+        name: Search
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: search
+    name: Search
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: search/_entry
+        uriFormat: search
+    type: single
+  65cae459-6e94-41ab-bc1b-88bcb6c200ed:
+    enableVersioning: true
+    entryTypes:
+      8a60c42c-6657-4519-bc52-dae47b5b073d:
+        handle: faq
+        hasTitleField: false
+        name: 'Frequently Asked Questions'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: faq
+    name: 'Frequently Asked Questions'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: frequently-asked-questions/_entry
+        uriFormat: frequently-asked-questions
+    type: single
+  6a093cdb-5d36-4714-85b9-fa700d2c66c7:
+    enableVersioning: true
+    entryTypes:
+      9ee4d3b6-2d70-40f9-bc68-00cb9b3e20c9:
+        fieldLayouts:
+          76c593da-d5a5-42dd-98e6-7220da0072ea:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 1
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 3
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 2
+                name: Hero
+                sortOrder: 1
+              -
+                fields:
+                  9b5a46e5-5a48-44b3-9c74-29bb68f92c00:
+                    required: false
+                    sortOrder: 1
+                name: General
+                sortOrder: 2
+        handle: home
+        hasTitleField: false
+        name: 'We Are Bluegrass.'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: home
+    name: 'We Are Bluegrass.'
+    previewTargets:
+      -
+        label: 'Primary entry page'
+        urlFormat: '{url}'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: home/_entry
+        uriFormat: __home__
+    type: single
+  6a1b38a4-bdaf-481b-9730-4ca694bcaa13:
+    enableVersioning: true
+    entryTypes:
+      9d294a94-48d5-4fe6-9637-e17e9339a171:
+        handle: yourPrivacy
+        hasTitleField: false
+        name: 'Your Privacy'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: yourPrivacy
+    name: 'Your Privacy'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: your-privacy/_entry
+        uriFormat: your-privacy
+    type: single
+  8b4166a0-c191-4e9b-9a02-f85c48edcd26:
+    enableVersioning: true
+    entryTypes:
+      8ef12e6d-dbb7-45e8-b168-710e106cfea3:
+        handle: privacyPolicy
+        hasTitleField: false
+        name: 'Privacy Policy'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: privacyPolicy
+    name: 'Privacy Policy'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: privacy-policy/_entry
+        uriFormat: privacy-policy
+    type: single
+  930458e2-2fee-4767-9b32-9764f29f5441:
+    enableVersioning: true
+    entryTypes:
+      cd825013-bd1c-4c4b-a169-65f85973f92e:
+        fieldLayouts:
+          3bb1af9c-6c1c-4399-bb1a-be792610bf62:
+            tabs:
+              -
+                fields:
+                  6f780888-e048-43cc-ab34-a9a0de59acee:
+                    required: false
+                    sortOrder: 5
+                  7a43bd01-e0b4-421b-8574-e3be1b2fb5b9:
+                    required: false
+                    sortOrder: 4
+                  819a02e8-d990-4209-a4a6-fbe645886d75:
+                    required: false
+                    sortOrder: 3
+                  a1ddd441-ac97-4eaf-91ad-2014e7c145c7:
+                    required: false
+                    sortOrder: 6
+                  ec549621-6d25-4376-acc1-332b2fa1a9ad:
+                    required: false
+                    sortOrder: 1
+                  f54f9341-be0d-4841-8d88-649150159747:
+                    required: false
+                    sortOrder: 2
+                name: Blog
+                sortOrder: 1
+        handle: blog
+        hasTitleField: true
+        name: Blog
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: blog
+    name: Blog
+    previewTargets:
+      -
+        label: 'Primary entry page'
+        urlFormat: '{url}'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: blog/_entry.twig
+        uriFormat: 'blog/{slug}'
+    type: channel
+  a1fbadb8-8656-4a59-aeb2-0ac97118f84a:
+    enableVersioning: true
+    entryTypes:
+      9aefb316-19d2-4fbb-bccf-12d308614599:
+        handle: signUp
+        hasTitleField: false
+        name: 'Sign Up'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: signUp
+    name: 'Sign Up'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: sign-up/_entry
+        uriFormat: sign-up
+    type: single
+  c20f6439-c7ec-4b99-b067-9f0e07584d73:
+    enableVersioning: true
+    entryTypes:
+      5f524af9-4f98-4c0c-a655-03f5e01ee7b5:
+        fieldLayouts:
+          7611c44d-15b4-40f9-85e1-6216d4f428a7:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 1
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 2
+                  b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
+                    required: false
+                    sortOrder: 4
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 3
+                name: Hero
+                sortOrder: 1
+        handle: indicia
+        hasTitleField: false
+        name: Indicia
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: indicia
+    name: Indicia
+    previewTargets:
+      -
+        label: 'Primary entry page'
+        urlFormat: '{url}'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: /indicia/_entry.twig
+        uriFormat: indicia
+    type: single
+  d5a59813-4460-4df9-9650-818fe09690a5:
+    enableVersioning: true
+    entryTypes:
+      f90c2926-efc4-4f20-b3f9-754319072d94:
+        handle: signupError
+        hasTitleField: false
+        name: 'Signup Error'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: signupError
+    name: 'Signup Error'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: signup-error/_entry
+        uriFormat: signup-error
+    type: single
+  e246e0c4-58c0-47a4-a969-e718d2d9536c:
+    enableVersioning: true
+    entryTypes:
+      ebc72037-0a6f-4f34-bee2-6e8b22816fb9:
+        fieldLayouts:
+          3c569449-08a2-4773-9c76-ee819e6752c0:
+            tabs:
+              -
+                fields:
+                  3eff2e71-eab9-465a-94be-8eaab3f561ce:
+                    required: false
+                    sortOrder: 1
+                  8608d852-cd56-47f1-ae5f-13a1227de62a:
+                    required: false
+                    sortOrder: 4
+                  9f48962b-1e5c-4bec-bf20-bc74b0c9319a:
+                    required: false
+                    sortOrder: 3
+                  c5405c57-c331-45dd-bb73-59075c4bd47e:
+                    required: false
+                    sortOrder: 5
+                  fde17dfc-bbf8-4858-b1c3-372c953b15fd:
+                    required: false
+                    sortOrder: 2
+                name: Employees
+                sortOrder: 1
+        handle: aboutUs
+        hasTitleField: true
+        name: 'About Us'
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: aboutUs
+    name: 'About Us'
+    previewTargets:
+      -
+        label: 'Primary entry page'
+        urlFormat: '{url}'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: about-us/_entry.twig
+        uriFormat: '{parent.uri}/{slug}'
+    structure:
+      maxLevels: null
+      uid: e5a9f3f8-71d8-4c42-9ad0-572d319c1ca0
+    type: structure
+siteGroups:
+  3f83f68f-620f-4f25-aab1-0b20a1bc203f:
+    name: wearebluegrass
+sites:
+  c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: en-US
+    name: wearebluegrass
+    primary: true
+    siteGroup: 3f83f68f-620f-4f25-aab1-0b20a1bc203f
+    sortOrder: 1
+system:
+  edition: solo
+  live: true
+  name: wearebluegrass
+  schemaVersion: 3.4.10
+  timeZone: America/New_York
+tagGroups:
+  3660b1ca-721c-4c92-9192-a75c7b82b116:
+    fieldLayouts:
+      c85dc581-fb59-4e0f-a1c7-60a28082d3de:
+        tabs:
+          -
+            fields:
+              354d00fb-3f22-4043-b833-d50b13cd3c59:
+                required: false
+                sortOrder: 1
+              ec549621-6d25-4376-acc1-332b2fa1a9ad:
+                required: false
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    handle: serviceLines
+    name: 'Service Lines'
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
+volumes:
+  0a5c9a50-eed7-4895-800b-16f2367c962a:
+    handle: branding
+    hasUrls: true
+    name: Branding
+    settings:
+      path: /Users/Mayme.Clayton/repos/bluegrass-website-new/web/images/branding
+    sortOrder: 3
+    type: craft\volumes\Local
+    url: //bluegrass-website-new.test/images/branding
+  2c9440b7-d3e9-4b01-80e1-008c2764a529:
+    handle: employeePictures
+    hasUrls: true
+    name: 'Employee Pictures'
+    settings:
+      path: /Users/Mayme.Clayton/repos/bluegrass-website-new/web/images/employees
+    sortOrder: 5
+    type: craft\volumes\Local
+    url: //bluegrass-website-new.test/images/employees
+  39471bc0-b5e5-47a7-a191-16ce5255b92c:
+    handle: imageHero
+    hasUrls: true
+    name: 'Image Hero'
+    settings:
+      path: /Users/Mayme.Clayton/repos/bluegrass-website-new/web/images/imagehero
+    sortOrder: 4
+    type: craft\volumes\Local
+    url: //bluegrass-website-new.test/images/imagehero
+  9ad43390-a17b-4454-8f6f-0887b219539d:
+    handle: bluegrass
+    hasUrls: true
+    name: Bluegrass
+    settings:
+      path: /Users/Mayme.Clayton/repos/bluegrass-website-new/web/images/bluegrass
+    sortOrder: 1
+    type: craft\volumes\Local
+    url: //bluegrass-website-new.test/images/bluegrass

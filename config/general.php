@@ -25,7 +25,9 @@ return [
 
         // Whether to save the project config out to config/project.yaml
         // (see https://docs.craftcms.com/v3/project-config.html)
-        'useProjectConfigFile' => false,
+        'useProjectConfigFile' => true,
+
+        'siteURL' => getenv('SITE_URL') ? : '@web',   
     ],
 
     // Dev environment settings
@@ -43,6 +45,8 @@ return [
     // Production environment settings
     'production' => [
         // Set this to `false` to prevent administrative changes from being made on production
-        'allowAdminChanges' => true,
+        'allowAdminChanges' => false,
+        'devMode' => false,
+        'allowUpdates' => false,
     ],
 ];

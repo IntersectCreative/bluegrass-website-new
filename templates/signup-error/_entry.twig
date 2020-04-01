@@ -1,5 +1,13 @@
 {% extends "_layout" %}
 
     {% block content %} 
-        <h2>Signup Error</h2>
+
+        {% include "/components/navigation.html" %}
+
+        {% set headerTitle="Sign-Up Error" %}
+
+        {% include "/components/section-header.html" %}
+
+        {% include "/components/footer.html" %}
+        
     {% endblock %}
