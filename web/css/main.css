@@ -2,7 +2,7 @@
 /* colors */
 /* font */
 html, body {
-  font-family: "Gotham";
+  font-family: proxima-nova;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -10,12 +10,12 @@ html, body {
   overflow: visible; }
 
 .bodyText {
-  font-family: "Gotham";
+  font-family: proxima-nova;
   font-size: 14px;
   color: #4A4A4A; }
 
 .introText {
-  font-family: "Gotham";
+  font-family: proxima-nova;
   font-size: 18px;
   color: #000000; }
 
@@ -25,7 +25,7 @@ html, body {
 .nav-link {
   text-transform: uppercase;
   color: white;
-  font-family: Gotham-Medium;
+  font-family: proxima-nova;
   font-size: 18px;
   text-align: center; }
 
@@ -44,7 +44,7 @@ html, body {
 
 .dropdown-item {
   color: #006ea4 !important;
-  font-family: Gotham-Medium;
+  font-family: proxima-nova;
   font-size: 18px;
   text-align: center;
   text-transform: uppercase; }
@@ -112,7 +112,7 @@ footer {
   padding: 10px 10px;
   text-transform: uppercase;
   font-size: 12px;
-  font-family: gotham-book; }
+  font-family: proxima-nova; }
 
 /* Let's get started blue button*/
 .lgsb {
@@ -166,7 +166,7 @@ video {
       text-align: center; } }
 
 .hero-title {
-  font-family: Gotham-Bold;
+  font-family: proxima-nova;
   font-size: 96px;
   color: #FFFFFF;
   line-height: 90px;
@@ -177,7 +177,7 @@ video {
       line-height: 60px; } }
 
 .hero-subtitle {
-  font-family: Gotham-Book;
+  font-family: proxima-nova;
   font-size: 18px;
   color: #FFFFFF; }
   @media only screen and (max-width: 768px) {
@@ -493,7 +493,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Gotham";
+  font-family: proxima-nova;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4807,7 +4807,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Gotham";
+  font-family: proxima-nova;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4892,7 +4892,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Gotham";
+  font-family: proxima-nova;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
