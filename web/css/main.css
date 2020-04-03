@@ -139,7 +139,8 @@ footer {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-color: #006ea4; }
 
 .hero-divider {
   height: 126px;
