@@ -48,7 +48,6 @@ return [
         'allowAdminChanges' => false,
         'devMode' => false,
         'allowUpdates' => false,
-        'siteUrl' =>"https://craft3-daru.frb.io/",
     ],
 
 ];
