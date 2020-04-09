@@ -1,4 +1,4 @@
-dateModified: 1586451433
+dateModified: 1586458774
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -2037,4 +2037,4 @@ volumes:
       path: /Users/Mayme.Clayton/repos/bluegrass-website-new/web/images/bluegrass
     sortOrder: 1
     type: craft\volumes\Local
-    url: '@web/images/bluegrass'
+    url: //bluegrass-website-new.test/images/bluegrass
