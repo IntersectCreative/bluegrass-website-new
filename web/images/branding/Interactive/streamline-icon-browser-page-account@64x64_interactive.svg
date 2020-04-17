@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" viewBox="0 0 64 64" height="64" width="64">
+  <title>Exported from Streamline App (https://app.streamlineicons.com)</title>
+  <g transform="matrix(2.6666666666666665,0,0,2.6666666666666665,0,0)">
+    <path d="M 2.5,0.5h19c1.105,0,2,0.895,2,2v19c0,1.105-0.895,2-2,2h-19c-1.105,0-2-0.895-2-2v-19 C0.5,1.395,1.395,0.5,2.5,0.5z " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 0.5,5.5h23 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 14,8.5h6c0.276,0,0.5,0.224,0.5,0.5v4c0,0.276-0.224,0.5-0.5,0.5h-6 c-0.276,0-0.5-0.224-0.5-0.5V9C13.5,8.724,13.724,8.5,14,8.5z " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 14,15.5h6c0.276,0,0.5,0.224,0.5,0.5v4c0,0.276-0.224,0.5-0.5,0.5 h-6c-0.276,0-0.5-0.224-0.5-0.5v-4C13.5,15.724,13.724,15.5,14,15.5z " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 4,8.5h6c0.276,0,0.5,0.224,0.5,0.5v7 c0,0.276-0.224,0.5-0.5,0.5H4c-0.276,0-0.5-0.224-0.5-0.5V9C3.5,8.724,3.724,8.5,4,8.5z " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 7,10.5c0.828,0,1.5,0.672,1.5,1.5 S7.828,13.5,7,13.5S5.5,12.828,5.5,12S6.172,10.5,7,10.5z " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 4.5,16.5c-0.125-1.515,0.987-2.85,2.5-3c1.513,0.15,2.625,1.485,2.5,3 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 4,18.5h4 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 4,20.5h4 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 4,2.75c0.138,0,0.25,0.112,0.25,0.25S4.138,3.25,4,3.25C3.862,3.25,3.75,3.138,3.75,3S3.862,2.75,4,2.75 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 7,2.75c0.138,0,0.25,0.112,0.25,0.25S7.138,3.25,7,3.25S6.75,3.138,6.75,3S6.862,2.75,7,2.75 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 10,2.75 c0.138,0,0.25,0.112,0.25,0.25S10.138,3.25,10,3.25S9.75,3.138,9.75,3S9.862,2.75,10,2.75" stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+</svg>

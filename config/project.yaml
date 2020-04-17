@@ -1,4 +1,4 @@
-dateModified: 1587130495
+dateModified: 1587134264
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -2007,28 +2007,28 @@ volumes:
     hasUrls: true
     name: Branding
     settings:
-      path: /Users/Mayme.Clayton/repos/bluegrass-website-new/web/images/branding
+      path: '@webroot/images/branding'
     sortOrder: 3
     type: craft\volumes\Local
-    url: //bluegrass-website-new.test/images/branding
+    url: '@web/images/branding'
   2c9440b7-d3e9-4b01-80e1-008c2764a529:
     handle: employeePictures
     hasUrls: true
     name: 'Employee Pictures'
     settings:
-      path: /Users/Mayme.Clayton/repos/bluegrass-website-new/web/images/employees
+      path: '@webroot/images/employees'
     sortOrder: 5
     type: craft\volumes\Local
-    url: //bluegrass-website-new.test/images/employees
+    url: '@web/images/employees'
   39471bc0-b5e5-47a7-a191-16ce5255b92c:
     handle: imageHero
     hasUrls: true
     name: 'Image Hero'
     settings:
-      path: /Users/Mayme.Clayton/repos/bluegrass-website-new/web/images/imagehero
+      path: '@webroot/images/imagehero'
     sortOrder: 4
     type: craft\volumes\Local
-    url: 'https://bluegrass-website-new.test/images/imagehero'
+    url: '@web/images/imagehero'
   9ad43390-a17b-4454-8f6f-0887b219539d:
     handle: bluegrass
     hasUrls: true

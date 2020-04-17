@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" viewBox="0 0 64 64" height="64" width="64">
+  <title>Exported from Streamline App (https://app.streamlineicons.com)</title>
+  <g transform="matrix(2.6666666666666665,0,0,2.6666666666666665,0,0)">
+    <path d="M 8,17.499c0.828,0,1.5,0.672,1.5,1.5s-0.672,1.5-1.5,1.5s-1.5-0.672-1.5-1.5S7.172,17.499,8,17.499z " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 0.5,0.5 h2.708c0.464,0,0.867,0.319,0.973,0.771L8,17.5h4 " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 21.984,11.046l1.077-3.229c0.175-0.524-0.108-1.09-0.631-1.265 C22.327,6.517,22.22,6.5,22.112,6.5h-16.7 " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 7.294,14.501h4.681 " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 18.5,13.499c2.761,0,5,2.239,5,5s-2.239,5-5,5s-5-2.239-5-5 S15.739,13.499,18.5,13.499z " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 16.5,19l1.083,1.083c0.195,0.195,0.512,0.195,0.707-0.001c0.019-0.019,0.037-0.04,0.053-0.062 L20.5,17" stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" viewBox="0 0 64 64" height="64" width="64">
+  <title>Exported from Streamline App (https://app.streamlineicons.com)</title>
+  <g transform="matrix(2.6666666666666665,0,0,2.6666666666666665,0,0)">
+    <path d="M 1,19h22 " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 1,23h22 " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 3,19v4 " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 5,19v4 " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 11,19v4 " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 13,19v4 " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 21,19v4 " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 19,19v4 " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 3,10c0-0.552,0.448-1,1-1h8v8H4 c-0.552,0-1-0.448-1-1V10z " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 12,9h8c0.552,0,1,0.448,1,1v6c0,0.552-0.448,1-1,1h-8V9z " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 8,2c0-0.552,0.448-1,1-1h7 c0.552,0,1,0.448,1,1v7H8V2z " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 14,1h-3v2.5C11,3.776,11.224,4,11.5,4h2C13.776,4,14,3.776,14,3.5V1z " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 9,9H6v2.5 C6,11.776,6.224,12,6.5,12h2C8.776,12,9,11.776,9,11.5V9z " stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 18,9h-3v2.5c0,0.276,0.224,0.5,0.5,0.5h2c0.276,0,0.5-0.224,0.5-0.5V9z" stroke="#1cb09a" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" viewBox="0 0 64 64" height="64" width="64">
+  <title>Exported from Streamline App (https://app.streamlineicons.com)</title>
+  <g transform="matrix(2.6666666666666665,0,0,2.6666666666666665,0,0)">
+    <path d="M 17,22.019c-0.068,0.268-0.34,0.429-0.608,0.361c-0.141-0.036-0.259-0.131-0.324-0.261L10.671,11.34 c-0.124-0.247-0.024-0.547,0.223-0.671c0.141-0.071,0.307-0.071,0.448,0l10.782,5.391c0.247,0.123,0.349,0.422,0.226,0.67 c-0.065,0.131-0.184,0.227-0.326,0.263L18,18L17,22.019z " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 10,19.5c-5.247,0-9.5-4.253-9.5-9.5S4.753,0.5,10,0.5s9.5,4.253,9.5,9.5 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 8.57,15.31c-2.933-0.789-4.672-3.806-3.883-6.74s3.806-4.672,6.74-3.883c1.881,0.506,3.355,1.97,3.873,3.848" stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+</svg>

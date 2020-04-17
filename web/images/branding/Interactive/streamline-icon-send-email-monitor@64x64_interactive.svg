@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" viewBox="0 0 64 64" height="64" width="64">
+  <title>Exported from Streamline App (https://app.streamlineicons.com)</title>
+  <g transform="matrix(2.6666666666666665,0,0,2.6666666666666665,0,0)">
+    <path d="M 13.077,22.5H7.353l0.24-0.386c0.712-1.077,1.124-2.325,1.191-3.614h2.862 c0.067,1.289,0.479,2.537,1.191,3.614L13.077,22.5z " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 5.615,22.5h9.2 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 0.615,15.5h20 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 20.615,12.5v5c0,0.552-0.448,1-1,1h-18 c-0.552,0-1-0.448-1-1v-15c0-0.552,0.448-1,1-1h18c0.552,0,1,0.448,1,1l0,0 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 22.219,10.059c-0.053,0.257-0.28,0.441-0.542,0.441 h-8.008c-0.305,0-0.553-0.247-0.554-0.552c0-0.039,0.004-0.077,0.012-0.115l1.154-4.892c0.053-0.257,0.28-0.441,0.542-0.441h8.008 c0.305,0,0.553,0.247,0.554,0.552c0,0.039-0.004,0.077-0.012,0.115L22.219,10.059z " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 14.482,4.618l2.834,3.052 c0.376,0.406,0.995,0.472,1.448,0.154l4.484-3.139 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 7.615,4.5h4 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 7.615,7.5h3 " stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 7.615,10.5h2" stroke="#b9d40d" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+</svg>

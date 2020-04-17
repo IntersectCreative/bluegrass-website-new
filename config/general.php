@@ -52,7 +52,9 @@ return [
 
     //aliases
     'aliases' => [
-        '@assetsBaseUrl' => getenv('ASSETS_BASE_URL'),
+        '@web' => getenv('SITE_URL'),
+        '@webroot' => getenv('WEB_ROOT_PATH'),
+
     ]
 
 ];
