@@ -50,4 +50,9 @@ return [
         'allowUpdates' => false,
     ],
 
+    //aliases
+    'aliases' => [
+        '@assetsBaseUrl' => getenv('ASSETS_BASE_URL'),
+    ]
+
 ];
