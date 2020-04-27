@@ -102,29 +102,19 @@
 
     <div class="container mt-5">
         <div class="row text-left">
-            {% set author = (entry.title) %}
 
-            {% set blogs = craft.entries.section('Blogs').relatedTo({
-                targetElement: author, field:'selectAuthor',
-                }).all()
-             %}
+        {% set employeeBlogs = craft.entries.section('Blog').relatedTo(entry)%}
 
-        {% for blog in blogs %}
+        {% for blog in employeeBlogs %}
 
             <div class="col-lg-4 mb-4">
               <div class="card mt-3 h-100">
               <img src="{{ blog.picture.one().getUrl() }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <p class="card-subtitle bodyText">{{ entry.serviceLine|upper }}</p>
+                  <p class="card-subtitle bodyText">{{ blog.serviceLine|upper }}</p>
                   <h3 class="card-title mb-2"><a href="{{ blog.url }}" style="color: inherit; text-decoration: inherit;">{{ blog.title }}</a></h3>
                 </div>
-      
-                {% for entry in entry.selectAuthor.all() %}
-      
                   <p class="bodyText"><img src="{{ entry.employeePicture.one().getUrl() }}" alt="..." class="ml-3 mr-3" style="height: 75px; width: 75px;">{{ entry.title|upper }}</p>
-                
-                {% endfor %}
-      
                 </div>
             </div>
       
