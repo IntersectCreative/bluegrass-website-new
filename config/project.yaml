@@ -1,4 +1,4 @@
-dateModified: 1587134264
+dateModified: 1587575536
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -1127,7 +1127,7 @@ plugins:
   freeform:
     edition: pro
     enabled: true
-    schemaVersion: 3.0.5
+    schemaVersion: 3.0.6
     settings:
       ajaxByDefault: false
       autoScrollToErrors: true

@@ -1,10 +1,10 @@
 {
   "require": {
-    "craftcms/cms": "3.4.10.1",
-    "craftcms/feed-me": "4.2.0.1",
-    "craftcms/redactor": "2.3.3.2",
+    "craftcms/cms": "3.4.16",
+    "craftcms/feed-me": "4.2.2",
+    "craftcms/redactor": "2.6.1",
     "fortrabbit/craft-copy": "^1.0.0-RC10",
-    "solspace/craft-freeform": "3.5.9",
+    "solspace/craft-freeform": "3.6.7",
     "twbs/bootstrap": "^4.3",
     "vlucas/phpdotenv": "^2.4.0"
   },
