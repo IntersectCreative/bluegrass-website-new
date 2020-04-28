@@ -13,10 +13,11 @@
 			  	<h3 class="card-title mb-2"><a href="{{entry.url}}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
 			  </div>
 
-			{% for entry in entry.selectAuthor.all() %}
-
-			  	<p class="bodyText"><img src="{{ entry.employeePicture.one().getUrl() }}" alt="{{ entry.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px;">{{ entry.title|upper }}</p>
 			  
+			{% for author in entry.selectAuthor.all() %}
+
+				<a href="{{ author.url }}"<p class="bodyText"><img src="{{ author.employeePicture.one().getUrl() }}" alt="{{ author.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px;">{{ author.title|upper }}</p></a>		
+			
 			{% endfor %}
 
 			</div>
