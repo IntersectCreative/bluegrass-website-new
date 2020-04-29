@@ -96,7 +96,7 @@
 
     </div>
 
-    {% set employeeBlogs = craft.entries.section('Blog').relatedTo(entry)%}
+    {% set employeeBlogs = craft.entries.section('Blog').relatedTo(entry).all() %}
 
         {% if employeeBlogs|length %}
 
