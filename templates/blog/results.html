@@ -1,4 +1,6 @@
-<h1>Search Results</h1>
+{% extends "_layout" %}
+
+{% block content %}
 
 {% set searchQuery = craft.app.request.getParam('q') %}
 {% set entries = craft.entries()
@@ -7,6 +9,15 @@
     .orderBy('score')
     .all() %}
 
+
+
+{% include "/components/navigation.html" %}
+
+<div style="background-color: #006ea4; color: white; text-shadow: $shadow; height: 50vh; display: flex; align-items: center; justify-content: center;">
+    <h1 class="text-center">Blog Results for {{ searchQuery }}</h1>
+</div>
+
+<div class="container">
 {% if entries|length %}
     <p>{{ entries|length }} results:</p>
 
@@ -18,3 +29,9 @@
 {% else %}
     <p>Your search for “{{ searchQuery }}” didn’t return any results.</p>
 {% endif %}
+
+</div>
+
+{% include "/components/footer.html" %}
+
+{% endblock %}

@@ -1,97 +1,54 @@
 <div class="container">
 
     <div class="row d-flex" style="margin-top: 200px;">
-        <div class="col-lg-8 col-sm-12 justify-content-center align-self-center">
+        <div class="col-lg-8 col-sm-12 justify-content-center align-self-center text-md-left text-center">
             <h1>{{ entry.title }}</h1>
             <h4>{{ entry.department }}</h4>
             <h2>{{ entry.employeeTitle }}</h2>
         </div>
-        <div class="col-lg-4 col-sm-12 text-left align-self-center">
+        <div class="col-lg-4 col-sm-12 align-self-center text-lg-left text-center">
             <img src="{{ entry.employeePicture.one().getUrl() }}" alt="{{ entry.title }}" class="img-fluid" style="height: 300px; width: 300px;">
         </div>
     </div>
 
+    {% for block in entry.getToKnow.all() %}
+
+    {% if block|length %}
+
     <div class="row">
         <div class="col-lg-8 col-sm-12">
-            <h2 class="mb-4 font-weight-bold">Get to Know {{ entry.employeeName }}</h2>
 
-        {% for block in entry.getToKnow.all() %}
-
-            <h3>What is your favorite part of working at Bluegrass?</h3>
+            <h4 class="mb-4 font-weight-bold">Get to Know {{ entry.employeeName }}</h4>
+            <h4>What is your favorite part of working at Bluegrass?</h4>
             <p>{{ block.favoritePart }}</p>
 
-            <h3>Do you have any pets?</h3>
+            <h4>Do you have any pets?</h4>
             <p>{{ block.pets }}</p>
 
-            <h3>Where do you find inspiration?</h3>
+            <h4>Where do you find inspiration?</h4>
             <p>{{ block.inspiration }}</p>
 
-            <h3>What is the most played song on your playlist?</h3>
+            <h4>What is the most played song on your playlist?</h4>
             <p>{{ block.song }}</p>
 
-            <h3>What is one fact about you that surprises people?</h3>
+            <h4>What is one fact about you that surprises people?</h4>
             <p>{{ block.surprisingFact }}</p>
 
-            <h3>Why do you think clients should choose to work with Bluegrass?</h3>
+            <h4>Why do you think clients should choose to work with Bluegrass?</h4>
             <p>{{ block.chooseBluegrass }}</p>
-        
-        {% endfor %}
+            
+            {% endif %}
+
 
         </div>
         <div class="col-lg-4 col-sm-12">
-            <div class="interest-block mt-5">
 
-                <div class="row justify-content-center mb-3 mt-5">
-                    <div class="col-5 text-right mt-5">
-                        <img src="/images/employees/icons/streamline-icon-official-building-3@64x64_college_white.png" alt="office building icon" class="img-fluid">
-                    </div>
-                    <div class="col-7 mt-5">
-                        <h4 class="text-uppercase">College</h4>
-                        <p>Transylvania University</p>
-                    </div>
-                </div>
+            {% include "/components/employee-interest-block.html" %}
 
-                <div class="row justify-content-center">
-                    <div class="col-5 text-right mt-3 mb-5">
-                        <img src="/images/employees/icons/streamline-icon-music-genre-stars@64x64_interests3_white.png" alt="office building icon" class="img-fluid">
-                    </div>
-                    <div class="col-7 mt-3 mb-5">
-                        <h4 class="text-uppercase">interests</h4>
-                    </div>
-                </div>
-
-                <div class="row text-center">
-                    <div class="col"></div>
-                    <div class="col">
-                        <img src="/images/employees/icons/streamline-icon-professions-woman-chef-3@64x64_cooking_white.png" alt="office building icon" class="img-fluid">
-                        <p class="mt-1">Cooking</p>
-                    </div>
-                    <div class="col">
-                        <img src="/images/employees/icons/streamline-icon-passport-ticket@64x64_travel_white.png" alt="office building icon" class="img-fluid">
-                        <p class="mt-1">Traveling</p>
-                    </div>
-                    <div class="col"></div>
-                </div>
-            
-                <div class="row text-center">
-                    <div class="col"></div>
-                    <div class="col">
-                        <img src="/images/employees/icons/streamline-icon-tennis-racquet-ball@64x64_tennis_white.png" alt="office building icon" class="img-fluid">
-                        <p class="mt-1">Tennis</p>
-                    </div>
-                    <div class="col">
-                        <img src="/images/employees/icons/streamline-icon-book-open-2@64x64_reading_white.png" alt="office building icon" class="img-fluid">
-                        <p class="mt-1">Reading</p>
-                    </div>
-                    <div class="col"></div>
-                </div>
-            
-            </div>
-
-                <button type="button" class="btn btn-block btn-lg  btn-primary mt-5 text-uppercase">Hire Mayme and Team</button>
+            <button type="button" class="btn btn-block btn-lg  btn-primary mt-5 text-uppercase">Hire {{ entry.employeeName }} and Team</button>
 
         </div>
-
+        {% endfor %}
     
 
     </div>
@@ -99,9 +56,9 @@
     {% set employeeBlogs = craft.entries.section('Blog').relatedTo(entry).all() %}
 
         {% if employeeBlogs|length %}
-
-        <div class="mt-5">
-            <h2>Latest from {{ entry.title }}</h2>
+        
+        <div class="container mt-5 text-lg-left text-center">
+            <h4>Latest from {{ entry.title }}</h4>
         </div>
 
         <div class="container mt-5">
@@ -127,34 +84,36 @@
 
         {% else %}
 
-        <div class="mt-5">
-            <h2>Latest Blogs</h2>
+        <!-- <div class="container mt-5 text-lg-left text-center">
+            <h4>Latest Blogs</h4>
         </div>
 
-        <div class="row">
+        <div class="container mt-5">
+            <div class="row text-left">
 
-        {% for entry in craft.entries().section('blog').limit(3).all() %}
+            {% for entry in craft.entries().section('blog').limit(3).all() %}
 
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100 mt-3">
-                <img src="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-subtitle bodyText">{{ entry.serviceLine|upper }}</p>
-                    <h3 class="card-title mb-2"><a href="{{entry.url}}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 mt-3">
+                    <img src="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-subtitle bodyText">{{ entry.serviceLine|upper }}</p>
+                        <h3 class="card-title mb-2"><a href="{{entry.url}}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
+                    </div>
+
+                {% for author in entry.selectAuthor.all() %}
+
+                    <a href="{{ author.url }}"<p class="bodyText"><img src="{{ author.employeePicture.one().getUrl() }}" alt="{{ author.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px;">{{ author.title|upper }}</p></a>		
+                
+                {% endfor %}
                 </div>
-
-            {% for author in entry.selectAuthor.all() %}
-
-				<a href="{{ author.url }}"<p class="bodyText"><img src="{{ author.employeePicture.one().getUrl() }}" alt="{{ author.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px;">{{ author.title|upper }}</p></a>		
-			
-			{% endfor %}
-
                 </div>
+            
+
+            {% endfor %}
+
             </div>
-        
-
-        {% endfor %}
-        </div>
+        </div> -->
 
         {% endif %}
 </div>

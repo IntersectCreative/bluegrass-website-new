@@ -1,0 +1,15 @@
+<div id="business-development-team" class="container mt-5">
+    <h4 class="text-center">Reach our business development team</h4>
+    <div class="row text-center mt-5">
+
+        {% for entry in businessDevelopmentTeam.businessDevelopment.all() %}
+
+        <div class="col-md">
+            <a href="{{ entry.url }}"><img src="{{ entry.employeePicture.one().getUrl() }}" alt="{{ entry.title }}" style="width: 150px; height: 150px;" class="mb-2"></a>
+            <a href="{{ entry.url }}"><p>{{ entry.title }}</p></a>
+        </div>
+
+        {% endfor %}
+        
+    </div>
+</div>

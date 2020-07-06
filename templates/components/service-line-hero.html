@@ -22,12 +22,8 @@
     <div class="container">
     <div class="service-line-hero-copy">
       <h5>{{ entry.parent }}</h5>
-      <h1 class="serviceHeader" data-typer-targets="{{ entry.title }}"></h1>
-      <img
-        src="/images/branding/direct_mailinglists_direct.png"
-        class="service-line-icon img-fluid"
-        alt="direct mailing list icon"
-      />
+      <img src="{{ entry.icon.one().getUrl() }}" class="service-line-icon img-fluid cursor" alt="{{entry.title}} icon" />
+      <h1 id="service-header" class="serviceHeader typer" data-typer-targets="{{ entry.title }}"></h1>
       <p class="introText">
        {{ entry.heroSubtitle }}
       </p>

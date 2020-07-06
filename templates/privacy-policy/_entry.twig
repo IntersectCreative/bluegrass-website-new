@@ -4,9 +4,13 @@
 
     {% include "/components/navigation.html" %}
 
-    {% set headerTitle="Privacy Policy" %}
+    {% include "/components/hero.html" %}
 
-    {% include "/components/section-header.html" %}
+    <div class="services-temporary-body container mt-5 mb-5">
+        <div>
+            {{ entry.bodyCopy }}
+        </div>
+    </div>
 
     {% include "/components/footer.html" %}
     

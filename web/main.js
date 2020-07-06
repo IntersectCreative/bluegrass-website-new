@@ -2,15 +2,17 @@ $(window).scroll(function () {
 
   var scrollTop = $(window).scrollTop();
 
-  if (scrollTop > 200) {
+  if (scrollTop > 1) {
     $('.header').css('display', 'flex');
     $('.header').addClass('fixed-to-top');
     $('.header').addClass('scrolled');
+    $('.navbar-toggler').addClass('navbar-toggler-scrolled');
 
   } else if (scrollTop == 0) {
 
     $('.header').removeClass('fixed-to-top');
     $('.header').removeClass('scrolled');
+    $('.navbar-toggler').removeClass('navbar-toggler-scrolled');
 
   }
 

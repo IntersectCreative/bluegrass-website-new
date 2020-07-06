@@ -9,11 +9,15 @@
     <p>Social Media for ECommerce: How and Where to Start Your Strategy</p>
     <p>What is Local SEO and How to Improve Your Ranking</p>
     <p>5 Reasons you Need a Small Business Website</p>
-    <button type="button" class="lgsb"><a href="https://bluegrass-website-new.test/blog">explore more</a></button>
+    <button type="button" class="lgsb"><a href="https://bluegrass-website-new.test/blog" class="text-white">explore more</a></button>
 </div>
 <div class="mt-4">
-    <img src="/images/branding/social-media/social_facebook1_black.png" alt="facebook icon" class="mr-2"/>
-    <img src="/images/branding/social-media/social_twitter_black.png" alt="twitter icon" class="mr-2"/>
-    <img src="/images/branding/social-media/social_linkedin_black.png" alt="linkedin icon" />
+
+    {% for block in companyInfo.socialMedia.all() %}
+
+        <a href="{{ block.platformUrl }}" target="_blank"><img src="{{ block.platformIcon.one().getUrl() }}" alt="{{ block.platformName }}icon" class="mr-2"/></a>
+    
+    {% endfor %}
+
 </div>
 </div>

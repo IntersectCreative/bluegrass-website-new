@@ -4,4 +4,8 @@ This is the new website for BIC and is built using Craft CMS and Bootstrap as th
 
 sass --watch web/scss/input.scss:web/css/main.css
 
+restart sql server:
+/usr/local/mysql/support-files/mysql.server restart
+
+
 

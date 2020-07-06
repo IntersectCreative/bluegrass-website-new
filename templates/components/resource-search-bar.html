@@ -1,15 +1,43 @@
-<div class="resource-search-bar">
+<div class="resource-search-bar" id="resource-search-bar">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 form-inline">
+      <div class="col-md-7 form-inline">
         <label for="resource-search">Browse Resources By...</label>
       </div>
-      <div class="col-md-4 form-inline">
-        <form action="{{ url('blog/results') }}">
-          <input type="search" name="q" placeholder="Search" class="form-control form-control-lg">
-          <input type="submit" value="Go">
+      <div class="col-md-5 form-inline">
+        <form action="blog/results">
+              <input type="search" name="q" placeholder="Search Resources" class="form-control form-control-lg">
+              <button type="submit" class="lgsw ml-lg-3 mt-3 mt-xl-0">Search</button>
       </form>
       </div>
     </div>
   </div>
 </div>
+
+{% set searchQuery = craft.app.request.getParam('q') %}
+
+{% if searchQuery %}
+
+  {% set entries = craft.entries()
+      .section('blog')
+      .search(searchQuery)
+      .orderBy('score')
+      .all() %}
+
+<div id="blog-search-result" class="container">
+  {% if entries|length %}
+      <p>{{ entries|length }} results found for: {{ searchQuery }}</p>
+
+      <ul>
+          {% for entry in entries %}
+              <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+          {% endfor %}
+      </ul>
+  {% else %}
+      <p>Your search for “{{ searchQuery }}” didn’t return any results.</p>
+  {% endif %}
+
+{% endif %}
+</div>
+
+

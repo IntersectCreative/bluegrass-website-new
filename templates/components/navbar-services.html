@@ -36,13 +36,23 @@
           <a class="nav-link blog" href="/reach-us">Contact</a>
         </li>
         <li class="nav-item ml-5 mr-5">
-          <a class="nav-link blog" href="tel:800-928-6245">800.928.6245</a>
+          <a class="nav-link blog" href="tel:1-800-928-6245">800.928.6245</a>
         </li>
-        <li class="nav-item">
-          <img class="nav-icon nav-link mr-2" src="/images/branding/streamline-icon-phone@64x64_bluegrass.svg" alt="Phone Icon">
-        </li>
-        <li class="nav-item">
-          <img class="nav-icon nav-link" src="/images/branding/streamline-icon-search-alternate@64x64_bluegrass.svg" alt="Search Icon">
+        <!-- <li class="nav-item">
+          <a href="tel:1-800-928-6245"><img class="nav-icon nav-link mr-2" src="/images/branding/streamline-icon-phone@64x64_bluegrass.svg" alt="Phone Icon"></a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"><img class="nav-icon nav-link" src="/images/branding/streamline-icon-search-alternate@64x64_bluegrass.svg" alt="Search Icon"></a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <form action="/search/results" class="form-inline px-4 py-3">
+              <div class="form-group">
+                  <input type="search" name="q" placeholder="Search the site" class="form-control form-control-lg">
+              </div>
+              <div class="form-group">
+                  <button type="submit" class="lgsb mt-2">Search</button>
+              </div>
+          </form>
+          </div>
         </li>
       </ul>
     </div>

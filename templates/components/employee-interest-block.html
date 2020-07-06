@@ -1,0 +1,42 @@
+<div class="interest-block mt-5">
+    <div class="row m-auto">
+        <div class="col-4 text-center mt-5 mb-3">
+            <img src="/images/employees/icons/streamline-icon-official-building-3@64x64_college_white.png" alt="office building icon" class="img-fluid" />
+        </div>
+        <div class="col-8 mt-5 mb-3">
+            <h4 class="text-uppercase">Education</h4>
+            <p class="text-left">{{  entry.college }}</p>
+        </div>
+    </div>
+    
+    
+
+    <div class="row m-auto">
+
+        {% if entry.interests|length %}
+        
+        <div class="col-4 text-center mb-5">
+            <img src="/images/employees/icons/streamline-icon-music-genre-stars@64x64_interests3_white.png" alt="interest icon" class="img-fluid">
+        </div>
+        <div class="col-8 mb-5">
+            <h4 class="text-uppercase">Interests</h4>
+        </div>
+    </div>
+    <div class="row text-center">
+
+        {% for block in entry.interests.all() %}
+
+        <div class="col-6 mb-3">
+            <img src="{{ block.interestIcon.one().getUrl() }}" alt="{{ block.interestName }} icon" class="img-fluid mb-3" />
+            <p>{{ block.interestName }}</p>
+        </div>
+
+        {% endfor %}
+
+
+    {% endif %}
+
+    </div>
+</div>
+
+

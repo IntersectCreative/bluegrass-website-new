@@ -1,4 +1,4 @@
-dateModified: 1587575536
+dateModified: 1593628457
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -10,6 +10,8 @@ fieldGroups:
     name: Services
   636d19c7-1b45-4c83-bb80-ff9a370bc669:
     name: 'Service Line Details'
+  6c1296e7-716e-47a7-9c8a-f997715459ae:
+    name: 'Social Media'
   7bca8b6b-f8c1-4edc-b235-a6509d0aa5d4:
     name: Common
   a6a4dfd7-85ec-4401-9660-83f696085bf7:
@@ -51,6 +53,24 @@ fields:
       charLimit: ''
       code: ''
       columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  27b5db1b-ac71-4b64-9b56-c132a05599c6:
+    contentColumnType: text
+    fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
+    handle: college
+    instructions: 'Enter the employee''s college/University.'
+    name: College
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
       initialRows: '4'
       multiline: ''
       placeholder: ''
@@ -106,6 +126,21 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  44e87086-ae6c-4998-bbed-0acd0b49b56d:
+    contentColumnType: string
+    fieldGroup: d0828146-8abe-49b5-87cd-3e7f3b6bacdb
+    handle: socialMedia
+    instructions: 'Enter information about Bluegrass'' social media channels.'
+    name: 'Social Media'
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_socialmedia}}'
+      maxBlocks: ''
+      minBlocks: ''
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   47f85bb3-0be4-424e-a3f8-01b098ee787a:
     contentColumnType: string
     fieldGroup: 14845e65-d10e-4335-95d6-68c36bfbbbbc
@@ -198,6 +233,19 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
+  5e2dac92-e982-4979-bae6-11aeaa2fea5f:
+    contentColumnType: string(255)
+    fieldGroup: 6c1296e7-716e-47a7-9c8a-f997715459ae
+    handle: instagram
+    instructions: 'Enter the URL for the Bluegrass Instagram account.'
+    name: Instagram
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   6f780888-e048-43cc-ab34-a9a0de59acee:
     contentColumnType: string
     fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
@@ -217,6 +265,19 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
+  78e7d055-3c49-4cc3-9d6b-deed4930e3b8:
+    contentColumnType: string(255)
+    fieldGroup: 6c1296e7-716e-47a7-9c8a-f997715459ae
+    handle: twitter
+    instructions: 'Enter the URL for the Bluegrass Twitter Account.'
+    name: Twitter
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   7a43bd01-e0b4-421b-8574-e3be1b2fb5b9:
     contentColumnType: text
     fieldGroup: 7bca8b6b-f8c1-4edc-b235-a6509d0aa5d4
@@ -398,6 +459,29 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
+  94377b09-8631-4bdf-b0be-fe65c7f969c9:
+    contentColumnType: text
+    fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
+    handle: bodyCopy
+    instructions: 'This is a WYSIWYG editor for body copy '
+    name: 'Body Copy'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
   96efe999-ece5-45ed-8a45-6258fbe04a27:
     contentColumnType: string
     fieldGroup: d0828146-8abe-49b5-87cd-3e7f3b6bacdb
@@ -477,6 +561,27 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Tags
+  a7228e30-67ec-410a-b87a-544338e6eaf3:
+    contentColumnType: string
+    fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
+    handle: businessDevelopment
+    instructions: ''
+    name: 'Business Development'
+    searchable: true
+    settings:
+      allowSelfRelations: ''
+      limit: '4'
+      localizeRelations: false
+      selectionLabel: ''
+      source: null
+      sources:
+        - 'section:e246e0c4-58c0-47a4-a969-e718d2d9536c'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
   ae6a83f6-8d78-4932-9800-16ed3134e37b:
     contentColumnType: text
     fieldGroup: cbb81a4a-d66f-4c65-b36d-05b4bba5e406
@@ -494,6 +599,19 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  b36671aa-b061-49b0-bfdb-58c53137aa82:
+    contentColumnType: string(255)
+    fieldGroup: 6c1296e7-716e-47a7-9c8a-f997715459ae
+    handle: facebook
+    instructions: 'Enter the URL for Bluegrass''s facebook page.'
+    name: Facebook
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   b6fb8735-f940-46b4-9a17-d96f5b5e0314:
     contentColumnType: text
     fieldGroup: d0828146-8abe-49b5-87cd-3e7f3b6bacdb
@@ -533,6 +651,8 @@ fields:
       removeEmptyTags: '1'
       removeInlineStyles: ''
       removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
@@ -735,6 +855,21 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  fddca6bb-5ab9-47fd-9441-3531288a2e37:
+    contentColumnType: string
+    fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
+    handle: interests
+    instructions: 'Add the employees interests and associated icons.'
+    name: Interests
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_interests}}'
+      maxBlocks: '4'
+      minBlocks: ''
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   fde17dfc-bbf8-4858-b1c3-372c953b15fd:
     contentColumnType: string
     fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
@@ -768,6 +903,9 @@ globalSets:
         tabs:
           -
             fields:
+              44e87086-ae6c-4998-bbed-0acd0b49b56d:
+                required: false
+                sortOrder: 6
               50fdb6fc-8fed-4a61-99bc-d2fd736b301f:
                 required: false
                 sortOrder: 3
@@ -803,7 +941,166 @@ globalSets:
   3c9f4119-fed7-4cb7-bf10-261dd9a2ed4d:
     handle: branding
     name: branding
+  d3bf2fdc-3e3d-4b42-8409-6f65ed0978ec:
+    fieldLayouts:
+      169e0d97-0e93-4a97-9f56-68207688df75:
+        tabs:
+          -
+            fields:
+              a7228e30-67ec-410a-b87a-544338e6eaf3:
+                required: false
+                sortOrder: 1
+            name: 'Tab 1'
+            sortOrder: 1
+    handle: businessDevelopmentTeam
+    name: 'Business Development Team'
 matrixBlockTypes:
+  083a2793-e2bd-4b39-8a25-b9b0f9886d6d:
+    field: fddca6bb-5ab9-47fd-9441-3531288a2e37
+    fieldLayouts:
+      cb949101-7c21-423d-aaee-159d7a2450d2:
+        tabs:
+          -
+            fields:
+              422a03ca-067f-461c-9c71-4711fca53513:
+                required: true
+                sortOrder: 2
+              7e41507d-b911-4313-a729-7f4c7fff46dc:
+                required: true
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      422a03ca-067f-461c-9c71-4711fca53513:
+        contentColumnType: string
+        fieldGroup: null
+        handle: interestIcon
+        instructions: 'select the icon that represents the interest'
+        name: 'interest icon'
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+          singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: false
+          validateRelatedElements: ''
+          viewMode: large
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      7e41507d-b911-4313-a729-7f4c7fff46dc:
+        contentColumnType: text
+        fieldGroup: null
+        handle: interestName
+        instructions: 'The name of one of the employees interests.'
+        name: 'interest name'
+        searchable: true
+        settings:
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: 'underwater basket weaving'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: interests
+    name: interests
+    sortOrder: 1
+  8c9ce97b-a9e1-48ea-9512-9c0bbf9c533c:
+    field: 44e87086-ae6c-4998-bbed-0acd0b49b56d
+    fieldLayouts:
+      0bc3aaf8-82cd-497d-9a05-bb510d610183:
+        tabs:
+          -
+            fields:
+              99bfa5a6-db90-4817-8de1-dc6caa7e4153:
+                required: true
+                sortOrder: 1
+              d95f6e33-c084-44cc-b8f4-3735b62e4ee0:
+                required: true
+                sortOrder: 3
+              df019a57-54b6-4e83-b853-be737521d53e:
+                required: true
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      99bfa5a6-db90-4817-8de1-dc6caa7e4153:
+        contentColumnType: text
+        fieldGroup: null
+        handle: platformName
+        instructions: 'Enter the name of the social media platform.'
+        name: 'platform name'
+        searchable: true
+        settings:
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      d95f6e33-c084-44cc-b8f4-3735b62e4ee0:
+        contentColumnType: string
+        fieldGroup: null
+        handle: platformIcon
+        instructions: 'Enter the icon for this platform.'
+        name: 'platform icon'
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          defaultUploadLocationSubpath: ''
+          limit: ''
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+          singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: false
+          validateRelatedElements: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      df019a57-54b6-4e83-b853-be737521d53e:
+        contentColumnType: string(255)
+        fieldGroup: null
+        handle: platformUrl
+        instructions: 'Enter the url for Bluegrass'' account.'
+        name: 'platform url'
+        searchable: true
+        settings:
+          maxLength: '255'
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\Url
+    handle: social
+    name: social
+    sortOrder: 1
   c8ecdfa7-18a8-4e9c-b512-292ba270a324:
     field: c5405c57-c331-45dd-bb73-59075c4bd47e
     fieldLayouts:
@@ -1394,6 +1691,9 @@ sections:
                     sortOrder: 1
                 name: Sub-services
                 sortOrder: 5
+              -
+                name: tags
+                sortOrder: 6
         handle: directMarketing
         hasTitleField: true
         name: 'Direct Marketing'
@@ -1742,12 +2042,31 @@ sections:
     enableVersioning: true
     entryTypes:
       9d294a94-48d5-4fe6-9637-e17e9339a171:
+        fieldLayouts:
+          e00b14af-b77b-4f0b-9f0c-d03c51fbf862:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 1
+                  94377b09-8631-4bdf-b0be-fe65c7f969c9:
+                    required: false
+                    sortOrder: 4
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 2
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 3
+                name: Hero
+                sortOrder: 1
         handle: yourPrivacy
         hasTitleField: false
         name: 'Your Privacy'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: yourPrivacy
     name: 'Your Privacy'
     propagationMethod: all
@@ -1762,12 +2081,31 @@ sections:
     enableVersioning: true
     entryTypes:
       8ef12e6d-dbb7-45e8-b168-710e106cfea3:
+        fieldLayouts:
+          ee8dd24e-ce2d-42d2-91af-3f3810c5f063:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 1
+                  94377b09-8631-4bdf-b0be-fe65c7f969c9:
+                    required: false
+                    sortOrder: 4
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 2
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 3
+                name: Hero
+                sortOrder: 1
         handle: privacyPolicy
         hasTitleField: false
         name: 'Privacy Policy'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: privacyPolicy
     name: 'Privacy Policy'
     propagationMethod: all
@@ -1789,22 +2127,25 @@ sections:
                 fields:
                   6f780888-e048-43cc-ab34-a9a0de59acee:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 6
                   7a43bd01-e0b4-421b-8574-e3be1b2fb5b9:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 5
                   819a02e8-d990-4209-a4a6-fbe645886d75:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
                   a1ddd441-ac97-4eaf-91ad-2014e7c145c7:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 7
+                  d5956b69-0822-469f-aeb2-183f5df6840c:
+                    required: false
+                    sortOrder: 2
                   ec549621-6d25-4376-acc1-332b2fa1a9ad:
                     required: false
                     sortOrder: 1
                   f54f9341-be0d-4841-8d88-649150159747:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                 name: Blog
                 sortOrder: 1
         handle: blog
@@ -1919,6 +2260,9 @@ sections:
             tabs:
               -
                 fields:
+                  27b5db1b-ac71-4b64-9b56-c132a05599c6:
+                    required: false
+                    sortOrder: 5
                   3eff2e71-eab9-465a-94be-8eaab3f561ce:
                     required: false
                     sortOrder: 1
@@ -1930,7 +2274,10 @@ sections:
                     sortOrder: 3
                   c5405c57-c331-45dd-bb73-59075c4bd47e:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 6
+                  fddca6bb-5ab9-47fd-9441-3531288a2e37:
+                    required: false
+                    sortOrder: 7
                   fde17dfc-bbf8-4858-b1c3-372c953b15fd:
                     required: false
                     sortOrder: 2
