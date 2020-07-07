@@ -1,4 +1,4 @@
-dateModified: 1593628457
+dateModified: 1594065738
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -77,6 +77,117 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  32a35c2d-7747-4707-91f2-410f02d41a4d:
+    contentColumnType: text
+    fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
+    handle: optimizedImages
+    instructions: ''
+    name: 'Optimized Images'
+    searchable: true
+    settings:
+      displayDominantColorPalette: '1'
+      displayLazyLoadPlaceholderImages: '1'
+      displayOptimizedImageVariants: '1'
+      variants:
+        -
+          __assoc__:
+            -
+              - width
+              - '1200'
+            -
+              - useAspectRatio
+              - '1'
+            -
+              - aspectRatioX
+              - '16'
+            -
+              - aspectRatioY
+              - '9'
+            -
+              - retinaSizes
+              -
+                - '1'
+            -
+              - quality
+              - '82'
+            -
+              - format
+              - jpg
+        -
+          __assoc__:
+            -
+              - width
+              - '992'
+            -
+              - useAspectRatio
+              - '1'
+            -
+              - aspectRatioX
+              - '16'
+            -
+              - aspectRatioY
+              - '9'
+            -
+              - retinaSizes
+              -
+                - '1'
+            -
+              - quality
+              - '82'
+            -
+              - format
+              - jpg
+        -
+          __assoc__:
+            -
+              - width
+              - '768'
+            -
+              - useAspectRatio
+              - '1'
+            -
+              - aspectRatioX
+              - '4'
+            -
+              - aspectRatioY
+              - '3'
+            -
+              - retinaSizes
+              -
+                - '1'
+            -
+              - quality
+              - '60'
+            -
+              - format
+              - jpg
+        -
+          __assoc__:
+            -
+              - width
+              - '576'
+            -
+              - useAspectRatio
+              - '1'
+            -
+              - aspectRatioX
+              - '4'
+            -
+              - aspectRatioY
+              - '3'
+            -
+              - retinaSizes
+              -
+                - '1'
+            -
+              - quality
+              - '60'
+            -
+              - format
+              - jpg
+    translationKeyFormat: null
+    translationMethod: none
+    type: nystudio107\imageoptimize\fields\OptimizedImages
   34b58095-e6ee-489d-ba82-405d4f13b032:
     contentColumnType: text
     fieldGroup: 7bca8b6b-f8c1-4edc-b235-a6509d0aa5d4
@@ -1474,10 +1585,58 @@ plugins:
       spamProtectionBehaviour: simulate_success
       submissionThrottlingCount: null
       submissionThrottlingTimeFrame: null
+  image-optimize:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowUpScaledImageVariants: false
+      assetVolumeSubFolders: true
+      autoSharpenScaledImages: true
+      createColorPalette: true
+      createPlaceholderSilhouettes: false
+      imageTransformTypeSettings:
+        __assoc__:
+          -
+            - nystudio107\imageoptimizeimgix\imagetransforms\ImgixImageTransform
+            -
+              __assoc__:
+                -
+                  - domain
+                  - ''
+                -
+                  - apiKey
+                  - ''
+                -
+                  - securityToken
+                  - ''
+          -
+            - nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - ''
+          -
+            - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - ''
+                -
+                  - securityKey
+                  - ''
+      lowerQualityRetinaImageVariants: true
+      transformClass: nystudio107\imageoptimize\imagetransforms\CraftImageTransform
   redactor:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  seomatic:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.9
 routes:
   610b8bba-5f5f-43b3-bc86-d105a8debf5e:
     siteUid: null
@@ -1634,6 +1793,9 @@ sections:
             tabs:
               -
                 fields:
+                  32a35c2d-7747-4707-91f2-410f02d41a4d:
+                    required: false
+                    sortOrder: 4
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 3
@@ -1691,9 +1853,6 @@ sections:
                     sortOrder: 1
                 name: Sub-services
                 sortOrder: 5
-              -
-                name: tags
-                sortOrder: 6
         handle: directMarketing
         hasTitleField: true
         name: 'Direct Marketing'
@@ -2350,6 +2509,16 @@ users:
   requireEmailVerification: true
 volumes:
   0a5c9a50-eed7-4895-800b-16f2367c962a:
+    fieldLayouts:
+      cdb1971a-33e6-473f-a7d7-1f3f932a3592:
+        tabs:
+          -
+            fields:
+              32a35c2d-7747-4707-91f2-410f02d41a4d:
+                required: false
+                sortOrder: 1
+            name: 'Tab 1'
+            sortOrder: 1
     handle: branding
     hasUrls: true
     name: Branding
@@ -2359,6 +2528,16 @@ volumes:
     type: craft\volumes\Local
     url: '@web/images/branding'
   2c9440b7-d3e9-4b01-80e1-008c2764a529:
+    fieldLayouts:
+      833c0711-aa5a-4a35-b65b-805c10bb3d56:
+        tabs:
+          -
+            fields:
+              32a35c2d-7747-4707-91f2-410f02d41a4d:
+                required: false
+                sortOrder: 1
+            name: 'Tab 1'
+            sortOrder: 1
     handle: employeePictures
     hasUrls: true
     name: 'Employee Pictures'
@@ -2368,6 +2547,16 @@ volumes:
     type: craft\volumes\Local
     url: '@web/images/employees'
   39471bc0-b5e5-47a7-a191-16ce5255b92c:
+    fieldLayouts:
+      1703b6ab-318b-4f61-9799-a66b753741ea:
+        tabs:
+          -
+            fields:
+              32a35c2d-7747-4707-91f2-410f02d41a4d:
+                required: false
+                sortOrder: 1
+            name: 'Tab 1'
+            sortOrder: 1
     handle: imageHero
     hasUrls: true
     name: 'Image Hero'
@@ -2377,6 +2566,16 @@ volumes:
     type: craft\volumes\Local
     url: '@web/images/imagehero'
   9ad43390-a17b-4454-8f6f-0887b219539d:
+    fieldLayouts:
+      6415f396-1f43-4920-947d-4ebc5e2e952a:
+        tabs:
+          -
+            fields:
+              32a35c2d-7747-4707-91f2-410f02d41a4d:
+                required: false
+                sortOrder: 1
+            name: 'Tab 1'
+            sortOrder: 1
     handle: bluegrass
     hasUrls: true
     name: Bluegrass

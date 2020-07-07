@@ -27,7 +27,7 @@ return [
         // (see https://docs.craftcms.com/v3/project-config.html)
         'useProjectConfigFile' => true,
 
-        'siteURL' => getenv('SITE_URL') ? : '@web',   
+        'siteURL' => getenv('SITE_URL') ? : '@web',  
     ],
 
     // Dev environment settings
