@@ -35,7 +35,10 @@ $("#generalContactButton").click(function(){
   $("#generalContact").toggle(600);
 });
 
-//nonessential change
+//application drop down
+$("#applicationButton").click(function(){
+  $("#application").toggle(600);
+});
 
 
   

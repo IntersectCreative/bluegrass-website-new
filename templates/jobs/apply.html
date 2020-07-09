@@ -1,0 +1,32 @@
+{% extends "_layout" %}
+
+
+{% block content %}
+
+{% include "/components/navigation.html" %}
+
+<div class="hero-jobs">
+        <div class="hero-copy">
+                <h4>Position:</h4>
+                <h1 class="hero-title">Mail Sorter</h1>
+        </div>
+</div>
+<div class="container mt-5">
+        <p>{{ entry.title }} - {{ entry.fullOrPart }}</p>
+        <p>{{ entry.positionDescription }}</p>
+        <button id="applicationButton" class="btn btn-primary mt-3 mb-5">Apply Now</button>
+</div>
+
+<div class="container">
+        <form id="application" class="text-left">
+                <p class="mb-3 font-italic">Complete the application below to apply for the position!</p>
+                {{ craft.freeform.form("application", 
+                {
+                submitClass: "apply-submit",
+                }).render() }}
+        </form>
+</div>
+
+{% include "/components/footer.html" %}
+
+{% endblock %}

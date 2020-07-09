@@ -1,0 +1,32 @@
+#application {
+    display: none; 
+    width: auto;
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.apply-submit {
+    margin-top: 25px;
+}
+
+.hero-jobs {
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	display: inline-block;
+	justify-content: center;
+ 	align-items: center;
+	text-shadow: $shadow;
+	background-color: $bluegrass;
+	 
+}
+
+// .hero-image-jobs {
+// 	width: 100vw;
+// 	height: 50vh;
+// 	background-size: 100% 100%;
+// 	background-repeat: no-repeat;
+// 	background-position: center center;
+// 	background-color: #006ea4;
+// }

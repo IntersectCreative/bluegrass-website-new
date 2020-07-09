@@ -1,4 +1,4 @@
-dateModified: 1594065738
+dateModified: 1594309857
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -14,6 +14,8 @@ fieldGroups:
     name: 'Social Media'
   7bca8b6b-f8c1-4edc-b235-a6509d0aa5d4:
     name: Common
+  99a6ae32-c12a-4521-81e9-07fa865916ad:
+    name: Jobs
   a6a4dfd7-85ec-4401-9660-83f696085bf7:
     name: General
   b52e0cd8-87b6-4d28-b736-100b598f0fcc:
@@ -22,6 +24,8 @@ fieldGroups:
     name: Hero
   d0828146-8abe-49b5-87cd-3e7f3b6bacdb:
     name: 'About Us'
+  ea910e7b-73e3-4f9b-9383-d7a62f7020f8:
+    name: SEO
   ef21bb7c-0cae-421f-9c87-a14750432c60:
     name: Employees
 fields:
@@ -357,6 +361,41 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  6e35cfe8-41f9-47be-b9ca-6def1723e4bb:
+    contentColumnType: string
+    fieldGroup: 99a6ae32-c12a-4521-81e9-07fa865916ad
+    handle: fullOrPart
+    instructions: 'Select whether this position is full or part time.'
+    name: Status
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Full Time'
+            -
+              - value
+              - 'Full Time'
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'Part Time'
+            -
+              - value
+              - 'Part Time'
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
   6f780888-e048-43cc-ab34-a9a0de59acee:
     contentColumnType: string
     fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
@@ -570,6 +609,29 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
+  870f903d-851f-4bcb-a0b5-71852d0f2485:
+    contentColumnType: text
+    fieldGroup: 99a6ae32-c12a-4521-81e9-07fa865916ad
+    handle: positionDescription
+    instructions: 'Enter the description for this position.'
+    name: 'Position Description'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
   94377b09-8631-4bdf-b0be-fe65c7f969c9:
     contentColumnType: text
     fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
@@ -620,6 +682,28 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Color
+  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+    contentColumnType: text
+    fieldGroup: ea910e7b-73e3-4f9b-9383-d7a62f7020f8
+    handle: seoSettings
+    instructions: 'Enter the SEO details here.'
+    name: 'SEO Settings'
+    searchable: true
+    settings:
+      elementDisplayPreviewType: google
+      facebookTabEnabled: ''
+      generalEnabledFields:
+        - seoPreview
+        - seoTitle
+        - seoDescription
+        - seoImage
+        - seoImageDescription
+      generalTabEnabled: '1'
+      sitemapTabEnabled: ''
+      twitterTabEnabled: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: nystudio107\seomatic\fields\SeoSettings
   9ef27649-5aa6-4863-9500-c630405c5822:
     contentColumnType: text
     fieldGroup: 14845e65-d10e-4335-95d6-68c36bfbbbbc
@@ -1052,6 +1136,32 @@ globalSets:
   3c9f4119-fed7-4cb7-bf10-261dd9a2ed4d:
     handle: branding
     name: branding
+  5feb51e2-88b2-4deb-b220-52fdf5520be5:
+    fieldLayouts:
+      586b1e97-7d65-46e0-9ab1-fbf5f135cf5c:
+        tabs:
+          -
+            fields:
+              528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                required: false
+                sortOrder: 2
+              ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                required: false
+                sortOrder: 3
+              bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                required: false
+                sortOrder: 1
+            name: Hero
+            sortOrder: 1
+          -
+            fields:
+              9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                required: false
+                sortOrder: 1
+            name: SEO
+            sortOrder: 2
+    handle: jobs
+    name: Jobs
   d3bf2fdc-3e3d-4b42-8409-6f65ed0978ec:
     fieldLayouts:
       169e0d97-0e93-4a97-9f56-68207688df75:
@@ -1712,6 +1822,13 @@ sections:
                     sortOrder: 1
                 name: Sub-services
                 sortOrder: 5
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 6
         handle: transactional
         hasTitleField: true
         name: Transactional
@@ -1781,6 +1898,13 @@ sections:
                     sortOrder: 1
                 name: Sub-services
                 sortOrder: 5
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 6
         handle: fundraising
         hasTitleField: true
         name: Fundraising
@@ -1853,6 +1977,13 @@ sections:
                     sortOrder: 1
                 name: Sub-services
                 sortOrder: 5
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 6
         handle: directMarketing
         hasTitleField: true
         name: 'Direct Marketing'
@@ -1922,6 +2053,13 @@ sections:
                     sortOrder: 1
                 name: Sub-services
                 sortOrder: 5
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 6
         handle: interactive
         hasTitleField: true
         name: Interactive
@@ -1991,6 +2129,13 @@ sections:
                     sortOrder: 1
                 name: Sub-services
                 sortOrder: 5
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 6
         handle: fulfillment
         hasTitleField: true
         name: Fulfillment
@@ -2023,7 +2168,7 @@ sections:
         name: Thanks
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: thanks
     name: Thanks
     propagationMethod: all
@@ -2034,6 +2179,49 @@ sections:
         template: thanks/_entry
         uriFormat: thanks
     type: single
+  3d584b4f-ae6a-4b41-ab85-69ecc460be8e:
+    enableVersioning: true
+    entryTypes:
+      9ac92714-c163-4b35-82ac-6edb3abf53d0:
+        fieldLayouts:
+          077bbc71-54d0-412b-bf87-45c4dcdb2296:
+            tabs:
+              -
+                fields:
+                  6e35cfe8-41f9-47be-b9ca-6def1723e4bb:
+                    required: false
+                    sortOrder: 1
+                  870f903d-851f-4bcb-a0b5-71852d0f2485:
+                    required: false
+                    sortOrder: 2
+                name: Jobs
+                sortOrder: 1
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
+        handle: jobs
+        hasTitleField: true
+        name: Jobs
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: jobs
+    name: Jobs
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: jobs/_entry
+        uriFormat: 'jobs/{slug}'
+    structure:
+      maxLevels: null
+      uid: 206c6d7e-cc1a-4828-819b-3c6f54451c17
+    type: structure
   4499d0d0-e729-4c5c-9820-a2ae72bb92dc:
     enableVersioning: true
     entryTypes:
@@ -2043,7 +2231,7 @@ sections:
         name: Unsubscribed
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: unsubscribed
     name: Unsubscribed
     propagationMethod: all
@@ -2139,7 +2327,7 @@ sections:
         name: 'Frequently Asked Questions'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: faq
     name: 'Frequently Asked Questions'
     propagationMethod: all
@@ -2177,6 +2365,13 @@ sections:
                     sortOrder: 1
                 name: General
                 sortOrder: 2
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 3
         handle: home
         hasTitleField: false
         name: 'We Are Bluegrass.'
@@ -2307,6 +2502,13 @@ sections:
                     sortOrder: 3
                 name: Blog
                 sortOrder: 1
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
         handle: blog
         hasTitleField: true
         name: Blog
@@ -2336,7 +2538,7 @@ sections:
         name: 'Sign Up'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: signUp
     name: 'Sign Up'
     propagationMethod: all
@@ -2399,7 +2601,7 @@ sections:
         name: 'Signup Error'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: signupError
     name: 'Signup Error'
     propagationMethod: all
