@@ -9,20 +9,28 @@
 
 <div class="container">  
     <h2 class="mt-5 mb-5">Available Positions:</h2>
+
+    {% set entries = entry.children().level(2).all() %}
+
+        {% for entry in entries %}
+
     <div class="card mb-3">
         <div class="card-body">
-            <h4 class="card-title">Mail Sorter - Full Time</h4>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <a href="https://www.bluegrass-website-new.test/jobs/mail-sorter" class="btn btn-primary">Learn More</a>
+            <h4 class="card-title">{{ entry.title }} - {{ entry.fullOrPart }}</h4>
+            <p class="card-text">{{ entry.positionDescription|striptags|slice(0, 200)|default('Read More') }}...</p>
+            <a href="{{ entry.url }}" class="btn btn-primary">Learn More</a>
         </div>
     </div>
-    <div class="card mb-3">
+
+    {% endfor %}
+
+    <!-- <div class="card mb-3">
         <div class="card-body">
             <h4 class="card-title">Mail Sorter - Part Time</h4>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             <a href="https://bluegrass.frb.io/jobs/mail-sorter" class="btn btn-primary">Learn More</a>
         </div>
-    </div>
+    </div> -->
 </div>
 {% include "/components/footer.html" %}
 
