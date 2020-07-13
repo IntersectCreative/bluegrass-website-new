@@ -10,13 +10,13 @@
 <div class="container">  
     <h2 class="mt-5 mb-5">Available Positions:</h2>
 
-    {% set entries = craft.entries.section('jobs').level(2) %}
+    {% set entries = craft.entries.section('jobs').level(2).all() %}
 
     {% for entry in entries %}
 
     <div class="card mb-4">
         <div class="card-body">
-            <h4 class="card-title">{{ entry.title }} - {{ entry.fullOrPart }}</h4>
+            <a href="{{ entry.url }}"><h4 class="card-title">{{ entry.title }} - {{ entry.fullOrPart }}</h4></a>
             <p class="card-text">{{ entry.positionDescription|striptags|slice(0, 200)|default('Read More') }}...</p>
             <a href="{{ entry.url }}" class="btn btn-primary">Learn More</a>
         </div>
