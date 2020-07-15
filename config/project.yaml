@@ -1,4 +1,16 @@
-dateModified: 1594309857
+categoryGroups:
+  6f5d6cf3-9370-4bf5-927c-2539258f4c8f:
+    handle: resourceType
+    name: 'Resource Type'
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        hasUrls: false
+        template: null
+        uriFormat: null
+    structure:
+      maxLevels: null
+      uid: 7d26fcf6-458a-4440-813a-c296723b8161
+dateModified: 1594833689
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -18,8 +30,6 @@ fieldGroups:
     name: Jobs
   a6a4dfd7-85ec-4401-9660-83f696085bf7:
     name: General
-  b52e0cd8-87b6-4d28-b736-100b598f0fcc:
-    name: tags
   cbb81a4a-d66f-4c65-b36d-05b4bba5e406:
     name: Hero
   d0828146-8abe-49b5-87cd-3e7f3b6bacdb:
@@ -361,6 +371,28 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  690c44b8-6960-4311-b5b2-2e43266c1a37:
+    contentColumnType: string
+    fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
+    handle: blogTags
+    instructions: 'Enter the tags for this blog post.'
+    name: 'Blog Tags'
+    searchable: true
+    settings:
+      allowLimit: false
+      allowMultipleSources: false
+      allowSelfRelations: ''
+      limit: null
+      localizeRelations: false
+      selectionLabel: ''
+      source: 'taggroup:e4a2a7cf-f527-4a12-a56d-1e5c3621e844'
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Tags
   6e35cfe8-41f9-47be-b9ca-6def1723e4bb:
     contentColumnType: string
     fieldGroup: 99a6ae32-c12a-4521-81e9-07fa865916ad
@@ -682,6 +714,29 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Color
+  9d2023c5-003c-4181-91fc-5d640947de67:
+    contentColumnType: string
+    fieldGroup: 636d19c7-1b45-4c83-bb80-ff9a370bc669
+    handle: serviceCategory
+    instructions: 'Select the category of service this falls under'
+    name: 'Service Category'
+    searchable: true
+    settings:
+      allowLimit: false
+      allowMultipleSources: false
+      allowSelfRelations: ''
+      branchLimit: ''
+      limit: null
+      localizeRelations: false
+      selectionLabel: ''
+      source: 'group:1d7ca769-a3a6-4b1b-8565-2cfc6e825919'
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Categories
   9e8302b4-a171-42a3-ac02-fb0349878eb8:
     contentColumnType: text
     fieldGroup: ea910e7b-73e3-4f9b-9383-d7a62f7020f8
@@ -1933,27 +1988,26 @@ sections:
                 sortOrder: 1
               -
                 fields:
-                  9b5a46e5-5a48-44b3-9c74-29bb68f92c00:
-                    required: true
-                    sortOrder: 2
-                  ec549621-6d25-4376-acc1-332b2fa1a9ad:
-                    required: true
-                    sortOrder: 1
-                name: General
-                sortOrder: 2
-              -
-                fields:
                   0b1ed3ee-e3ad-494a-99ab-c6821d4e8400:
                     required: false
-                    sortOrder: 1
+                    sortOrder: 5
                   824c29dd-2c54-4ab2-bdc5-cf30d8530204:
+                    required: false
+                    sortOrder: 6
+                  9b5a46e5-5a48-44b3-9c74-29bb68f92c00:
+                    required: true
+                    sortOrder: 3
+                  9d2023c5-003c-4181-91fc-5d640947de67:
                     required: false
                     sortOrder: 2
                   d5956b69-0822-469f-aeb2-183f5df6840c:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
+                  ec549621-6d25-4376-acc1-332b2fa1a9ad:
+                    required: true
+                    sortOrder: 1
                 name: 'Service Line Details'
-                sortOrder: 3
+                sortOrder: 2
               -
                 fields:
                   0c664d0d-025d-46b1-99a5-75b9aab6e905:
@@ -1966,7 +2020,7 @@ sections:
                     required: false
                     sortOrder: 2
                 name: Services
-                sortOrder: 4
+                sortOrder: 3
               -
                 fields:
                   47f85bb3-0be4-424e-a3f8-01b098ee787a:
@@ -1976,14 +2030,14 @@ sections:
                     required: false
                     sortOrder: 1
                 name: Sub-services
-                sortOrder: 5
+                sortOrder: 4
               -
                 fields:
                   9e8302b4-a171-42a3-ac02-fb0349878eb8:
                     required: false
                     sortOrder: 1
                 name: SEO
-                sortOrder: 6
+                sortOrder: 5
         handle: directMarketing
         hasTitleField: true
         name: 'Direct Marketing'
@@ -2479,6 +2533,9 @@ sections:
             tabs:
               -
                 fields:
+                  690c44b8-6960-4311-b5b2-2e43266c1a37:
+                    required: false
+                    sortOrder: 7
                   6f780888-e048-43cc-ab34-a9a0de59acee:
                     required: false
                     sortOrder: 6
@@ -2488,9 +2545,6 @@ sections:
                   819a02e8-d990-4209-a4a6-fbe645886d75:
                     required: false
                     sortOrder: 4
-                  a1ddd441-ac97-4eaf-91ad-2014e7c145c7:
-                    required: false
-                    sortOrder: 7
                   d5956b69-0822-469f-aeb2-183f5df6840c:
                     required: false
                     sortOrder: 2
@@ -2687,22 +2741,9 @@ system:
   schemaVersion: 3.4.10
   timeZone: America/New_York
 tagGroups:
-  3660b1ca-721c-4c92-9192-a75c7b82b116:
-    fieldLayouts:
-      c85dc581-fb59-4e0f-a1c7-60a28082d3de:
-        tabs:
-          -
-            fields:
-              354d00fb-3f22-4043-b833-d50b13cd3c59:
-                required: false
-                sortOrder: 1
-              ec549621-6d25-4376-acc1-332b2fa1a9ad:
-                required: false
-                sortOrder: 2
-            name: Content
-            sortOrder: 1
-    handle: serviceLines
-    name: 'Service Lines'
+  e4a2a7cf-f527-4a12-a56d-1e5c3621e844:
+    handle: blogTags
+    name: 'Blog Tags'
 users:
   allowPublicRegistration: false
   defaultGroup: null

@@ -9,5 +9,24 @@
     <div class="col-lg-3 sidebar">
       {% include "/components/blog-sidebar.html" %}
     </div>
-  </div>
+</div>
+
+<!-- The following block of code lists out the related tags for the blog post. Will use this in the future. -->
+
+<!-- {% set relatedTags = entry.blogTags.all()  %}
+
+{% if relatedTags|length %}
+
+  <ul>
+
+    {% for rel in relatedTags %}
+    
+    <li><a href="{{ url('tags/'~rel.slug) }}">{{ rel.title }}</a></li>
+
+    {% endfor %}
+
+  </ul>
+
+{% endif %} -->
+
 </div>
