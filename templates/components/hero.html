@@ -2,6 +2,25 @@
 <!-- 	<video playsinline autoplay muted loop id="myVideo">
   	<source src="/images/pexelsvideo.mp4" type="video/mp4">
 	</video> -->
+
+	<!-- if homepage make title two lines -->
+
+{% if entry.uri == "__home__" %}
+
+<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
+	<div class="hero-copy">
+		<h1 class="hero-title" style="margin-bottom:0px;">{{ entry.heroTitle }}</h1>
+		<h1 class="hero-title" style="margin-top: 0px;">{{ entry.heroTitle2 }}</h1>
+		<div class="row">
+			<div class="col-8">
+				<h2 class="hero-subtitle">{{ entry.heroSubtitle }}</h2>
+			</div>
+			<div class="col-4"></div>
+		</div>
+	</div>
+
+{% else %}
+
 	<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
 	<div class="hero-copy">
 		<h1 class="hero-title">{{ entry.title }}</h1>
@@ -12,4 +31,7 @@
 			<div class="col-4"></div>
 		</div>
 	</div>
+
+{% endif %}
+
 </div>

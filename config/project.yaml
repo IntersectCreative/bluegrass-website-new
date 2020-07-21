@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1594833689
+dateModified: 1595358559
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -358,6 +358,24 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
+  5c07e36c-fa81-4d9b-9894-4217e594a43f:
+    contentColumnType: text
+    fieldGroup: cbb81a4a-d66f-4c65-b36d-05b4bba5e406
+    handle: heroTitle2
+    instructions: 'This is for the homepage second line. Should be Bluegrass.'
+    name: 'Hero Title 2'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   5e2dac92-e982-4979-bae6-11aeaa2fea5f:
     contentColumnType: string(255)
     fieldGroup: 6c1296e7-716e-47a7-9c8a-f997715459ae
@@ -2404,9 +2422,12 @@ sections:
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 1
-                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                  5c07e36c-fa81-4d9b-9894-4217e594a43f:
                     required: false
                     sortOrder: 3
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 4
                   bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
                     required: false
                     sortOrder: 2
