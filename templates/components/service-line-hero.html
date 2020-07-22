@@ -22,8 +22,8 @@
     <div class="container">
     <div class="service-line-hero-copy">
       <h5>{{ entry.parent }}</h5>
-      <img src="{{ entry.icon.one().getUrl() }}" class="service-line-icon img-fluid cursor" alt="{{entry.title}} icon" />
-      <h1 id="service-header" class="serviceHeader typer" data-typer-targets="{{ entry.title }}"></h1>
+      <span id="service-header" class="serviceHeader typer" data-typer-targets="{{ entry.title }}" style="color: #000000; font-size: 96px; font-weight: 500;"></span>
+        <img src="{{ entry.icon.one().getUrl() }}" class="service-line-icon img-fluid cursor" alt="{{entry.title}} icon" />
       <p class="introText">
        {{ entry.heroSubtitle }}
       </p>

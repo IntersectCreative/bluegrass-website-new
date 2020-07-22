@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1595358559
+dateModified: 1595442071
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -102,6 +102,20 @@ fields:
       displayDominantColorPalette: '1'
       displayLazyLoadPlaceholderImages: '1'
       displayOptimizedImageVariants: '1'
+      fieldVolumeSettings:
+        __assoc__:
+          -
+            - bluegrass
+            - '*'
+          -
+            - branding
+            - '*'
+          -
+            - imageHero
+            - '*'
+          -
+            - employeePictures
+            - '*'
       variants:
         -
           __assoc__:
@@ -2756,7 +2770,7 @@ sites:
     siteGroup: 3f83f68f-620f-4f25-aab1-0b20a1bc203f
     sortOrder: 1
 system:
-  edition: solo
+  edition: pro
   live: true
   name: wearebluegrass
   schemaVersion: 3.4.10

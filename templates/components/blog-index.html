@@ -55,9 +55,9 @@
 
 <!-- This sections pulls the blog posts with the tag Greatest lists them here. -->
 
-    {% set tag = craft.tags.group('blogTags').slug('Greatest').first() %}
+    {% set tag = craft.tags.group('blogTags').slug('Greatest').one() %}
 
-    {% set entries = craft.entries.section('Blog').relatedTo(tag) %}
+    {% set entries = craft.entries.section('Blog').relatedTo(tag).all() %}
 
 
     <div class="col-md text-left mt-5">
