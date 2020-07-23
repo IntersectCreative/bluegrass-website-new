@@ -5,7 +5,7 @@
         {% for entry in businessDevelopmentTeam.businessDevelopment.all() %}
 
         <div class="col-md">
-            <a href="{{ entry.url }}"><img src="{{ entry.employeePicture.one().getUrl() }}" alt="{{ entry.title }}" style="width: 150px; height: 150px;" class="mb-2"></a>
+            <a href="{{ entry.url }}"><img src="{{ entry.employeePicture.one().getUrl() }}" alt="{{ entry.title }}" style="width: 150px; height: 150px; border-radius: 50%;" class="mb-2"></a>
             <a href="{{ entry.url }}"><p>{{ entry.title }}</p></a>
         </div>
 

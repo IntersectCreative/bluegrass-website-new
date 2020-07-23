@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1595442071
+dateModified: 1595531416
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -347,6 +347,35 @@ fields:
       sources: '*'
       targetSiteId: null
       useSingleFolder: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  531a6ab4-0ee5-417e-8293-1488e2136001:
+    contentColumnType: string
+    fieldGroup: 7bca8b6b-f8c1-4edc-b235-a6509d0aa5d4
+    handle: brandLogo
+    instructions: 'Select the Brand Logo to use.'
+    name: 'Brand Logo'
+    searchable: true
+    settings:
+      allowSelfRelations: ''
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
       viewMode: large
     translationKeyFormat: null
     translationMethod: site
@@ -1221,6 +1250,16 @@ globalSets:
     handle: companyInfo
     name: 'Company Info'
   3c9f4119-fed7-4cb7-bf10-261dd9a2ed4d:
+    fieldLayouts:
+      3429e415-5217-4c36-a159-e22be708688e:
+        tabs:
+          -
+            fields:
+              531a6ab4-0ee5-417e-8293-1488e2136001:
+                required: false
+                sortOrder: 1
+            name: 'Branding Information'
+            sortOrder: 1
     handle: branding
     name: branding
   5feb51e2-88b2-4deb-b220-52fdf5520be5:
@@ -1262,6 +1301,11 @@ globalSets:
             sortOrder: 1
     handle: businessDevelopmentTeam
     name: 'Business Development Team'
+graphql:
+  schemas:
+    49cbf326-3e8d-4000-bac6-c6db4d9d0f92:
+      isPublic: true
+      name: 'Public Schema'
 matrixBlockTypes:
   083a2793-e2bd-4b39-8a25-b9b0f9886d6d:
     field: fddca6bb-5ab9-47fd-9441-3531288a2e37
