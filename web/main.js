@@ -40,5 +40,11 @@ $("#applicationButton").click(function(){
   $("#application").toggle(600);
 });
 
+//application drop down
+$(".question").click(function(){
+  $(this).next('.answer').toggleClass('preToggle postToggle');
+  return false;
+});
+
 
   

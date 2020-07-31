@@ -21,3 +21,13 @@
         display: none;
     }
 }
+
+.blog-hero-mobile {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items:flex-end;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

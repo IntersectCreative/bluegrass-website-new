@@ -5,45 +5,22 @@
     </div>
   </div>
   <div class="row icon-row">
+
+
+    <!-- Iterates over the entries within the Services section to output the service lines -->
+
+    {% for entry in craft.entries.section('Services').level(1).all() %}
+
     <div class="col d-flex justify-content-center">
       <div class="card">
-        <a href="/direct-marketing"><img src="/images/branding/Direct/icon-shaded-direct.png" class="card-img-top" alt="direct marketing icon"></a>
+        <a href="{{ entry.url }}"><img src="{{ entry.serviceLineIcon.one().getUrl() }}" class="card-img-top" alt="{{ entry.title }} Icon"></a>
         <div class="card-body">
-          <p class="card-text text-center">Direct Marketing</p>
+          <p class="card-text text-center">{{ entry.title }}</p>
         </div>
       </div>
     </div>
-    <div class="col d-flex justify-content-center">
-      <div class="card">
-        <a href="/interactive"><img src="/images/branding/Interactive/icon-shaded-interactive.png" class="card-img-top" alt="interactive icon"></a>
-        <div class="card-body">
-          <p class="card-text text-center">Interactive</p>
-        </div>
-      </div>
-    </div>
-    <div class="col d-flex justify-content-center">
-      <div class="card">
-        <a href="/fundraising"><img src="/images/branding/Fundraising/icon-shaded-fundraising-fix.png" class="card-img-top" alt="fundraising icon"></a>
-        <div class="card-body">
-          <p class="card-text text-center">Fundraising</p>
-        </div>
-      </div>
-    </div>
-    <div class="col d-flex justify-content-center">
-      <div class="card">
-        <a href="/fulfillment"><img src="/images/branding/Fulfillment/icon-shaded-fulfillment.png" class="card-img-top" alt="fulfillment icon"></a>
-        <div class="card-body">
-          <p class="card-text text-center">Fulfillment</p>
-        </div>
-      </div>
-    </div>
-    <div class="col d-flex justify-content-center">
-      <div class="card">
-        <a href="/transactional"><img src="/images/branding/Transactional/icon-shaded-transactional-fix.png" class="card-img-top" alt="transactional icon"></a>
-        <div class="card-body">
-          <p class="card-text text-center">Transactional</p>
-        </div>
-      </div>
-    </div>
+
+    {% endfor %}
+
   </div>
 </div>

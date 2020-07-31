@@ -7,6 +7,7 @@
     "nystudio107/craft-imageoptimize": "^1.6",
     "nystudio107/craft-seomatic": "3.3.8",
     "solspace/craft-freeform": "3.6.12",
+    "superbig/craft3-mobiledetect": "1.0.2",
     "twbs/bootstrap": "^4.3",
     "vlucas/phpdotenv": "^2.4.0"
   },

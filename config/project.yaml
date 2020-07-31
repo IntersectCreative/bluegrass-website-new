@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1595531416
+dateModified: 1596210718
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -216,23 +216,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: nystudio107\imageoptimize\fields\OptimizedImages
-  34b58095-e6ee-489d-ba82-405d4f13b032:
-    contentColumnType: text
-    fieldGroup: 7bca8b6b-f8c1-4edc-b235-a6509d0aa5d4
-    handle: activity
-    instructions: 'this is the title'
-    name: activity
-    searchable: true
-    settings:
-      charLimit: '50'
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: Title
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
   354d00fb-3f22-4043-b833-d50b13cd3c59:
     contentColumnType: string
     fieldGroup: 636d19c7-1b45-4c83-bb80-ff9a370bc669
@@ -775,29 +758,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Color
-  9d2023c5-003c-4181-91fc-5d640947de67:
-    contentColumnType: string
-    fieldGroup: 636d19c7-1b45-4c83-bb80-ff9a370bc669
-    handle: serviceCategory
-    instructions: 'Select the category of service this falls under'
-    name: 'Service Category'
-    searchable: true
-    settings:
-      allowLimit: false
-      allowMultipleSources: false
-      allowSelfRelations: ''
-      branchLimit: ''
-      limit: null
-      localizeRelations: false
-      selectionLabel: ''
-      source: 'group:1d7ca769-a3a6-4b1b-8565-2cfc6e825919'
-      sources: '*'
-      targetSiteId: null
-      validateRelatedElements: ''
-      viewMode: null
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Categories
   9e8302b4-a171-42a3-ac02-fb0349878eb8:
     contentColumnType: text
     fieldGroup: ea910e7b-73e3-4f9b-9383-d7a62f7020f8
@@ -993,9 +953,9 @@ fields:
     searchable: true
     settings:
       contentTable: '{{%matrixcontent_gettoknow}}'
-      localizeBlocks: false
-      maxBlocks: ''
-      minBlocks: ''
+      maxBlocks: '6'
+      minBlocks: '0'
+      propagationMethod: all
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
@@ -1074,6 +1034,21 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  e6b5a3fe-802c-4c2a-bcbc-fe2a1d7473d0:
+    contentColumnType: string
+    fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
+    handle: faqs
+    instructions: 'These are frequently asked questions.'
+    name: FAQs
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_faqs}}'
+      maxBlocks: ''
+      minBlocks: ''
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   ec549621-6d25-4376-acc1-332b2fa1a9ad:
     contentColumnType: string
     fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
@@ -1372,6 +1347,123 @@ matrixBlockTypes:
     handle: interests
     name: interests
     sortOrder: 1
+  1c24204e-628f-44a0-944b-ef2b8b346dbb:
+    field: c5405c57-c331-45dd-bb73-59075c4bd47e
+    fieldLayouts:
+      ebf6906e-ecd8-4d52-9812-0827e0b664e2:
+        tabs:
+          -
+            fields:
+              e5226b0b-389b-4667-be9c-364d5802746c:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      e5226b0b-389b-4667-be9c-364d5802746c:
+        contentColumnType: text
+        fieldGroup: null
+        handle: pets
+        instructions: 'Do you have any pets?'
+        name: Pets
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: true
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+          removeEmptyTags: '1'
+          removeInlineStyles: '1'
+          removeNbsp: '1'
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+    handle: pets
+    name: Pets
+    sortOrder: 2
+  45e2fd4f-66ac-41c6-b743-d91327abb49c:
+    field: c5405c57-c331-45dd-bb73-59075c4bd47e
+    fieldLayouts:
+      9e662763-9d17-4fab-b7b2-98a7c4027dc7:
+        tabs:
+          -
+            fields:
+              833c4ab8-c946-4171-a6cb-2daed8040bc5:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      833c4ab8-c946-4171-a6cb-2daed8040bc5:
+        contentColumnType: text
+        fieldGroup: null
+        handle: inspiration
+        instructions: 'Where do you find inspiration?'
+        name: Inspiration
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: true
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+          removeEmptyTags: '1'
+          removeInlineStyles: '1'
+          removeNbsp: '1'
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+    handle: inspiration
+    name: Inspiration
+    sortOrder: 3
+  7045dfba-708f-4dd2-985b-a2c9a085fb79:
+    field: c5405c57-c331-45dd-bb73-59075c4bd47e
+    fieldLayouts:
+      930393f4-0e21-4d7f-8715-6dd7dc2142a5:
+        tabs:
+          -
+            fields:
+              f744d449-6f00-4d1f-9cb6-f9f00926e685:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      f744d449-6f00-4d1f-9cb6-f9f00926e685:
+        contentColumnType: text
+        fieldGroup: null
+        handle: chooseBluegrass
+        instructions: 'Why do you think clients should choose to work with Bluegrass?'
+        name: 'Choose Bluegrass'
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: true
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+          removeEmptyTags: '1'
+          removeInlineStyles: '1'
+          removeNbsp: '1'
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+    handle: chooseBluegrass
+    name: 'Choose Bluegrass'
+    sortOrder: 6
   8c9ce97b-a9e1-48ea-9512-9c0bbf9c533c:
     field: 44e87086-ae6c-4998-bbed-0acd0b49b56d
     fieldLayouts:
@@ -1453,56 +1545,20 @@ matrixBlockTypes:
     handle: social
     name: social
     sortOrder: 1
-  c8ecdfa7-18a8-4e9c-b512-292ba270a324:
+  9eaa2e47-06ff-478a-9b31-e5b1175ac957:
     field: c5405c57-c331-45dd-bb73-59075c4bd47e
     fieldLayouts:
-      5978544f-7018-445e-94e6-a620692cef76:
+      ced0c819-6aa5-4cd1-801f-cbfb2393aca8:
         tabs:
           -
             fields:
-              07b39559-e59a-467f-b20a-17df32ae52cd:
-                required: false
-                sortOrder: 2
-              3f514041-0d97-4524-932d-0be255042a87:
-                required: false
-                sortOrder: 4
-              7be85f5b-eb08-43a1-bf29-c5ea7462337d:
+              29f805f0-e0b2-4cec-aee5-581e9282672e:
                 required: false
                 sortOrder: 1
-              9d915956-c7af-4746-8d23-5b9e90ed4d52:
-                required: false
-                sortOrder: 5
-              d2714c0f-df37-4126-9712-9946a29431ce:
-                required: false
-                sortOrder: 3
-              e3f7eee6-8f38-48ae-bc14-bb2481e230a1:
-                required: false
-                sortOrder: 6
             name: Content
             sortOrder: 1
     fields:
-      07b39559-e59a-467f-b20a-17df32ae52cd:
-        contentColumnType: text
-        fieldGroup: null
-        handle: pets
-        instructions: 'Do you have any pets?'
-        name: Pets
-        searchable: true
-        settings:
-          availableTransforms: '*'
-          availableVolumes: '*'
-          cleanupHtml: true
-          columnType: text
-          purifierConfig: ''
-          purifyHtml: '1'
-          redactorConfig: ''
-          removeEmptyTags: '1'
-          removeInlineStyles: '1'
-          removeNbsp: '1'
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\redactor\Field
-      3f514041-0d97-4524-932d-0be255042a87:
+      29f805f0-e0b2-4cec-aee5-581e9282672e:
         contentColumnType: text
         fieldGroup: null
         handle: song
@@ -1520,31 +1576,165 @@ matrixBlockTypes:
           removeEmptyTags: '1'
           removeInlineStyles: '1'
           removeNbsp: '1'
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
         translationKeyFormat: null
         translationMethod: none
         type: craft\redactor\Field
-      7be85f5b-eb08-43a1-bf29-c5ea7462337d:
+    handle: song
+    name: Song
+    sortOrder: 4
+  c3ef2fa4-c5ae-4181-8c9d-206fed8fe5ae:
+    field: e6b5a3fe-802c-4c2a-bcbc-fe2a1d7473d0
+    fieldLayouts:
+      c9fdcf84-ade6-4ad5-ae3f-b7f632b43ea8:
+        tabs:
+          -
+            fields:
+              36b91fab-feda-4061-a6a5-f43a93e1a969:
+                required: true
+                sortOrder: 1
+              822f574b-f188-48d6-addb-dafc2715851c:
+                required: true
+                sortOrder: 2
+              f9986084-eb63-4224-84e6-5ee90324b10d:
+                required: true
+                sortOrder: 3
+            name: Content
+            sortOrder: 1
+    fields:
+      36b91fab-feda-4061-a6a5-f43a93e1a969:
         contentColumnType: text
         fieldGroup: null
-        handle: favoritePart
-        instructions: 'What is your favorite part about working at Bluegrass?'
-        name: 'Favorite Part'
+        handle: question
+        instructions: 'The question'
+        name: Question
         searchable: true
         settings:
-          availableTransforms: '*'
-          availableVolumes: '*'
-          cleanupHtml: true
-          columnType: text
-          purifierConfig: ''
-          purifyHtml: '1'
-          redactorConfig: ''
-          removeEmptyTags: '1'
-          removeInlineStyles: '1'
-          removeNbsp: '1'
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: 'How much would could a woodchuck chuck if a woodchuck could chuck wood?'
         translationKeyFormat: null
         translationMethod: none
-        type: craft\redactor\Field
-      9d915956-c7af-4746-8d23-5b9e90ed4d52:
+        type: craft\fields\PlainText
+      822f574b-f188-48d6-addb-dafc2715851c:
+        contentColumnType: text
+        fieldGroup: null
+        handle: answer
+        instructions: 'This is the answer to the question.'
+        name: Answer
+        searchable: true
+        settings:
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: 'A woodchuck would chuck lots of wood if a woodchuck could chuck wood.'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      f9986084-eb63-4224-84e6-5ee90324b10d:
+        contentColumnType: string
+        fieldGroup: null
+        handle: serviceLine
+        instructions: 'Which service line does this faq belong to?'
+        name: 'Service Line'
+        searchable: true
+        settings:
+          optgroups: true
+          options:
+            -
+              __assoc__:
+                -
+                  - label
+                  - 'Direct Marketing'
+                -
+                  - value
+                  - 'Direct Marketing'
+                -
+                  - default
+                  - ''
+            -
+              __assoc__:
+                -
+                  - label
+                  - Transactional
+                -
+                  - value
+                  - Transactional
+                -
+                  - default
+                  - ''
+            -
+              __assoc__:
+                -
+                  - label
+                  - Interactive
+                -
+                  - value
+                  - Interactive
+                -
+                  - default
+                  - ''
+            -
+              __assoc__:
+                -
+                  - label
+                  - Fundraising
+                -
+                  - value
+                  - Fundraising
+                -
+                  - default
+                  - ''
+            -
+              __assoc__:
+                -
+                  - label
+                  - Fulfillment
+                -
+                  - value
+                  - Fulfillment
+                -
+                  - default
+                  - ''
+            -
+              __assoc__:
+                -
+                  - label
+                  - 'All Service Lines'
+                -
+                  - value
+                  - 'All Service Lines'
+                -
+                  - default
+                  - ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\Dropdown
+    handle: faq
+    name: FAQ
+    sortOrder: 1
+  debac929-823e-4ab3-8075-953a957e4158:
+    field: c5405c57-c331-45dd-bb73-59075c4bd47e
+    fieldLayouts:
+      625571a5-a5dd-445d-99f7-87a71fa6a328:
+        tabs:
+          -
+            fields:
+              84ba7f89-7f20-4121-a703-019ddacd47f9:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      84ba7f89-7f20-4121-a703-019ddacd47f9:
         contentColumnType: text
         fieldGroup: null
         handle: surprisingFact
@@ -1562,15 +1752,33 @@ matrixBlockTypes:
           removeEmptyTags: '1'
           removeInlineStyles: '1'
           removeNbsp: '1'
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
         translationKeyFormat: null
         translationMethod: none
         type: craft\redactor\Field
-      d2714c0f-df37-4126-9712-9946a29431ce:
+    handle: surprisingFact
+    name: 'Surprising Fact'
+    sortOrder: 5
+  dfeab7b5-d172-4e28-9d3c-55cd87ad8f0c:
+    field: c5405c57-c331-45dd-bb73-59075c4bd47e
+    fieldLayouts:
+      7c815ad1-97ab-4997-a25b-4b8584dcfcf7:
+        tabs:
+          -
+            fields:
+              8bb1801a-b698-4b77-a6a5-4c8a8624bea6:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      8bb1801a-b698-4b77-a6a5-4c8a8624bea6:
         contentColumnType: text
         fieldGroup: null
-        handle: inspiration
-        instructions: 'Where do you find inspiration?'
-        name: Inspiration
+        handle: favoritePart
+        instructions: 'What is your favorite part about working at Bluegrass?'
+        name: 'Favorite Part'
         searchable: true
         settings:
           availableTransforms: '*'
@@ -1583,32 +1791,13 @@ matrixBlockTypes:
           removeEmptyTags: '1'
           removeInlineStyles: '1'
           removeNbsp: '1'
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
         translationKeyFormat: null
         translationMethod: none
         type: craft\redactor\Field
-      e3f7eee6-8f38-48ae-bc14-bb2481e230a1:
-        contentColumnType: text
-        fieldGroup: null
-        handle: chooseBluegrass
-        instructions: 'Why do you think clients should choose to work with Bluegrass?'
-        name: 'Choose Bluegrass'
-        searchable: true
-        settings:
-          availableTransforms: '*'
-          availableVolumes: '*'
-          cleanupHtml: true
-          columnType: text
-          purifierConfig: ''
-          purifyHtml: '1'
-          redactorConfig: ''
-          removeEmptyTags: '1'
-          removeInlineStyles: '1'
-          removeNbsp: '1'
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\redactor\Field
-    handle: getToKnow
-    name: 'Get to Know'
+    handle: favoritePart
+    name: 'Favorite Part'
     sortOrder: 1
   f10a2128-7830-4732-9750-f4d2c3e5af68:
     field: 354d00fb-3f22-4043-b833-d50b13cd3c59
@@ -1870,6 +2059,10 @@ plugins:
                   - ''
       lowerQualityRetinaImageVariants: true
       transformClass: nystudio107\imageoptimize\imagetransforms\CraftImageTransform
+  mobile-detect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
@@ -1902,9 +2095,6 @@ sections:
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
                     sortOrder: 2
-                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
-                    required: false
-                    sortOrder: 3
                 name: Hero
                 sortOrder: 1
               -
@@ -1978,9 +2168,6 @@ sections:
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
                     sortOrder: 2
-                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
-                    required: false
-                    sortOrder: 3
                 name: Hero
                 sortOrder: 1
               -
@@ -2050,16 +2237,13 @@ sections:
                 fields:
                   32a35c2d-7747-4707-91f2-410f02d41a4d:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 3
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 2
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
                     sortOrder: 1
-                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
-                    required: false
-                    sortOrder: 2
                 name: Hero
                 sortOrder: 1
               -
@@ -2073,9 +2257,6 @@ sections:
                   9b5a46e5-5a48-44b3-9c74-29bb68f92c00:
                     required: true
                     sortOrder: 3
-                  9d2023c5-003c-4181-91fc-5d640947de67:
-                    required: false
-                    sortOrder: 2
                   d5956b69-0822-469f-aeb2-183f5df6840c:
                     required: false
                     sortOrder: 4
@@ -2132,9 +2313,6 @@ sections:
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
                     sortOrder: 2
-                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
-                    required: false
-                    sortOrder: 3
                 name: Hero
                 sortOrder: 1
               -
@@ -2208,9 +2386,6 @@ sections:
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
                     sortOrder: 2
-                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
-                    required: false
-                    sortOrder: 3
                 name: Hero
                 sortOrder: 1
               -
@@ -2341,13 +2516,25 @@ sections:
         titleLabel: Title
     handle: jobs
     name: Jobs
+    previewTargets:
+      -
+        __assoc__:
+          -
+            - label
+            - 'Primary entry page'
+          -
+            - urlFormat
+            - '{url}'
+          -
+            - refresh
+            - '1'
     propagationMethod: all
     siteSettings:
       c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
         enabledByDefault: true
         hasUrls: true
         template: jobs/_entry
-        uriFormat: 'jobs/{slug}'
+        uriFormat: '{parent.uri}/{slug}'
     structure:
       maxLevels: null
       uid: 206c6d7e-cc1a-4828-819b-3c6f54451c17
@@ -2452,6 +2639,25 @@ sections:
     enableVersioning: true
     entryTypes:
       8a60c42c-6657-4519-bc52-dae47b5b073d:
+        fieldLayouts:
+          dfd98d18-74ec-4fdc-99fd-f0ef6999de6f:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 1
+                  5c07e36c-fa81-4d9b-9894-4217e594a43f:
+                    required: false
+                    sortOrder: 4
+                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                    required: false
+                    sortOrder: 2
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 3
+                name: Hero
+                sortOrder: 1
         handle: faq
         hasTitleField: false
         name: 'Frequently Asked Questions'
@@ -2787,8 +2993,16 @@ sections:
     name: 'About Us'
     previewTargets:
       -
-        label: 'Primary entry page'
-        urlFormat: '{url}'
+        __assoc__:
+          -
+            - label
+            - 'Primary entry page'
+          -
+            - urlFormat
+            - '{url}'
+          -
+            - refresh
+            - '1'
     propagationMethod: all
     siteSettings:
       c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
