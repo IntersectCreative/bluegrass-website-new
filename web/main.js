@@ -46,5 +46,10 @@ $(".question").click(function(){
   return false;
 });
 
+//navbar hamburger menu turns white upon click
+$('.navbar-toggler').click(function(){
+$(".navbar-toggler").addClass('navbar-toggler-scrolled');
+$('.header').addClass('fixed-to-top');
+$('.header').addClass('scrolled');
 
-  
+});
