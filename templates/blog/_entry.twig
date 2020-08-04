@@ -9,7 +9,15 @@
 
 {% include "/components/blog-body.html" %}
 
+{% if craft.mobileDetect.isMobile %}
+
+{% include "/components/mobileMoreResources.html"%}
+
+{% else %}
+
 {% include "/components/moreresources.html" %}
+
+{% endif %}
 
 {% include "/components/resource-search-bar.html" %}
 

@@ -26,8 +26,35 @@
 <div class="mt-4">
   {{ entry.blogBody }}
 </div>
-<hr class="mt-5">
-<a href="https://twitter.com/intent/tweet?" class="twitter-share-button" data-show-count="false" data-size="large">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr class="mt-5 mb-5">
+
+<!-- The code below outputs the tags for the entry. This is for a future enhancement utilizing tags. -->
+
+<!-- <div class="row mb-5 text-center">
+
+  {% set relatedTags = entry.blogTags.all() %}
+
+  {% if relatedTags | length %}
+
+  {% for rel in relatedTags %}
+
+  <div class="col">
+    <a type="button" class="btn btn-outline-secondary" href="{{ url('tags/'~rel.slug) }}" style="font-size: 10px; border-radius: 8px;">#{{ rel.title }}</a>
+  </div>
+
+  {% endfor %}
+
+  {% endif %}
+
+</div> -->
+
+<div class="row text-center" style="background-color: #006ea4;">
+  {% for block in companyInfo.socialMedia.all() %}
+  <div class="col">
+    <a href="{{ block.platformUrl }}" target="_blank"><img src="{{ block.platformIcon.one().getUrl() }}" alt="{{ block.platformName }}icon" class="mt-3 mb-3" style="height: 32px; width: 32px;"/></a>
+  </div>
+  {% endfor %}
+</div>
 </div>
 
 {% else %}

@@ -1,0 +1,25 @@
+<div class="container mt-5">
+    <div class="row text-left">
+  
+    {% for entry in craft.entries.section('Blog').all() %}
+  
+        <div class="col-lg-4 mb-4">
+          <div class="card mt-3 h-100">
+          <img src="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-subtitle bodyText">{{ entry.serviceLine|upper }}</p>
+              <h3 class="card-title mb-2"><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
+            </div>
+  
+            {% for author in entry.selectAuthor.all() %}
+  
+              <a href="{{ author.url }}"<p class="bodyText"><img src="{{ author.employeePicture.one().getUrl() }}" alt="{{ author.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px;">{{ author.title|upper }}</p></a>		
+  
+            {% endfor %}
+  
+            </div>
+        </div>
+  
+    {% endfor %}
+    </div>
+  </div>

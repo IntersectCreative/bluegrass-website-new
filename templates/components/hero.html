@@ -23,7 +23,15 @@
 
 	<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
 	<div class="hero-copy">
+
+		{% if entry.uri == "thanks" %}
+
+		{% else %}
+
 		<h1 class="hero-title">{{ entry.title }}</h1>
+
+		{% endif %}
+
 		<div class="row">
 			<div class="col-8">
 				<h2 class="hero-subtitle">{{ entry.heroSubtitle }}</h2>
