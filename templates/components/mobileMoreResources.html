@@ -1,30 +1,23 @@
 <div class="container">
     <p class="mt-3" style="font-size: 18px;">You may also like...</p>
-    <div class="row mb-3">
-        <div class="col-4">
-            <img src="/images/imagehero/tbbc-every-day-is-a-gift-dress.png" alt="..." style="width: 100px; border-radius: 10px 0px 0px 10px;" class="h-100">
+    <div class="row mb-3 mt-3">
+
+        {% for entry in craft.entries.section('Blog').limit(3).id('not ' ~ entry.id).all() %}
+
+        <div class="col-3">
+            <img src="{{ entry.picture.one().getUrl() }}" alt="..." style="width: 75px; border-radius: 10px 0px 0px 10px;">
         </div>
         <div class="col-8">
-            <p>Political Postcards Drive Your Message Home</p>
-            <p><small>June 25, 2020</small></p>
+            <a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">
+            <p class="mb-0">{{ entry.title }}</p>
+            <p><small>{{ entry.postDate | date("M d, Y") }}</small></p>
+            </a>
         </div>
-    </div>
-    <div class="row mb-3">
-        <div class="col-4">
-            <img src="/images/imagehero/tbbc-every-day-is-a-gift-dress.png" alt="..." style="width: 100px; border-radius: 10px 0px 0px 10px;" class="h-100">
+        <div class="col-1 p-0">
+            <a href="{{ entry.url }}"><i class="fas fa-chevron-right"></i></a>
+
         </div>
-        <div class="col-8">
-            <p>Political Postcards Drive Your Message Home</p>
-            <p><small>June 25, 2020</small></p>
-        </div>
-    </div>
-    <div class="row mb-3">
-        <div class="col-4">
-            <img src="/images/imagehero/tbbc-every-day-is-a-gift-dress.png" alt="..." style="width: 100px; border-radius: 10px 0px 0px 10px;" class="h-100">
-        </div>
-        <div class="col-8">
-            <p>Political Postcards Drive Your Message Home</p>
-            <p><small>June 25, 2020</small></p>
-        </div>
+
+        {% endfor %}
     </div>
 </div>
