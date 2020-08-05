@@ -12,7 +12,13 @@
             <div class="col-lg-7 col-md-12 col-sm-12">
                 <div class="card ml-0 ml-lg-5 mb-5">
                     <div class="card-body">
-                        <p>{{ entry.serviceLine|upper }}</p>
+                        
+                        {% for entry in entry.serviceLine.all() %}
+
+                        <p>{{ entry.title|upper }}</p>
+
+                        {% endfor %}
+
                         <h2>{{ entry.title }}</h2>
                         <h3>{{ entry.blogLeaderline }}</h3>
                         <div class="row mt-3">

@@ -4,7 +4,12 @@
 {% for entry in craft.entries.section('Blog').limit(1).all() %}
 
     <div class="col-md-5">
-      <p>{{ entry.serviceLine|upper }}</p>
+      {% for entry in entry.serviceLine.all() %}
+
+      <p>{{ entry.title|upper }}</p>
+
+      {% endfor %}
+
       <h2><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h2>
       <p>
         {{ entry.blogBody|striptags|slice(0, 250)|default('Read More') }}
@@ -31,11 +36,17 @@
   {% for entry in craft.entries.section('Blog').offset(1).limit(2).all() %}
 
   <div class="col-2">
+
+    {% for entry in entry.serviceLine.all() %}
+
     <img
       class="image img-fluid"
       src="{{ entry.serviceLineIcon.one().getUrl() }}"
       alt="{{ entry.serviceLine }} icon"
     />
+
+    {% endfor %}
+    
   </div>
   <div class="col-10">
     <h3><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>

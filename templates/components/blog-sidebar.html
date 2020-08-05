@@ -5,10 +5,36 @@
     <button type="button" class="lgsb">sign up</button>
 </div>
 <div class="mt-5">
+    {% set tags = entry.blogTags %}
+
+    {% set entries = craft.entries.section('Blog').orderBy('dateCreated desc').relatedTo(tags).limit(3).id('not ' ~ entry.id).all() %}
+
+    <!-- If an entry has tags this gives us other entries with similar tags and the section is titled Most Recent Related. -->
+
+    {% if tags | length %}
+
     <h3>MOST RECENT RELATED</h3>
-    <p>Social Media for ECommerce: How and Where to Start Your Strategy</p>
-    <p>What is Local SEO and How to Improve Your Ranking</p>
-    <p>5 Reasons you Need a Small Business Website</p>
+
+    {% for entry in entries %}
+
+    <p><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></p>
+
+    {% endfor %}
+
+    <!-- If an entry does not have tags we are given the most recent blog posts and the section is titled Most Recent. -->
+
+    {% else %}
+
+    <h3>MOST RECENT</h3>
+
+    {% for entry in craft.entries.section('Blog').orderBy('dateCreated desc').limit(3).id('not ' ~ entry.id).all() %}
+
+    <p><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></p>
+
+    {% endfor %}
+
+    {% endif %}
+
     <button type="button" class="lgsb"><a href="https://bluegrass-website-new.test/blog" class="text-white">explore more</a></button>
 </div>
 <div class="mt-4">

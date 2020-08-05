@@ -18,7 +18,13 @@
         <div class="card mt-3 h-100">
         <img src="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-subtitle bodyText">{{ entry.serviceLine|upper }}</p>
+
+            {% for entry in entry.serviceLine.all() %}
+
+            <p class="card-subtitle bodyText">{{ entry.title|upper }}</p>
+
+            {% endfor %}
+            
             <h3 class="card-title mb-2"><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
           </div>
 

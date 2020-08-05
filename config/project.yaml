@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1596554903
+dateModified: 1596650465
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -1057,65 +1057,19 @@ fields:
     name: 'Service Line'
     searchable: true
     settings:
-      options:
-        -
-          __assoc__:
-            -
-              - label
-              - 'Direct Marketing'
-            -
-              - value
-              - 'Direct Marketing'
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Fulfillment
-            -
-              - value
-              - Fulfillment
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Fundraising
-            -
-              - value
-              - Fundraising
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Interactive
-            -
-              - value
-              - Interactive
-            -
-              - default
-              - ''
-        -
-          __assoc__:
-            -
-              - label
-              - Transactional
-            -
-              - value
-              - Transactional
-            -
-              - default
-              - ''
+      allowSelfRelations: ''
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      source: null
+      sources:
+        - 'section:08016667-7ed0-4901-981b-0bcaace95a06'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
     translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Dropdown
+    translationMethod: site
+    type: craft\fields\Entries
   f54f9341-be0d-4841-8d88-649150159747:
     contentColumnType: string
     fieldGroup: 7bca8b6b-f8c1-4edc-b235-a6509d0aa5d4
@@ -1246,6 +1200,9 @@ globalSets:
               528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                 required: false
                 sortOrder: 2
+              94377b09-8631-4bdf-b0be-fe65c7f969c9:
+                required: false
+                sortOrder: 4
               ae6a83f6-8d78-4932-9800-16ed3134e37b:
                 required: false
                 sortOrder: 3
@@ -2830,25 +2787,22 @@ sections:
                 fields:
                   690c44b8-6960-4311-b5b2-2e43266c1a37:
                     required: false
-                    sortOrder: 7
+                    sortOrder: 6
                   6f780888-e048-43cc-ab34-a9a0de59acee:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 5
                   7a43bd01-e0b4-421b-8574-e3be1b2fb5b9:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 4
                   819a02e8-d990-4209-a4a6-fbe645886d75:
                     required: false
-                    sortOrder: 4
-                  d5956b69-0822-469f-aeb2-183f5df6840c:
-                    required: false
-                    sortOrder: 2
+                    sortOrder: 3
                   ec549621-6d25-4376-acc1-332b2fa1a9ad:
                     required: false
                     sortOrder: 1
                   f54f9341-be0d-4841-8d88-649150159747:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 2
                 name: Blog
                 sortOrder: 1
               -
