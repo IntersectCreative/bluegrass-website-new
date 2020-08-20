@@ -9,7 +9,11 @@
     {% if loop.first %}
 
     <div class="carousel-item active">
+      {% if entry.picture | length %}
       <div class="row mt-5" style="background: url('{{ entry.picture.one().getUrl() }}') center /cover no-repeat; height: 575px;">
+        {% else %}
+      <div class="row mt-5" style="background-color: black; height: 575px;"></div>
+      {% endif %}
         <div class="col-8">
         </div>
         <div class="col-3">
@@ -29,7 +33,11 @@
       {% else %}
 
       <div class="carousel-item">
-        <div class="row mt-5" style="background: url('{{ entry.picture.one().getUrl() }}') center /cover no-repeat; height: 575px;">
+        {% if entry.picture | length %}
+      <div class="row mt-5" style="background: url('{{ entry.picture.one().getUrl() }}') center /cover no-repeat; height: 575px;">
+        {% else %}
+      <div class="row mt-5" style="background-color: black; height: 575px;"></div>
+      {% endif %}
           <div class="col-8">
           </div>
           <div class="col-3">

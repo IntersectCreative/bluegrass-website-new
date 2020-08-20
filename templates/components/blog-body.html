@@ -20,7 +20,7 @@
             <img src="{{ entry.employeePicture.one().getUrl() }}" alt="Picture of {{ entry.title }}" class="" style="height: 75px; width: 75px;">
         </div>
         <div class="col-9">
-            <a href="{{entry.url}}"<p>{{ entry.title|upper }}</a><br><i>{{ entry.employeeTitle }}</i><br>{{ entry.dateCreated | date('F j, Y') }}</p>
+            <a href="{{entry.url}}"<p>{{ entry.title|upper }}</a><br><i>{{ entry.employeeTitle }}</i><br>{{ entry.postDate | date('M d, Y') }}</p>
         </div>
 
     {% endfor %}

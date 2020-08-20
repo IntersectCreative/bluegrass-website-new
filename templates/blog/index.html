@@ -16,7 +16,11 @@
 
       <div class="col-lg-4 mb-4">
         <div class="card mt-3 h-100">
+          {% if entry.picture | length %}
         <img src="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
+        {% else %}
+        <img src="/images/blog/Stocksy_txp5f38c8e57MT000_Original_315051.jpg" class="card-img-top" alt="...">
+        {% endif %}
           <div class="card-body">
 
             {% for entry in entry.serviceLine.all() %}
@@ -30,7 +34,24 @@
 
           {% for author in entry.selectAuthor.all() %}
 
-            <a href="{{ author.url }}"<p class="bodyText"><img src="{{ author.employeePicture.one().getUrl() }}" alt="{{ author.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px;">{{ author.title|upper }}</p></a>		
+            <a href="{{ author.url }}">
+              <p class="bodyText">
+                
+              {% if author.employeePicture | length %}
+              <p class="bodyText">
+              <img src="{{ author.employeePicture.one().getUrl() }}" alt="{{ author.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px; border-radius: 50%;">
+              {{ author.title|upper }}
+
+              {% else %}
+
+              <p class="bodyText ml-3" style="margin-bottom: 42px;">{{ author.title|upper }}
+
+              {% endif %}
+
+              
+
+              </p>
+            </a>		
 
           {% endfor %}
 

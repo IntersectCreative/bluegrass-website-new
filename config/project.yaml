@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1596650465
+dateModified: 1596741736
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -1058,7 +1058,7 @@ fields:
     searchable: true
     settings:
       allowSelfRelations: ''
-      limit: '1'
+      limit: '2'
       localizeRelations: false
       selectionLabel: ''
       source: null
@@ -3084,3 +3084,22 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: '@web/images/bluegrass'
+  f9548784-bf22-4ca1-b237-52f3dd132432:
+    fieldLayouts:
+      d1e341f0-323f-4a07-b009-9707681401bd:
+        tabs:
+          -
+            fields:
+              32a35c2d-7747-4707-91f2-410f02d41a4d:
+                required: false
+                sortOrder: 1
+            name: 'Tab 1'
+            sortOrder: 1
+    handle: blogImages
+    hasUrls: true
+    name: 'Blog Images'
+    settings:
+      path: '@webroot/images/blog'
+    sortOrder: 6
+    type: craft\volumes\Local
+    url: '@web/images/blog'
