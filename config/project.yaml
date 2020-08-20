@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1596741736
+dateModified: 1597943866
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -73,6 +73,18 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  12588cfc-649e-454c-8fe5-cf79ecb75793:
+    contentColumnType: boolean
+    fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
+    handle: currentlyEmployedByBluegrass
+    instructions: 'Toggle this field to gray if the employee is no longer employed by Bluegrass but has Blog Posts tied to their name.'
+    name: 'Currently employed by Bluegrass'
+    searchable: true
+    settings:
+      default: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
   27b5db1b-ac71-4b64-9b56-c132a05599c6:
     contentColumnType: text
     fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
@@ -2924,24 +2936,27 @@ sections:
             tabs:
               -
                 fields:
+                  12588cfc-649e-454c-8fe5-cf79ecb75793:
+                    required: false
+                    sortOrder: 4
                   27b5db1b-ac71-4b64-9b56-c132a05599c6:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 6
                   3eff2e71-eab9-465a-94be-8eaab3f561ce:
                     required: false
                     sortOrder: 1
                   8608d852-cd56-47f1-ae5f-13a1227de62a:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 5
                   9f48962b-1e5c-4bec-bf20-bc74b0c9319a:
                     required: false
                     sortOrder: 3
                   c5405c57-c331-45dd-bb73-59075c4bd47e:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 7
                   fddca6bb-5ab9-47fd-9441-3531288a2e37:
                     required: false
-                    sortOrder: 7
+                    sortOrder: 8
                   fde17dfc-bbf8-4858-b1c3-372c953b15fd:
                     required: false
                     sortOrder: 2
