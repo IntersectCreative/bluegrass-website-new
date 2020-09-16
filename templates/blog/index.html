@@ -30,18 +30,20 @@
             {% endfor %}
             
             <h3 class="card-title mb-2"><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
+            
+            <p class="card-subtitle bodyText">{{ entry.postDate|date('long') }}</p>
           </div>
 
           {% for author in entry.selectAuthor.all() %}
 
             <a href="{{ author.url }}">
-              <p class="bodyText">
+              
                 
               {% if author.employeePicture | length %}
               <p class="bodyText">
               <img src="{{ author.employeePicture.one().getUrl() }}" alt="{{ author.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px; border-radius: 50%;">
               {{ author.title|upper }}
-
+              </p>
               {% else %}
 
               <p class="bodyText ml-3" style="margin-bottom: 42px;">{{ author.title|upper }}
@@ -54,7 +56,7 @@
             </a>		
 
           {% endfor %}
-
+          
           </div>
       </div>
 

@@ -6,15 +6,20 @@
 
         <div class="col-3">
             {% if entry.picture | length %}
+
             <img src="{{ entry.picture.one().getUrl() }}" alt="..." style="width: 75px; border-radius: 10px 0px 0px 10px;">
+
             {% else %}
+
             <img src="/images/blog/Stocksy_txp5f38c8e57MT000_Original_315051.jpg" class="card-img-top" alt="..." style="width: 75px; border-radius: 10px 0px 0px 10px;">
+
             {% endif %}
+            
         </div>
         <div class="col-8">
             <a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">
             <p class="mb-0">{{ entry.title }}</p>
-            <p><small>{{ entry.postDate | date("M d, Y") }}</small></p>
+            <p><small>{{ entry.postDate | date('long') }}</small></p>
             </a>
         </div>
         <div class="col-1 p-0">

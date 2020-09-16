@@ -117,16 +117,20 @@
                 <div class="card mt-3 h-100">
 
                     {% if blog.picture | length %}
-                <img src="{{ blog.picture.one().getUrl() }}" class="card-img-top" alt="...">
+                    <img src="{{ blog.picture.one().getUrl() }}" class="card-img-top" alt="...">
 
                     {% else %}
 
+                    <img src="/images/blog/Stocksy_txp5f38c8e57MT000_Original_315051.jpg" class="card-img-top" alt="...">
+                    
                     {% endif %}
+
                     <div class="card-body">
                         {% for entry in blog.serviceLine.all() %}
                     <p class="card-subtitle bodyText">{{ entry.title|upper }}</p>
                         {% endfor %}
                     <h3 class="card-title mb-2"><a href="{{ blog.url }}" style="color: inherit; text-decoration: inherit;">{{ blog.title }}</a></h3>
+                    <p class="card-subtitle bodyText">{{ blog.postDate | date('long')}}</p>
                     </div>
                     {% if entry.employeePicture | length %}
                     <a href="{{ entry.url }}"<p class="bodyText"><img src="{{ entry.employeePicture.one().getUrl() }}" alt="..." class="ml-3 mr-3" style="height: 75px; width: 75px; border-radius: 50%;">{{ entry.title|upper }}</p></a>
@@ -143,36 +147,7 @@
 
         {% else %}
 
-        <!-- <div class="container mt-5 text-lg-left text-center">
-            <h4>Latest Blogs</h4>
-        </div>
-
-        <div class="container mt-5">
-            <div class="row text-left">
-
-            {% for entry in craft.entries().section('blog').limit(3).all() %}
-
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100 mt-3">
-                    <img src="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-subtitle bodyText">{{ entry.serviceLine|upper }}</p>
-                        <h3 class="card-title mb-2"><a href="{{entry.url}}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
-                    </div>
-
-                {% for author in entry.selectAuthor.all() %}
-
-                    <a href="{{ author.url }}"<p class="bodyText"><img src="{{ author.employeePicture.one().getUrl() }}" alt="{{ author.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px;">{{ author.title|upper }}</p></a>		
-                
-                {% endfor %}
-                </div>
-                </div>
-            
-
-            {% endfor %}
-
-            </div>
-        </div> -->
+        <!-- If an employee does not have blogs then nothing is listed below their employee profile. -->
 
         {% endif %}
 </div>

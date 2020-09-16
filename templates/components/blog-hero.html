@@ -41,10 +41,10 @@
                                 {% endif %}
                             </div>
                             <div class="col-9">
-                                <a href="{{entry.url}}"<p>{{ entry.title|upper }}</a><br><i>{{ entry.employeeTitle }}</i><br>{{ entry.postDate|date('M d, Y') }}</p>
+                                <a href="{{entry.url}}"<p>{{ entry.title|upper }}</a><br><i>{{ entry.employeeTitle }}</i>{% endfor %}<br>{{ entry.postDate|date('long') }}</p>
                             </div>
 
-                        {% endfor %}
+                        
                         
                         </div>
                     </div>
@@ -83,10 +83,10 @@
                                 {% endif %}
                             </div>
                             <div class="col-9">
-                                <a href="{{ entry.url }}"<p>{{ entry.title|upper }}</a><br><i>{{ entry.employeeTitle }}</i><br>{{ entry.postDate|date('long') }}</p>
+                                <a href="{{ entry.url }}"<p>{{ entry.title|upper }}</a><br><i>{{ entry.employeeTitle }}</i>{% endfor %}<br>{{ entry.postDate|date('long') }}</p>
                             </div>
 
-                        {% endfor %}
+                        
                         
                         </div>
                     </div>

@@ -20,7 +20,8 @@
 
 				{% endfor %}
 				
-			  	<h3 class="card-title mb-2"><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
+				  <h3 class="card-title mb-2"><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
+				  <p class="card-subtitle bodyText">{{ entry.postDate | date('long')}}</p>
 			  </div>
 
 			  
