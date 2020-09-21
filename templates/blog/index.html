@@ -5,63 +5,101 @@
 
 {% include "/components/navbar-services.html" %}
 
+
+<!-- If the page requested is not the first page of blog results, the blog-index is not included at the top of the page. -->
+{% if craft.request.getPageNum() == 1 %} 
+
 {% include "/components/blog-index.html" %}
+
+{% endif %}
+
+<!-- If the page is not page one add a spacer of 100px to make space for navbar. -->
+
+{% if craft.request.getPageNum() > 1 %}
+<div style="height: 100px;"></div>
+{% endif %}
 
 {% include "/components/resource-search-bar.html" %}
 
 <div class="container mt-5">
   <div class="row text-left">
 
-  {% for entry in craft.entries.section('Blog').offset(1).all() %}
+    {% set query = craft.entries()
+      .section('blog')
+      .limit(30)
+      .offset(1) %}
+  
+    {% paginate query as pageInfo, pageEntries %}
+    {% do seomatic.helper.paginate(pageInfo) %}
 
-      <div class="col-lg-4 mb-4">
-        <div class="card mt-3 h-100">
-          {% if entry.picture | length %}
-        <img src="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
-        {% else %}
-        <img src="/images/blog/Stocksy_txp5f38c8e57MT000_Original_315051.jpg" class="card-img-top" alt="...">
-        {% endif %}
-          <div class="card-body">
+    {% for entry in pageEntries %}
+    <div class="col-lg-4 mb-4 mt-2">
+      <div class="card mt-3 h-100">
+        {% if entry.picture | length %}
+      <img src="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
+      {% else %}
+      <img src="/images/blog/Stocksy_txp5f38c8e57MT000_Original_315051.jpg" class="card-img-top" alt="...">
+      {% endif %}
+        <div class="card-body">
 
-            {% for entry in entry.serviceLine.all() %}
+          {% for entry in entry.serviceLine.all() %}
 
-            <p class="card-subtitle bodyText">{{ entry.title|upper }}</p>
-
-            {% endfor %}
-            
-            <h3 class="card-title mb-2"><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
-            
-            <p class="card-subtitle bodyText">{{ entry.postDate|date('long') }}</p>
-          </div>
-
-          {% for author in entry.selectAuthor.all() %}
-
-            <a href="{{ author.url }}">
-              
-                
-              {% if author.employeePicture | length %}
-              <p class="bodyText">
-              <img src="{{ author.employeePicture.one().getUrl() }}" alt="{{ author.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px; border-radius: 50%;">
-              {{ author.title|upper }}
-              </p>
-              {% else %}
-
-              <p class="bodyText ml-3" style="margin-bottom: 42px;">{{ author.title|upper }}
-
-              {% endif %}
-
-              
-
-              </p>
-            </a>		
+          <p class="card-subtitle bodyText">{{ entry.title|upper }}</p>
 
           {% endfor %}
           
-          </div>
-      </div>
+          <h3 class="card-title mb-2"><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
+          
+          <p class="card-subtitle bodyText">{{ entry.postDate|date('long') }}</p>
+        </div>
 
-  {% endfor %}
+        {% for author in entry.selectAuthor.all() %}
+
+          <a href="{{ author.url }}">
+            
+              
+            {% if author.employeePicture | length %}
+            <p class="bodyText">
+            <img src="{{ author.employeePicture.one().getUrl() }}" alt="{{ author.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px; border-radius: 50%;">
+            {{ author.title|upper }}
+            </p>
+            {% else %}
+
+            <p class="bodyText ml-3" style="margin-bottom: 42px;">{{ author.title|upper }}
+
+            {% endif %}
+
+            
+
+            </p>
+          </a>		
+
+        {% endfor %}
+        
+        </div>
+    </div>
+   
+    {% endfor %}
+    
   </div>
+</div>
+
+<div class="text-center mt-3">
+  <a href="{{ pageInfo.firstUrl }}">First Page</a>
+  {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">Previous Page</a>{% endif %}
+  
+  {% for page, url in pageInfo.getPrevUrls(5) %}
+      <a href="{{ url }}">{{ page }}</a>
+  {% endfor %}
+  
+  <span class="current">{{ pageInfo.currentPage }}</span>
+  
+  {% for page, url in pageInfo.getNextUrls(5) %}
+      <a href="{{ url }}">{{ page }}</a>
+  {% endfor %}
+  
+  {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}">Next Page</a>{% endif %}
+  <a href="{{ pageInfo.lastUrl }}">Last Page</a>
 </div>
 
 {% include "/components/footer.html" %}
