@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1600712196
+dateModified: 1601490760
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -3042,6 +3042,15 @@ volumes:
     sortOrder: 3
     type: craft\volumes\Local
     url: '@web/images/branding'
+  0e611afd-a16d-4577-b7ad-ed3d01d7fcf1:
+    handle: jobApplications
+    hasUrls: false
+    name: 'Job Applications'
+    settings:
+      path: '@webroot/images/jobapplications'
+    sortOrder: 7
+    type: craft\volumes\Local
+    url: ''
   2c9440b7-d3e9-4b01-80e1-008c2764a529:
     fieldLayouts:
       833c0711-aa5a-4a35-b65b-805c10bb3d56:
