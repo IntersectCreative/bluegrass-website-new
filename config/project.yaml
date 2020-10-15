@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1601490760
+dateModified: 1602081003
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -30,6 +30,8 @@ fieldGroups:
     name: Jobs
   a6a4dfd7-85ec-4401-9660-83f696085bf7:
     name: General
+  c58a5554-fc87-40ab-988c-a6ef8506fbec:
+    name: Amplify
   cbb81a4a-d66f-4c65-b36d-05b4bba5e406:
     name: Hero
   d0828146-8abe-49b5-87cd-3e7f3b6bacdb:
@@ -243,6 +245,24 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
+  35e87cfa-1959-4c96-a8cb-32c051cbe692:
+    contentColumnType: text
+    fieldGroup: c58a5554-fc87-40ab-988c-a6ef8506fbec
+    handle: callOut
+    instructions: 'Enter the call out text on the Amplify by Bluegrass page.'
+    name: 'Call Out'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   3eff2e71-eab9-465a-94be-8eaab3f561ce:
     contentColumnType: text
     fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
@@ -375,6 +395,29 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  540ca61a-7022-43f9-92e4-0f79f663bb58:
+    contentColumnType: text
+    fieldGroup: c58a5554-fc87-40ab-988c-a6ef8506fbec
+    handle: howDoesItWork
+    instructions: ''
+    name: 'How does it work'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
   5aadd46c-f7e1-468b-81ec-88130171f14e:
     contentColumnType: text
     fieldGroup: d0828146-8abe-49b5-87cd-3e7f3b6bacdb
@@ -449,6 +492,29 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Tags
+  6910cd61-b9ed-4d47-bd95-14167fc3004c:
+    contentColumnType: text
+    fieldGroup: c58a5554-fc87-40ab-988c-a6ef8506fbec
+    handle: deliveryCopy
+    instructions: ''
+    name: 'Delivery Copy'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
   6e35cfe8-41f9-47be-b9ca-6def1723e4bb:
     contentColumnType: string
     fieldGroup: 99a6ae32-c12a-4521-81e9-07fa865916ad
@@ -720,6 +786,21 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
+  8a9f767f-fb84-4577-a54d-cedda20bb65b:
+    contentColumnType: string
+    fieldGroup: c58a5554-fc87-40ab-988c-a6ef8506fbec
+    handle: amplifyChannels
+    instructions: 'Enter the Amplify marketing channels here along with their icon and description of the service.'
+    name: 'Amplify Channels'
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_amplifychannels}}'
+      maxBlocks: ''
+      minBlocks: ''
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   94377b09-8631-4bdf-b0be-fe65c7f969c9:
     contentColumnType: text
     fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
@@ -1553,6 +1634,94 @@ matrixBlockTypes:
     handle: song
     name: Song
     sortOrder: 4
+  b1f21d5c-9a6b-43b4-8338-c45d5fe9b3a0:
+    field: 8a9f767f-fb84-4577-a54d-cedda20bb65b
+    fieldLayouts:
+      81b7c3bb-02f0-4066-bbb2-45b692b9fa7f:
+        tabs:
+          -
+            fields:
+              3f954d71-eb50-4e05-99a7-a9be3b492767:
+                required: true
+                sortOrder: 3
+              5f863d70-5e95-4044-9285-25ab03ce8272:
+                required: true
+                sortOrder: 1
+              8bccdfad-d105-4c3f-984e-c8b73b24abf9:
+                required: true
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      3f954d71-eb50-4e05-99a7-a9be3b492767:
+        contentColumnType: text
+        fieldGroup: null
+        handle: channelDescription
+        instructions: ''
+        name: 'channel description'
+        searchable: true
+        settings:
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      5f863d70-5e95-4044-9285-25ab03ce8272:
+        contentColumnType: text
+        fieldGroup: null
+        handle: channelName
+        instructions: ''
+        name: 'channel name'
+        searchable: true
+        settings:
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      8bccdfad-d105-4c3f-984e-c8b73b24abf9:
+        contentColumnType: string
+        fieldGroup: null
+        handle: channelIcon
+        instructions: 'Select the icon for this channel.'
+        name: 'channel icon'
+        searchable: true
+        settings:
+          allowSelfRelations: ''
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: 'Add an icon'
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+          singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources:
+            - 'volume:0a5c9a50-eed7-4895-800b-16f2367c962a'
+          targetSiteId: null
+          useSingleFolder: false
+          validateRelatedElements: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+    handle: channel
+    name: channel
+    sortOrder: 1
   c3ef2fa4-c5ae-4181-8c9d-206fed8fe5ae:
     field: e6b5a3fe-802c-4c2a-bcbc-fe2a1d7473d0
     fieldLayouts:
@@ -2863,6 +3032,60 @@ sections:
         hasUrls: true
         template: sign-up/_entry
         uriFormat: sign-up
+    type: single
+  b75f6ca4-eef9-4ef3-b133-57a22df35e00:
+    enableVersioning: true
+    entryTypes:
+      92005c8e-ef17-48b3-94fa-b68f84d52ba3:
+        fieldLayouts:
+          11ffa8ff-7813-4197-9983-26a24b435709:
+            tabs:
+              -
+                fields:
+                  35e87cfa-1959-4c96-a8cb-32c051cbe692:
+                    required: false
+                    sortOrder: 3
+                  540ca61a-7022-43f9-92e4-0f79f663bb58:
+                    required: false
+                    sortOrder: 4
+                  6910cd61-b9ed-4d47-bd95-14167fc3004c:
+                    required: false
+                    sortOrder: 5
+                  8a9f767f-fb84-4577-a54d-cedda20bb65b:
+                    required: false
+                    sortOrder: 1
+                  94377b09-8631-4bdf-b0be-fe65c7f969c9:
+                    required: false
+                    sortOrder: 2
+                name: Amplify
+                sortOrder: 1
+        handle: amplifyByBluegrass
+        hasTitleField: false
+        name: 'Amplify By Bluegrass'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: ''
+    handle: amplifyByBluegrass
+    name: 'Amplify By Bluegrass'
+    previewTargets:
+      -
+        __assoc__:
+          -
+            - label
+            - 'Primary entry page'
+          -
+            - urlFormat
+            - '{url}'
+          -
+            - refresh
+            - '1'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: amplify-by-bluegrass/_entry
+        uriFormat: amplify-by-bluegrass
     type: single
   c20f6439-c7ec-4b99-b067-9f0e07584d73:
     enableVersioning: true

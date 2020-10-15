@@ -18,7 +18,7 @@
 </div>
 
 <div class="container">
-        <form id="application" class="text-left">
+        <div id="application">
                 <p class="mb-3 font-italic">Complete the application below to apply for the position!</p>
                 {{ craft.freeform.form("application", 
                 {
@@ -27,7 +27,7 @@
                 jobTitle: entry.title,
                 }
                 }).render() }}
-        </form>
+        </div>
 </div>
 
 {% include "/components/footer.html" %}

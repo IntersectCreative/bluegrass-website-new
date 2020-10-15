@@ -8,13 +8,40 @@
         <form action="/blog/results">
               <input type="search" name="q" placeholder="Search Resources" class="form-control form-control-lg">
               <button type="submit" class="lgsw ml-lg-3 mt-3 mt-xl-0">Search</button>
-      </form>
+      
+      </div>
+    </div>
+    <div class="mt-5">
+      <div class="row">
+        <div class="col">
+          <p>Industry</p>
+
+          {% for entry in craft.entries.section('Services').level(1).all() %}
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="i" value="{{ entry.title }}" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              {{ entry.title }}
+            </label>
+          </div>
+
+          {% endfor %}
+
+        </div>
+        <div class="col">
+          <p>Type</p>
+          <p>Blog</p>
+        </div>
+        <div class="col">
+          <p>Topic</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
+</form>
 {% set searchQuery = craft.app.request.getParam('q') %}
+{% set industryQuery = craft.app.request.getParam('i') %}
 
 {% if searchQuery %}
 
@@ -39,5 +66,30 @@
 
 {% endif %}
 </div>
+
+{% if industryQuery %}
+
+{% set entries = craft.entries()
+  .section('blog')
+  .search(industryQuery)
+  .orderBy('score')
+  .all() %}
+
+  <div id="blog-search-result" class="container">
+    {% if entries|length %}
+        <p>{{ entries|length }} results found for: {{ industryQuery }}</p>
+  
+        <ul>
+            {% for entry in entries %}
+                <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Your search for “{{ industryQuery }}” didn’t return any results.</p>
+    {% endif %}
+
+  </div>
+
+{% endif %}
 
 

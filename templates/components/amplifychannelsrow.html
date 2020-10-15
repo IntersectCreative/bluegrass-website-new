@@ -1,0 +1,12 @@
+<div class="container mt-5">
+    <div class="row text-center">
+        {% for block in entry.amplifyChannels.all() %}
+
+        <div class="col pl-0 pr-0">
+            <img class="stat" src="{{ block.channelIcon.one().getUrl() }}" alt="" height="100px" width="100px">
+            <p style="font-weight: bold; font-size: smaller;">{{ block.channelName }}</p>
+        </div>
+
+        {% endfor %}
+    </div>
+</div>

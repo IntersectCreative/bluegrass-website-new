@@ -47,6 +47,7 @@ html, body {
 .nav-item {
   color: white;
   text-align: center;
+  padding: 15px;
 }
 
 .nav-icon {
@@ -532,7 +533,6 @@ video {
   color: white;
   display: flex;
   align-items: center;
-  height: 200px;
   text-shadow: 0px 2px 4px #000000;
 }
 
