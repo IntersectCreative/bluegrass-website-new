@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1602081003
+dateModified: 1605728701
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -976,6 +976,21 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  b48f7be4-9b17-4271-a947-f91fbf074858:
+    contentColumnType: string
+    fieldGroup: 14845e65-d10e-4335-95d6-68c36bfbbbbc
+    handle: subServiceResourceBlock
+    instructions: 'These fields serve to link out to associated resources.'
+    name: 'Sub-service Resource Block'
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_subserviceresourceblock}}'
+      maxBlocks: ''
+      minBlocks: ''
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   b6fb8735-f940-46b4-9a17-d96f5b5e0314:
     contentColumnType: text
     fieldGroup: d0828146-8abe-49b5-87cd-3e7f3b6bacdb
@@ -1436,6 +1451,114 @@ matrixBlockTypes:
     handle: pets
     name: Pets
     sortOrder: 2
+  45b4c13d-8a4c-47b2-a6d6-06a3c88441f1:
+    field: b48f7be4-9b17-4271-a947-f91fbf074858
+    fieldLayouts:
+      b307ced3-f875-4e22-a25a-fb98db1f0dd3:
+        tabs:
+          -
+            fields:
+              16716246-e128-49c5-b9c2-898b657ef0c3:
+                required: false
+                sortOrder: 2
+              42ba96ae-5b7b-4437-815c-c3f7437e695f:
+                required: true
+                sortOrder: 3
+              8c0ee275-6371-4dce-8583-6710003bc361:
+                required: true
+                sortOrder: 1
+              9517c7ab-0a59-4c0f-9922-98be1ddd0689:
+                required: false
+                sortOrder: 4
+            name: Content
+            sortOrder: 1
+    fields:
+      16716246-e128-49c5-b9c2-898b657ef0c3:
+        contentColumnType: string
+        fieldGroup: null
+        handle: image
+        instructions: ''
+        name: Image
+        searchable: true
+        settings:
+          allowSelfRelations: ''
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          defaultUploadLocationSubpath: ''
+          limit: ''
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+          singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: false
+          validateRelatedElements: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      42ba96ae-5b7b-4437-815c-c3f7437e695f:
+        contentColumnType: text
+        fieldGroup: null
+        handle: copy
+        instructions: 'This is the copy describing the heading'
+        name: Copy
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: true
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+          removeEmptyTags: '1'
+          removeInlineStyles: '1'
+          removeNbsp: '1'
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+      8c0ee275-6371-4dce-8583-6710003bc361:
+        contentColumnType: text
+        fieldGroup: null
+        handle: heading
+        instructions: 'This is the heading for each block.'
+        name: Heading
+        searchable: true
+        settings:
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      9517c7ab-0a59-4c0f-9922-98be1ddd0689:
+        contentColumnType: string(255)
+        fieldGroup: null
+        handle: resourceUrl
+        instructions: 'This is the URL for the associated resource we are linking to.'
+        name: 'Resource URL'
+        searchable: true
+        settings:
+          maxLength: '255'
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\Url
+    handle: subServiceResourceBlock
+    name: 'sub-service Resource Block'
+    sortOrder: 1
   45e2fd4f-66ac-41c6-b743-d91327abb49c:
     field: c5405c57-c331-45dd-bb73-59075c4bd47e
     fieldLayouts:
@@ -2275,10 +2398,13 @@ sections:
                 fields:
                   47f85bb3-0be4-424e-a3f8-01b098ee787a:
                     required: false
-                    sortOrder: 2
-                  9ef27649-5aa6-4863-9500-c630405c5822:
-                    required: false
                     sortOrder: 1
+                  94377b09-8631-4bdf-b0be-fe65c7f969c9:
+                    required: false
+                    sortOrder: 2
+                  b48f7be4-9b17-4271-a947-f91fbf074858:
+                    required: false
+                    sortOrder: 3
                 name: Sub-services
                 sortOrder: 5
               -
@@ -2346,21 +2472,11 @@ sections:
                 sortOrder: 4
               -
                 fields:
-                  47f85bb3-0be4-424e-a3f8-01b098ee787a:
-                    required: false
-                    sortOrder: 2
-                  9ef27649-5aa6-4863-9500-c630405c5822:
-                    required: false
-                    sortOrder: 1
-                name: Sub-services
-                sortOrder: 5
-              -
-                fields:
                   9e8302b4-a171-42a3-ac02-fb0349878eb8:
                     required: false
                     sortOrder: 1
                 name: SEO
-                sortOrder: 6
+                sortOrder: 5
         handle: fundraising
         hasTitleField: true
         name: Fundraising
@@ -2388,16 +2504,16 @@ sections:
                 fields:
                   0b1ed3ee-e3ad-494a-99ab-c6821d4e8400:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 4
                   824c29dd-2c54-4ab2-bdc5-cf30d8530204:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 5
                   9b5a46e5-5a48-44b3-9c74-29bb68f92c00:
                     required: true
-                    sortOrder: 3
+                    sortOrder: 2
                   d5956b69-0822-469f-aeb2-183f5df6840c:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 3
                   ec549621-6d25-4376-acc1-332b2fa1a9ad:
                     required: true
                     sortOrder: 1
@@ -2408,6 +2524,9 @@ sections:
                   0c664d0d-025d-46b1-99a5-75b9aab6e905:
                     required: false
                     sortOrder: 1
+                  9ef27649-5aa6-4863-9500-c630405c5822:
+                    required: false
+                    sortOrder: 4
                   b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
                     required: false
                     sortOrder: 3
@@ -2420,10 +2539,10 @@ sections:
                 fields:
                   47f85bb3-0be4-424e-a3f8-01b098ee787a:
                     required: false
-                    sortOrder: 2
-                  9ef27649-5aa6-4863-9500-c630405c5822:
-                    required: false
                     sortOrder: 1
+                  94377b09-8631-4bdf-b0be-fe65c7f969c9:
+                    required: false
+                    sortOrder: 2
                 name: Sub-services
                 sortOrder: 4
               -
@@ -2497,6 +2616,9 @@ sections:
                   9ef27649-5aa6-4863-9500-c630405c5822:
                     required: false
                     sortOrder: 1
+                  b48f7be4-9b17-4271-a947-f91fbf074858:
+                    required: false
+                    sortOrder: 3
                 name: Sub-services
                 sortOrder: 5
               -
@@ -2564,21 +2686,11 @@ sections:
                 sortOrder: 4
               -
                 fields:
-                  47f85bb3-0be4-424e-a3f8-01b098ee787a:
-                    required: false
-                    sortOrder: 2
-                  9ef27649-5aa6-4863-9500-c630405c5822:
-                    required: false
-                    sortOrder: 1
-                name: Sub-services
-                sortOrder: 5
-              -
-                fields:
                   9e8302b4-a171-42a3-ac02-fb0349878eb8:
                     required: false
                     sortOrder: 1
                 name: SEO
-                sortOrder: 6
+                sortOrder: 5
         handle: fulfillment
         hasTitleField: true
         name: Fulfillment

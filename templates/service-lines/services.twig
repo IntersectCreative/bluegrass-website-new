@@ -8,6 +8,21 @@
 
     {% include "/components/services-temporary-body.html" %}
 
+{# The following component is only to be included on the Mailing Services Page. #}
+
+    {% if entry.title == "Mailing Services" %}    
+
+        {% include "/components/mailing-services.html" %}
+    
+    {% endif %}
+{# The following component is only to be included on the Creative Page. #}
+
+    {% if entry.title == "Creative" %}
+
+        {% include "/components/creative-decisions.html" %}
+
+    {% endif %}
+
     {% include "/components/block-trio.html" %}
 
     {% include "/components/sub-services-grid" %}
@@ -16,7 +31,7 @@
 
     {% include "/components/moreresources.html" %}
 
-        <div style="margin-top: 100px;">
+       <div style="margin-top: 100px;">
 
         {% include "/components/partner-logo-bar.html" %}
 

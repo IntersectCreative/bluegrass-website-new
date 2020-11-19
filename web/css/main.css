@@ -23,6 +23,16 @@ html, body {
   color: #000000;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ul li:before {
+  content: "—";
+  position: absolute;
+  margin-left: -20px;
+}
+
 .navbar-toggler {
   background-color: #006ea4 !important;
 }

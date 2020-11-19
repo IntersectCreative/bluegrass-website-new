@@ -27,14 +27,13 @@
 
         {% for entry in entries %}
 
-            <div class="col col-lg-4 text-center mb-3">
-                <a href="#collapse-{{entry.slug}}" data-toggle="collapse"><h3 class="mt-2">{{ entry.title }}</h3></a>
-                <div class="collapse multi-collapse" id="collapse-{{entry.slug}}">
-                    <div class="card card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    <a href="{{ entry.url }}" class="mt-3 btn btn-primary">Read More</a>
-                    </div>
-                  </div>
+            <div class="col col-lg-4 col-12 mb-3">
+                <img src="{{ entry.subServiceImage.one().getUrl() }}" class="img-responsive" width="300px" height="auto;"/>
+                <a href="{{entry.url}}" style="color: #4A4A4A;"><h3 class="mt-2">{{ entry.title }}</h3></a>
+                <p>
+                    {{ entry.bodyCopy }}
+                    <a href="{{ entry.url }}" style="color: {{ entry.serviceLineColor.getHex() }}; font-weight: bold;">MORE></a>
+                </p>
             </div>
 
         {% endfor %}

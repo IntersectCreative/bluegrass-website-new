@@ -29,10 +29,6 @@ $h4-font-size: $font-size-base * 1.967 !default;
 $h5-font-size: $font-size-base * 1.107 !default;
 $h6-font-size: $font-size-base * 1.333 !default;
 
-
-
-
-
 html, body {
 	font-family: $sans-serif;
 	width: 100%;
@@ -53,6 +49,17 @@ html, body {
 	font-size: 18px;
 	color: #000000;
 }
+
+ul {
+	list-style-type: none;
+  }
+
+  ul li:before {
+	content: '\2014';
+	position: absolute;
+	margin-left: -20px;
+  }
+  
 
 
 
