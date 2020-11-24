@@ -50,11 +50,11 @@ html, body {
 	color: #000000;
 }
 
-ul {
+ul.mailing-services {
 	list-style-type: none;
   }
 
-  ul li:before {
+  ul.mailing-services li:before {
 	content: '\2014';
 	position: absolute;
 	margin-left: -20px;

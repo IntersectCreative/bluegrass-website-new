@@ -23,11 +23,11 @@ html, body {
   color: #000000;
 }
 
-ul {
+ul.mailing-services {
   list-style-type: none;
 }
 
-ul li:before {
+ul.mailing-services li:before {
   content: "—";
   position: absolute;
   margin-left: -20px;
@@ -620,6 +620,14 @@ video {
 .question {
   cursor: -webkit-grab;
   cursor: grab;
+}
+
+#thanks {
+  margin-top: 150px;
+}
+
+#error404 {
+  margin-top: 150px;
 }
 
 /*!
