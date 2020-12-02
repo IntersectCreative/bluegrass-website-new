@@ -45,9 +45,7 @@ video {
 	}
 
 	.hero-title {
-		font-family: proxima-nova;
-		font-size: 96px;
-		color: #FFFFFF;
+		font-family: $sans-serif;
 		line-height: 90px;
 		margin-bottom: 30px;
 
@@ -59,8 +57,7 @@ video {
 
 	.hero-subtitle {
 		font-family: proxima-nova;
-		font-size: 18px;
-		color: #FFFFFF;
+
 
 		@media only screen and (max-width: 768px) {
 			display: none;

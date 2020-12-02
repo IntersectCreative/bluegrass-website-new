@@ -85,21 +85,29 @@
 </div>
 
 <div class="text-center mt-3">
-  <a href="{{ pageInfo.firstUrl }}">First Page</a>
-  {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">Previous Page</a>{% endif %}
   
-  {% for page, url in pageInfo.getPrevUrls(5) %}
-      <a href="{{ url }}">{{ page }}</a>
+  {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}" class="btn btn-outline btn-outline-primary mr-5 text-light" style="border-radius: 18px;">PREV</a>{% endif %}
+  
+
+    <a href="{{ pageInfo.firstUrl }}" class="ml-2 mr-2">{{ pageInfo.totalPages - (pageInfo.totalPages-1 ) }}</a> <span class="ml-2 mr-2">&#8230;</span>
+
+
+  {% for page, url in pageInfo.getPrevUrls(2) %}
+      <a href="{{ url }}" class="ml-2 mr-2">{{ page }}</a>
   {% endfor %}
   
-  <span class="current">{{ pageInfo.currentPage }}</span>
+  <span class="current ml-2 mr-2">{{ pageInfo.currentPage }}</span>
   
-  {% for page, url in pageInfo.getNextUrls(5) %}
-      <a href="{{ url }}">{{ page }}</a>
+  {% for page, url in pageInfo.getNextUrls(2) %}
+      <a href="{{ url }}" class="ml-2 mr-2">{{ page }}</a>
   {% endfor %}
+
+
+  <span class="ml-2 mr-2">&#8230;</span> <a href="{{ pageInfo.lastUrl }}" class="ml-2 mr-2">{{ pageInfo.totalPages }}</a>
+ 
+
+  {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}" class="btn btn-outline btn-outline-primary ml-5 text-light" style="border-radius: 18px;">NEXT</a>{% endif %}
   
-  {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}">Next Page</a>{% endif %}
-  <a href="{{ pageInfo.lastUrl }}">Last Page</a>
 </div>
 
 {% include "/components/footer.html" %}

@@ -28,8 +28,8 @@
 
                         {% endfor %}
 
-                        <h2>{{ entry.title }}</h2>
-                        <h3>{{ entry.blogLeaderline }}</h3>
+                        <h1 class="blogTitle">{{ entry.title }}</h1>
+                        <p>{{ entry.blogLeaderline }}</p>
                         <div class="row mt-3">
 
                         {% for entry in entry.selectAuthor.all() %}
@@ -57,7 +57,7 @@
 
 {% else %}
 
-<div class="blog-hero" style="background-image: url('/images/blog/Stocksy_txp5f38c8e57MT000_Original_315051.jpg'); background-color: grey;">
+<div class="blog-hero level4" style="background-image: url('/images/blog/Stocksy_txp5f38c8e57MT000_Original_315051.jpg'); background-color: grey;">
     <div class="blog-hero-inner container">
         <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12">
@@ -70,8 +70,8 @@
 
                         {% endfor %}
 
-                        <h2>{{ entry.title }}</h2>
-                        <h3>{{ entry.blogLeaderline }}</h3>
+                        <h1 class="blogTitle">{{ entry.title }}</h1>
+                        <p>{{ entry.blogLeaderline }}</p>
                         <div class="row mt-3">
 
                         {% for entry in entry.selectAuthor.all() %}

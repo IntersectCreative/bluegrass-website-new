@@ -12,6 +12,14 @@
         </div>
     </div>
 
-    {% include "/components/footer.html" %}
+    {% if craft.mobileDetect.isMobile %}
+
+        {% include "/components/mobile-cta.html" %}
+
+        {% else %}
+        
+        {% include "/components/cta.html" %}
+
+    {% endif %}
     
     {% endblock %}

@@ -12,8 +12,15 @@
 
 {% include "/components/amplifydelivery.html" %}
 
-{% include "/components/cta.html" %}
+{% if craft.mobileDetect.isMobile %}
 
+        {% include "/components/mobile-cta.html" %}
+
+        {% else %}
+        
+        {% include "/components/cta.html" %}
+
+    {% endif %}
 {% include "/components/footer.html" %}
 
 {% endblock %}

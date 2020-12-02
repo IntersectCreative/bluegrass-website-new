@@ -11,11 +11,14 @@ $interactive: #b9d40d;
 $transactional: #7cb854;
 $fundraising: #00875e;
 
-$primary: $bluegrass;
+$primary: #006ea4;
+$secondary: #464646;
+$light: #909496;
+$black: #000000;
 
+$white: #ffffff;
 
 /* font */
-
 $sans-serif: proxima-nova;
 
 $font-family-base: $sans-serif;
@@ -30,7 +33,7 @@ $h5-font-size: $font-size-base * 1.107 !default;
 $h6-font-size: $font-size-base * 1.333 !default;
 
 html, body {
-	font-family: $sans-serif;
+	font-family:  $sans-serif;
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
@@ -38,14 +41,186 @@ html, body {
 	overflow: visible;
 }
 
+/* Below are the CSS typography styles for the various sections of the site: */
+
+// CSS 1: Level 1
+// Homepage
+// Service Line Pages
+// About Us
+
+.level1 {
+
+	h1 {
+		font-size: 6.21em;
+
+		@media only screen and (max-width: 768px){
+			font-size: 1.77em;
+		}
+	}
+
+	h2 {
+		font-size: 1.107em;
+		
+		@media only screen and (max-width: 768px){
+			font-size: 1em;
+		}
+	}
+
+	h3 {
+		font-size: 1em;
+
+		@media only screen and (max-width: 768px){
+			font-size: 0.694em;
+		}
+	}
+
+	h4 {
+		font-size: 1.967em;
+
+		@media only screen and (max-width: 768px){
+			font-size: 0.623em;
+		}
+	}
+
+	h5 {
+		font-size: 1.107em;
+
+		@media only screen and (max-width: 768px){
+			font-size: 1.77em;
+		}
+
+	}
+
+	h6 {
+		font-size: 1.333em;
+
+		@media only screen and (max-width: 768px){
+			font-size: 1.77em;
+		}
+	}
+
+	p {
+		font-size: 1.107em;
+
+		@media only screen and (max-width: 768px){
+			font-size: 0.75em;
+		}
+	}
+
+	.buttonBlue {
+		font-size: 0.831em;
+		color: #006EA4;
+	}
+}
+
+// CSS2: Level 2
+// Services Page
+// Employee Page
+
+.level2 {
+	h1 {
+		font-size: 3.495em;
+		color: #000000;
+	}
+
+	h2 {
+		font-size: 1.967em;
+		color: $secondary;
+	}
+
+	h3 {
+		font-size: 1.77em;
+	}
+
+	h4 {
+		font-size: 1.107em;
+		color: $light;
+	}
+
+	h5 {
+		font-size: 1.107em;
+		color: $light;
+	}
+
+	p {
+		font-size: 1.107em;
+		color: $secondary;
+	}
+}
+
+// CSS3: Level 3
+// Resources page
+
+.level3 {
+
+	h1 {
+		font-size: 3.495em;
+	}
+	h2 {
+		font-size: 2.622em;
+	}
+	h3 {
+		font-size: 1.77em;
+		color: $light;
+	}
+	h4 {
+		font-size: 1.107em;
+		color: $light;
+	}
+
+	p {
+		font-size: 1.107em;
+	}
+}
+
+//CSS Level 4
+//Blog Styling
+
+.level4 {
+
+	h1{
+		font-size: 2.25em;
+	}
+
+	h2 {
+		font-size: 1.967em;
+		color: $secondary;
+	}
+
+	h3 {
+		font-size: 1.77em;
+	}
+
+	h4 {
+
+	}
+
+	h5 {
+
+	}
+
+	h6 {
+
+	}
+	p {
+		font-size: 1.107em;
+		color: $secondary;
+	}
+
+}
+
+.blogTitle {
+	font-size: 2.25em;
+}
+
 .bodyText {
-	font-family: $sans-serif;
+	font-family:  $sans-serif;
 	font-size: 14px;
 	color: #4A4A4A;
 }
 
 .introText {
-	font-family: $sans-serif;
+	font-family:  $sans-serif;
 	font-size: 18px;
 	color: #000000;
 }
@@ -59,7 +234,7 @@ ul.mailing-services {
 	position: absolute;
 	margin-left: -20px;
   }
-  
+
 
 
 
