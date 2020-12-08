@@ -77,24 +77,59 @@ html, body {
   font-size: 3.495em;
   color: #000000;
 }
+@media only screen and (max-width: 768px) {
+  .level2 h1 {
+    font-size: 1.77em;
+  }
+}
 .level2 h2 {
   font-size: 1.967em;
   color: #464646;
 }
+@media only screen and (max-width: 768px) {
+  .level2 h2 {
+    font-size: 1em;
+  }
+}
 .level2 h3 {
   font-size: 1.77em;
+}
+@media only screen and (max-width: 768px) {
+  .level2 h3 {
+    font-size: 0.694em;
+  }
 }
 .level2 h4 {
   font-size: 1.107em;
   color: #909496;
 }
+@media only screen and (max-width: 768px) {
+  .level2 h4 {
+    font-size: 0.623em;
+  }
+}
 .level2 h5 {
   font-size: 1.107em;
   color: #909496;
 }
+@media only screen and (max-width: 768px) {
+  .level2 h5 {
+    font-size: 0.623em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .level2 h6 {
+    font-size: 1.77em;
+  }
+}
 .level2 p {
   font-size: 1.107em;
   color: #464646;
+}
+@media only screen and (max-width: 768px) {
+  .level2 p {
+    font-size: 0.75em;
+  }
 }
 
 .level3 h1 {
@@ -118,16 +153,62 @@ html, body {
 .level4 h1 {
   font-size: 2.25em;
 }
+@media only screen and (max-width: 768px) {
+  .level4 h1 {
+    font-size: 1.77em;
+  }
+}
 .level4 h2 {
   font-size: 1.967em;
   color: #464646;
 }
+@media only screen and (max-width: 768px) {
+  .level4 h2 {
+    font-size: 1em;
+  }
+}
 .level4 h3 {
   font-size: 1.77em;
+}
+@media only screen and (max-width: 768px) {
+  .level4 h3 {
+    font-size: 0.694em;
+  }
+}
+.level4 h4 {
+  font-size: 1.107em;
+  color: #909496;
+}
+@media only screen and (max-width: 768px) {
+  .level4 h4 {
+    font-size: 0.623em;
+  }
+}
+.level4 h5 {
+  font-size: 1.107em;
+  color: black;
+}
+@media only screen and (max-width: 768px) {
+  .level4 h5 {
+    font-size: 0.6875em;
+  }
+}
+.level4 h6 {
+  font-size: 1.333em;
+}
+@media only screen and (max-width: 768px) {
+  .level4 h6 {
+    font-size: 0.65625em;
+  }
 }
 .level4 p {
   font-size: 1.107em;
   color: #464646;
+}
+@media only screen and (max-width: 768px) {
+  .level4 p {
+    font-size: 0.75em;
+  }
 }
 
 .blogTitle {
@@ -534,9 +615,9 @@ video {
 }
 @media only screen and (max-width: 768px) {
   .service-line-hero-copy {
-    top: 65%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -50%);
     position: absolute;
     text-align: center;
   }

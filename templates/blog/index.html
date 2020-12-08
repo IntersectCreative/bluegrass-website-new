@@ -59,10 +59,12 @@
             
               
             {% if author.employeePicture | length %}
+            
             <p class="bodyText">
             <img src="{{ author.employeePicture.one().getUrl() }}" alt="{{ author.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px; border-radius: 50%;">
             {{ author.title|upper }}
             </p>
+
             {% else %}
 
             <p class="bodyText ml-3" style="margin-bottom: 42px;">{{ author.title|upper }}
@@ -86,27 +88,40 @@
 
 <div class="text-center mt-3">
   
-  {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}" class="btn btn-outline btn-outline-primary mr-5 text-light" style="border-radius: 18px;">PREV</a>{% endif %}
+  {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}" class="btn btn-outline btn-outline-primary mr-lg-5 text-light" style="border-radius: 18px;">PREV</a>{% endif %}
   
+    
+    {% if craft.mobileDetect.isMobile %}
+    
+    {% else %}
 
-    <a href="{{ pageInfo.firstUrl }}" class="ml-2 mr-2">{{ pageInfo.totalPages - (pageInfo.totalPages-1 ) }}</a> <span class="ml-2 mr-2">&#8230;</span>
+    <a href="{{ pageInfo.firstUrl }}" class="ml-lg-2 mr-lg-2">{{ pageInfo.totalPages - (pageInfo.totalPages-1 ) }}</a> 
 
+    <span class="ml-2 mr-2">&#8230;</span>
+
+    {% endif %}
 
   {% for page, url in pageInfo.getPrevUrls(2) %}
-      <a href="{{ url }}" class="ml-2 mr-2">{{ page }}</a>
+      <a href="{{ url }}" class="ml-lg-2 mr-lg-2">{{ page }}</a>
   {% endfor %}
   
-  <span class="current ml-2 mr-2">{{ pageInfo.currentPage }}</span>
+  <span class="current ml-lg-2 mr-lg-2">{{ pageInfo.currentPage }}</span>
   
   {% for page, url in pageInfo.getNextUrls(2) %}
-      <a href="{{ url }}" class="ml-2 mr-2">{{ page }}</a>
+      <a href="{{ url }}" class="ml-lg-2 mr-lg-2">{{ page }}</a>
   {% endfor %}
 
+  {% if craft.mobileDetect.isMobile %}
+    
+  {% else %}
 
-  <span class="ml-2 mr-2">&#8230;</span> <a href="{{ pageInfo.lastUrl }}" class="ml-2 mr-2">{{ pageInfo.totalPages }}</a>
- 
+  <span class="ml-2 mr-2">&#8230;</span>
 
-  {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}" class="btn btn-outline btn-outline-primary ml-5 text-light" style="border-radius: 18px;">NEXT</a>{% endif %}
+  <a href="{{ pageInfo.lastUrl }}" class="ml-lg-2 mr-lg-2">{{ pageInfo.totalPages }}</a>
+  
+  {% endif %}
+
+  {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}" class="btn btn-outline btn-outline-primary ml-lg-5 text-light" style="border-radius: 18px;">NEXT</a>{% endif %}
   
 </div>
 

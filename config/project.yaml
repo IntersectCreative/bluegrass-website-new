@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1605728701
+dateModified: 1607452816
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -87,6 +87,35 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
+  163dc09e-a95b-4e80-b2db-2d516f17ec5f:
+    contentColumnType: string
+    fieldGroup: 14845e65-d10e-4335-95d6-68c36bfbbbbc
+    handle: heroImageTablet
+    instructions: 'Hero image for Tablet devices on sub-service pages.'
+    name: 'Hero Image Tablet'
+    searchable: true
+    settings:
+      allowSelfRelations: ''
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:39471bc0-b5e5-47a7-a191-16ce5255b92c'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   27b5db1b-ac71-4b64-9b56-c132a05599c6:
     contentColumnType: text
     fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
@@ -624,6 +653,35 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
+  82184cef-9c88-4dd7-bc96-70aba2316059:
+    contentColumnType: string
+    fieldGroup: 14845e65-d10e-4335-95d6-68c36bfbbbbc
+    handle: heroImageMobile
+    instructions: 'Mobile image for sub-service pages'
+    name: 'Hero Image Mobile'
+    searchable: true
+    settings:
+      allowSelfRelations: ''
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:39471bc0-b5e5-47a7-a191-16ce5255b92c'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
   824c29dd-2c54-4ab2-bdc5-cf30d8530204:
     contentColumnType: text
     fieldGroup: 636d19c7-1b45-4c83-bb80-ff9a370bc669
@@ -2350,12 +2408,18 @@ sections:
             tabs:
               -
                 fields:
+                  163dc09e-a95b-4e80-b2db-2d516f17ec5f:
+                    required: false
+                    sortOrder: 2
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 1
+                  82184cef-9c88-4dd7-bc96-70aba2316059:
+                    required: false
+                    sortOrder: 3
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 4
                 name: Hero
                 sortOrder: 1
               -
@@ -2426,12 +2490,18 @@ sections:
             tabs:
               -
                 fields:
+                  163dc09e-a95b-4e80-b2db-2d516f17ec5f:
+                    required: false
+                    sortOrder: 2
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 1
+                  82184cef-9c88-4dd7-bc96-70aba2316059:
+                    required: false
+                    sortOrder: 3
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 4
                 name: Hero
                 sortOrder: 1
               -
@@ -2489,12 +2559,18 @@ sections:
             tabs:
               -
                 fields:
-                  32a35c2d-7747-4707-91f2-410f02d41a4d:
+                  163dc09e-a95b-4e80-b2db-2d516f17ec5f:
                     required: false
                     sortOrder: 3
+                  32a35c2d-7747-4707-91f2-410f02d41a4d:
+                    required: false
+                    sortOrder: 5
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 2
+                  82184cef-9c88-4dd7-bc96-70aba2316059:
+                    required: false
+                    sortOrder: 4
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
                     sortOrder: 1
@@ -2564,12 +2640,18 @@ sections:
             tabs:
               -
                 fields:
+                  163dc09e-a95b-4e80-b2db-2d516f17ec5f:
+                    required: false
+                    sortOrder: 2
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 1
+                  82184cef-9c88-4dd7-bc96-70aba2316059:
+                    required: false
+                    sortOrder: 3
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 4
                 name: Hero
                 sortOrder: 1
               -
@@ -2640,12 +2722,18 @@ sections:
             tabs:
               -
                 fields:
+                  163dc09e-a95b-4e80-b2db-2d516f17ec5f:
+                    required: false
+                    sortOrder: 2
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 1
+                  82184cef-9c88-4dd7-bc96-70aba2316059:
+                    required: false
+                    sortOrder: 3
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 4
                 name: Hero
                 sortOrder: 1
               -

@@ -121,30 +121,61 @@ html, body {
 	h1 {
 		font-size: 3.495em;
 		color: #000000;
+
+		@media only screen and (max-width: 768px){
+			font-size: 1.77em;
+		}
 	}
 
 	h2 {
 		font-size: 1.967em;
 		color: $secondary;
+
+		@media only screen and (max-width: 768px){
+			font-size: 1em;
+		}
 	}
 
 	h3 {
 		font-size: 1.77em;
+
+		@media only screen and (max-width: 768px){
+			font-size: 0.694em;
+		}
 	}
 
 	h4 {
 		font-size: 1.107em;
 		color: $light;
+
+		@media only screen and (max-width: 768px){
+			font-size: 0.623em;
+		}
 	}
 
 	h5 {
 		font-size: 1.107em;
 		color: $light;
+
+		@media only screen and (max-width: 768px){
+			font-size: 0.623em;
+		}
+	}
+
+	h6 {
+
+		@media only screen and (max-width: 768px){
+			font-size: 1.77em;
+		}
 	}
 
 	p {
 		font-size: 1.107em;
 		color: $secondary;
+
+		@media only screen and (max-width: 768px){
+			font-size: 0.75em;
+		}
 	}
 }
 
@@ -156,13 +187,16 @@ html, body {
 	h1 {
 		font-size: 3.495em;
 	}
+
 	h2 {
 		font-size: 2.622em;
 	}
+
 	h3 {
 		font-size: 1.77em;
 		color: $light;
 	}
+
 	h4 {
 		font-size: 1.107em;
 		color: $light;
@@ -178,33 +212,63 @@ html, body {
 
 .level4 {
 
-	h1{
+	h1 {
 		font-size: 2.25em;
+
+		@media only screen and (max-width: 768px){
+			font-size: 1.77em;
+		}
 	}
 
 	h2 {
 		font-size: 1.967em;
 		color: $secondary;
+
+		@media only screen and (max-width: 768px){
+			font-size: 1em;
+		}
 	}
 
 	h3 {
 		font-size: 1.77em;
+
+		@media only screen and (max-width: 768px){
+			font-size: 0.694em;
+		}
 	}
 
 	h4 {
+		font-size: 1.107em;
+		color: $light;
 
+		@media only screen and (max-width: 768px){
+			font-size: 0.623em;
+		}
 	}
 
 	h5 {
+		font-size: 1.107em;
+		color: black;
 
+		@media only screen and (max-width: 768px){
+			font-size: 0.6875em;
+		}
 	}
 
 	h6 {
+		font-size: 1.333em;
 
+		@media only screen and (max-width: 768px){
+			font-size: 0.65625em;
+		}
 	}
 	p {
 		font-size: 1.107em;
 		color: $secondary;
+
+		@media only screen and (max-width: 768px){
+			font-size: 0.75em;
+		}
 	}
 
 }

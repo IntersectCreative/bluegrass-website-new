@@ -1,4 +1,4 @@
-<div class="search-bar">
+<!-- <div class="search-bar">
     <div class="container">
         <form action="search/results" class="mt-5 form-inline">
             <div class="form-group">
@@ -9,5 +9,85 @@
             </div>
         </form>
     </div>
+</div> -->
+{% set query = craft.request.getQuery() %}
+<div class="container level3" style="margin-top: 200px;">
+    <h1 class="text-primary">We're here to help.</h1>
+<form action="">
+    {% set value = query.search is defined ? query.search : '' %}
+    <h2 class="mt-3">Search our site:</h2>
+    <input style="border-color: #979797; border-radius: 8px; border-style: solid;"search" id="search" name="search" value="{{ value }}" autocomplete="off" class="mt-3 form-control-lg" placeholder="Search here...">
+    <button type="submit"class="lgsb ml-3">Search</button>
+</form>
+
+{% if query|length and query.search %}
+    {% set entries = craft.entries.search(query.search) %}
+
+    <aside>
+        {% if entries.section('not blog')|length %}
+
+        <h2 class="mt-5 mb-3">Your results ({{ entries|length }}):</h2>
+
+            {% for entry in entries %}
+            <a href="{{ entry.url }}"><h3>{{ entry.title }}</h3></a>
+
+            {% endfor %}
+
+        {% else %}
+
+            <p>No results.</p>
+
+        {% endif %}
+
+    </aside>
+{% endif %}
+
+{% if query|length and query.search %}
+    {% set entries = craft.entries.search(query.search) %}
+
+    <aside>
+        {% if entries.section('blog')|length %}
+
+        <h2 class="mt-5 mb-3">Your results ({{ entries|length }}):</h2>
+        <div class="row text-left">
+            {% for entry in entries %}
+            <div class="col-lg-4 mb-4">
+                <div class="card mt-3 h-100">
+                  {% if entry.picture | length %}
+                <img src="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
+      
+                {% else %}
+                <img src="/images/blog/Stocksy_txp5f38c8e57MT000_Original_315051.jpg" class="card-img-top" alt="...">
+                {% endif %}
+                
+                  <div class="card-body">
+      
+                    {% for entry in entry.serviceLine.all() %}
+      
+                    <p class="card-subtitle bodyText">{{ entry.title|upper }}</p>
+      
+                    {% endfor %}
+                    
+                    <h3 class="card-title mb-2"><a href="{{ entry.url }}" style="color: inherit; text-decoration: inherit;">{{ entry.title }}</a></h3>
+                  </div>
+        
+                  {% for author in entry.selectAuthor.all() %}
+        
+                    <a href="{{ author.url }}"><p class="bodyText"><img src="{{ author.employeePicture.one().getUrl() }}" alt="{{ author.title }}" class="ml-3 mr-3" style="width: 75px; height: 75px; border-radius: 50%;">{{ author.title|upper }}</p></a>		
+        
+                  {% endfor %}
+        
+                  </div>
+              </div>
+
+            {% endfor %}
 </div>
-    
+        {% else %}
+
+            <p>No results.</p>
+
+        {% endif %}
+        
+    </aside>
+{% endif %}
+</div>

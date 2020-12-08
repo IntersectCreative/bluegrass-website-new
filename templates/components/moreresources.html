@@ -1,6 +1,6 @@
 <div id="moreresources">
 <div class="container">
-	<h3 class="text-center mt-5 mb-5">More Resources:</h3>
+	<h3 class="text-center mt-5 mb-5">{{ explainer }}</h3>
 	<div class="row text-center">
 
 	{% for entry in craft.entries().section('blog').limit(3).id('not ' ~ entry.id).all() %}

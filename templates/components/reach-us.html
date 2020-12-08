@@ -19,7 +19,16 @@
 
     <div class="col-sm-12 col-lg-6">
         <h2 class="text-center mb-5 mt-3">Reach Us</h2>
-        {{ craft.freeform.form("reachUs").render() }}
+        <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+        hbspt.forms.create({
+            portalId: "8102511",
+            formId: "24ba88b8-e570-492e-bb02-e96b4da587fc"
+        });
+        </script>
     </div>
 </div>
 </div>
