@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1607452816
+dateModified: 1607616619
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -3385,6 +3385,13 @@ sections:
                     sortOrder: 2
                 name: Employees
                 sortOrder: 1
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
         handle: aboutUs
         hasTitleField: true
         name: 'About Us'

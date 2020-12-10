@@ -31,7 +31,7 @@ $(document).ready(function(){
 });
 
 //form drop down
-$("#generalContactButton").click(function(){
+$("#generalContactButton").onclick(function(){
   $("#generalContact").toggle(600);
 });
 

@@ -16,15 +16,35 @@
 				<a href="mailto:info@wearebluegrass.com" style="color: inherit; text-decoration: inherit;"><p>info@wearebluegrass.com</p></a>
 			</div>
 			<div class="text-center">
-				<button id="generalContactButton" class="lgsw mt-5 mb-5">Let's get started</button>
+				<button type="button" class="button lgsw mt-5 mb-5" data-toggle="modal" data-target="#gencontact">Contact Us</button>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container mt-4 level1">
-	<form id="generalContact" class="text-left">
-		<p class="mb-3 font-italic">Tell us a little bit about yourself</p>
-		{{ craft.freeform.form("generalContact").render() }}
-	</form>
+<!-- Modal -->
+<div class="modal fade" id="gencontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+		<div class="modal-header">
+		<h5 class="modal-title" id="exampleModalCenterTitle">Tell us a little big about yourself</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		</div>
+		<div class="modal-body">
+			<!--[if lte IE 8]>
+			<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+			<![endif]-->
+			<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+			<script>
+			hbspt.forms.create({
+				portalId: "8102511",
+				formId: "a1e4ad17-5e5e-4315-8b4f-02e02545e82d"
+			});
+			</script>
+		</div>
+	</div>
+	</div>
 </div>
+

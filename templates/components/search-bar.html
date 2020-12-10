@@ -10,14 +10,16 @@
         </form>
     </div>
 </div> -->
+
+
 {% set query = craft.request.getQuery() %}
 <div class="container level3" style="margin-top: 200px;">
     <h1 class="text-primary">We're here to help.</h1>
 <form action="">
     {% set value = query.search is defined ? query.search : '' %}
     <h2 class="mt-3">Search our site:</h2>
-    <input style="border-color: #979797; border-radius: 8px; border-style: solid;"search" id="search" name="search" value="{{ value }}" autocomplete="off" class="mt-3 form-control-lg" placeholder="Search here...">
-    <button type="submit"class="lgsb ml-3">Search</button>
+    <input style="border-color: #979797; border-radius: 8px; border-style: solid;"search" id="search" name="search" value="{{ value }}" autocomplete="off" class="mt-3 mb-3 mb-lg-1 form-control-lg" placeholder="Search here...">
+    <button type="submit"class="lgsb ml-md-3">Search</button>
 </form>
 
 {% if query|length and query.search %}
@@ -29,7 +31,18 @@
         <h2 class="mt-5 mb-3">Your results ({{ entries|length }}):</h2>
 
             {% for entry in entries %}
+            
             <a href="{{ entry.url }}"><h3>{{ entry.title }}</h3></a>
+
+            {% do seomatic.helper.loadMetadataForUri(entry.uri) %}
+            
+            {% if seomatic.meta.seoDescription %}
+
+            <p>{{ seomatic.meta.seoDescription }}</p>
+
+            {% else %}
+
+            {% endif %}
 
             {% endfor %}
 
