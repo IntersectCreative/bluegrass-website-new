@@ -19,14 +19,20 @@
 
 <div class="container">
         <div id="application">
-                <p class="mb-3 font-italic">Complete the application below to apply for the position!</p>
-                {{ craft.freeform.form("application", 
-                {
-                submitClass: "apply-submit",
-                overrideValues: {
-                jobTitle: entry.title,
+        <p class="mb-3 font-italic">Complete the application below to apply for the position!</p>
+
+        {% set options = {
+                id: "job-app",
+                errorClass: "form-has-error",
+                fields: {
+                    "*": {
+                        class: "form-control mt-2 mb-2",
+                    }
                 }
-                }).render() }}
+            } %}
+
+        {{ craft.sproutForms.displayForm('jobApplication', options) }}
+        
         </div>
 </div>
 

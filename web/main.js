@@ -2,7 +2,7 @@ $(window).scroll(function () {
 
   var scrollTop = $(window).scrollTop();
 
-  if (scrollTop > 1) {
+  if (scrollTop >= 1) {
     $('.header').css('display', 'flex');
     $('.header').addClass('fixed-to-top');
     $('.header').addClass('scrolled');
@@ -31,13 +31,13 @@ $(document).ready(function(){
 });
 
 //form drop down
-$("#generalContactButton").onclick(function(){
-  $("#generalContact").toggle(600);
+$("#generalContactButton").click(function(){
+  $("#generalContact").toggle();
 });
 
 //application drop down
 $("#applicationButton").click(function(){
-  $("#application").toggle(600);
+  $("#application").toggle();
 });
 
 //application drop down

@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1607616619
+dateModified: 1607962372
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -2390,6 +2390,51 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.9
+  sprout-forms:
+    enabled: true
+    settings:
+      captchaSettings:
+        __assoc__:
+          -
+            - barrelstrength\sproutforms\captchas\DuplicateCaptcha
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - 0
+          -
+            - barrelstrength\sproutforms\captchas\HoneypotCaptcha
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - 0
+                -
+                  - honeypotFieldName
+                  - sprout-forms-hc
+                -
+                  - honeypotScreenReaderMessage
+                  - 'Leave this field blank'
+          -
+            - barrelstrength\sproutforms\captchas\JavascriptCaptcha
+            -
+              __assoc__:
+                -
+                  - enabled
+                  - 1
+      cleanupProbability: 1000
+      defaultSection: entries
+      enableEditFormEntryViaFrontEnd: ''
+      enableSaveData: '1'
+      enableSaveDataDefaultValue: '1'
+      formTemplateId: barrelstrength\sproutforms\formtemplates\AccessibleTemplates
+      pluginNameOverride: ''
+      saveSpamToDatabase: ''
+      showNotificationsTab: true
+      showReportsTab: true
+      spamLimit: 500
+      spamRedirectBehavior: redirectAsNormal
+      trackRemoteIp: ''
 routes:
   610b8bba-5f5f-43b3-bc86-d105a8debf5e:
     siteUid: null
@@ -3329,6 +3374,38 @@ sections:
         hasUrls: true
         template: /indicia/_entry.twig
         uriFormat: indicia
+    type: single
+  d18c550f-18d7-4e8f-8463-ff0cbb22f598:
+    enableVersioning: true
+    entryTypes:
+      fae0ec6c-15b6-4af7-aaa6-b1a3257096b2:
+        handle: amplifyOnboarding
+        hasTitleField: false
+        name: 'Amplify Onboarding'
+        sortOrder: 1
+        titleFormat: '{section.name|raw}'
+        titleLabel: null
+    handle: amplifyOnboarding
+    name: 'Amplify Onboarding'
+    previewTargets:
+      -
+        __assoc__:
+          -
+            - label
+            - 'Primary entry page'
+          -
+            - urlFormat
+            - '{url}'
+          -
+            - refresh
+            - '1'
+    propagationMethod: all
+    siteSettings:
+      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: amplify-onboarding
     type: single
   d5a59813-4460-4df9-9650-818fe09690a5:
     enableVersioning: true
