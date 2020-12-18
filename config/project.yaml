@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1607962372
+dateModified: 1608136635
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -116,6 +116,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  1f051357-163f-4bd4-9cb7-56b11296636d:
+    contentColumnType: boolean
+    fieldGroup: 20ce816e-90cc-47e8-b3ab-eabc0da82703
+    handle: keywordPage
+    instructions: 'Is this a keyword page?'
+    name: 'Keyword Page'
+    searchable: true
+    settings:
+      default: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
   27b5db1b-ac71-4b64-9b56-c132a05599c6:
     contentColumnType: text
     fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
@@ -2494,13 +2506,16 @@ sections:
                 fields:
                   0c664d0d-025d-46b1-99a5-75b9aab6e905:
                     required: false
+                    sortOrder: 2
+                  1f051357-163f-4bd4-9cb7-56b11296636d:
+                    required: false
                     sortOrder: 1
                   b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
                   dc9c1bf8-0371-4318-82cb-37df37bfa6cf:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                 name: Services
                 sortOrder: 4
               -
@@ -2576,13 +2591,16 @@ sections:
                 fields:
                   0c664d0d-025d-46b1-99a5-75b9aab6e905:
                     required: false
+                    sortOrder: 2
+                  1f051357-163f-4bd4-9cb7-56b11296636d:
+                    required: false
                     sortOrder: 1
                   b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
                   dc9c1bf8-0371-4318-82cb-37df37bfa6cf:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                 name: Services
                 sortOrder: 4
               -
@@ -2644,16 +2662,19 @@ sections:
                 fields:
                   0c664d0d-025d-46b1-99a5-75b9aab6e905:
                     required: false
+                    sortOrder: 2
+                  1f051357-163f-4bd4-9cb7-56b11296636d:
+                    required: false
                     sortOrder: 1
                   9ef27649-5aa6-4863-9500-c630405c5822:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 5
                   b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
                   dc9c1bf8-0371-4318-82cb-37df37bfa6cf:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                 name: Services
                 sortOrder: 3
               -
@@ -2726,13 +2747,16 @@ sections:
                 fields:
                   0c664d0d-025d-46b1-99a5-75b9aab6e905:
                     required: false
+                    sortOrder: 2
+                  1f051357-163f-4bd4-9cb7-56b11296636d:
+                    required: false
                     sortOrder: 1
                   b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
                   dc9c1bf8-0371-4318-82cb-37df37bfa6cf:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                 name: Services
                 sortOrder: 4
               -
@@ -2808,13 +2832,16 @@ sections:
                 fields:
                   0c664d0d-025d-46b1-99a5-75b9aab6e905:
                     required: false
+                    sortOrder: 2
+                  1f051357-163f-4bd4-9cb7-56b11296636d:
+                    required: false
                     sortOrder: 1
                   b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
                   dc9c1bf8-0371-4318-82cb-37df37bfa6cf:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 3
                 name: Services
                 sortOrder: 4
               -

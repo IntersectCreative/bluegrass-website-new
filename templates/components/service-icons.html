@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row service-icon-row d-flex justify-content-center">
 
-        {% set entries = entry.children().level(2).all() %}
+        {% set entries = entry.children().level(2).keywordPage(false).all() %}
 
         {% for entry in entries %}
 
