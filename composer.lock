@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6557f0c476dde1a57e5ee9f7e69c880e",
+    "content-hash": "c8dcf68dc57a006d71b5a785e0aed332",
     "packages": [
         {
             "name": "albertofem/rsync-lib",
@@ -2091,6 +2091,67 @@
                 "source": "https://github.com/giggsey/Locale/tree/master"
             },
             "time": "2020-07-07T11:16:24+00:00"
+        },
+        {
+            "name": "guilty/hubspot-connector",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guilty-as/hubspot-connector.git",
+                "reference": "299ec160a199adfa0b7d2ff2cc5f031f75d1ce47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guilty-as/hubspot-connector/zipball/299ec160a199adfa0b7d2ff2cc5f031f75d1ce47",
+                "reference": "299ec160a199adfa0b7d2ff2cc5f031f75d1ce47",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1",
+                "ryanwinchester/hubspot-php": "~1.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "HubSpot Connector",
+                "handle": "hubspot-connector",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "developer": "Guilty AS",
+                "developerEmail": "tech@guilty.no",
+                "developerUrl": "https://guilty.no",
+                "components": {
+                    "hubspot": "Guilty\\HubspotConnector\\services\\Hubspot"
+                },
+                "class": "Guilty\\HubspotConnector\\HubspotConnector"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Guilty\\HubspotConnector\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilty AS",
+                    "homepage": "https://guilty.no"
+                }
+            ],
+            "description": "Expose Hubspot API features in Twig and pull in content from your HubSpot Portal.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "hubspot connector"
+            ],
+            "support": {
+                "issues": "https://github.com/guilty-as/hubspot-connector/issues",
+                "source": "https://github.com/guilty-as/hubspot-connector/tree/1.0.4"
+            },
+            "time": "2018-12-18T09:10:08+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -5619,6 +5680,61 @@
                 "source": "https://github.com/ralouphie/mimey/tree/master"
             },
             "time": "2017-01-27T20:57:22+00:00"
+        },
+        {
+            "name": "ryanwinchester/hubspot-php",
+            "version": "v1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HubSpot/hubspot-php.git",
+                "reference": "4e543ebc57d0b3eddcaaa5b4e17af0a259bc5b26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HubSpot/hubspot-php/zipball/4e543ebc57d0b3eddcaaa5b4e17af0a259bc5b26",
+                "reference": "4e543ebc57d0b3eddcaaa5b4e17af0a259bc5b26",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": " dev-master@dev",
+                "phpspec/phpspec": "~2.0",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SevenShores\\Hubspot\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Winchester",
+                    "email": "fungku@gmail.com",
+                    "homepage": "http://ryanwinchester.ca"
+                }
+            ],
+            "description": "HubSpot PHP API client",
+            "keywords": [
+                "api",
+                "hubspot"
+            ],
+            "support": {
+                "issues": "https://github.com/HubSpot/hubspot-php/issues",
+                "source": "https://github.com/HubSpot/hubspot-php/tree/v1.2.2"
+            },
+            "abandoned": "hubspot/hubspot-php",
+            "time": "2019-11-05T08:53:44+00:00"
         },
         {
             "name": "seld/cli-prompt",

@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1608136635
+dateModified: 1608745595
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -2346,6 +2346,15 @@ plugins:
       spamProtectionBehaviour: simulate_success
       submissionThrottlingCount: null
       submissionThrottlingTimeFrame: null
+  hubspot-connector:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.4
+    settings:
+      apiKey: 5a3dfd4c-89a9-4c8b-b63a-9005a11f5a02
+      blogSubscriptionProperty: null
+      defaultBlogSubscriptionFrequency: null
+      enableBlogSubscriptionEndpoint: false
   image-optimize:
     edition: standard
     enabled: true

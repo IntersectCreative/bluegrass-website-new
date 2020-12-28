@@ -1,0 +1,16 @@
+
+    {% set publishedBlogPosts = craft.hubspot.blogPosts("8102511", {
+        state: "PUBLISHED",
+    }) %}
+    
+    {% for post in publishedBlogPosts %}
+        <article>
+            <h5>
+                <a href="{{ post.published_url }}">
+                    {{ post.html_title }}
+                </a>
+            </h5>
+            {{ post.post_summary | striptags }}
+        </article>
+    {% endfor %}
+
