@@ -1,16 +1,15 @@
+<div class="container">
+{% for blog in craft.hubspot.blogs %}
+{% for post in  craft.hubspot.blogPosts(blog.id) %}
+    <article>
+        <h5>
+            <img src="{{post.featured_image}}" height="300px" width="auto"><br>
+            <a href="{{ post.published_url }}">
+                {{ post.html_title }} - {{ post.author_name }}
+            </a>
+        </h5>
 
-    {% set publishedBlogPosts = craft.hubspot.blogPosts("8102511", {
-        state: "PUBLISHED",
-    }) %}
-    
-    {% for post in publishedBlogPosts %}
-        <article>
-            <h5>
-                <a href="{{ post.published_url }}">
-                    {{ post.html_title }}
-                </a>
-            </h5>
-            {{ post.post_summary | striptags }}
-        </article>
-    {% endfor %}
-
+    </article>
+{% endfor %}
+{% endfor %}
+</div>

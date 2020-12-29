@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1608745595
+dateModified: 1609276453
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -1714,6 +1714,9 @@ matrixBlockTypes:
         tabs:
           -
             fields:
+              74147213-f75c-471a-ae0c-a67234e8c8d7:
+                required: true
+                sortOrder: 4
               99bfa5a6-db90-4817-8de1-dc6caa7e4153:
                 required: true
                 sortOrder: 1
@@ -1726,6 +1729,35 @@ matrixBlockTypes:
             name: Content
             sortOrder: 1
     fields:
+      74147213-f75c-471a-ae0c-a67234e8c8d7:
+        contentColumnType: string
+        fieldGroup: null
+        handle: platformIconBlue
+        instructions: ''
+        name: 'platform icon blue'
+        searchable: true
+        settings:
+          allowSelfRelations: ''
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+          singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: false
+          validateRelatedElements: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
       99bfa5a6-db90-4817-8de1-dc6caa7e4153:
         contentColumnType: text
         fieldGroup: null
@@ -1747,15 +1779,16 @@ matrixBlockTypes:
       d95f6e33-c084-44cc-b8f4-3735b62e4ee0:
         contentColumnType: string
         fieldGroup: null
-        handle: platformIcon
+        handle: platformIconWhite
         instructions: 'Enter the icon for this platform.'
-        name: 'platform icon'
+        name: 'platform icon white'
         searchable: true
         settings:
+          allowSelfRelations: ''
           allowedKinds: null
           defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
           defaultUploadLocationSubpath: ''
-          limit: ''
+          limit: '1'
           localizeRelations: false
           restrictFiles: ''
           selectionLabel: ''
@@ -3415,12 +3448,32 @@ sections:
     enableVersioning: true
     entryTypes:
       fae0ec6c-15b6-4af7-aaa6-b1a3257096b2:
+        fieldLayouts:
+          c3d2be02-7ba3-4d0d-be23-a664de920385:
+            tabs:
+              -
+                fields:
+                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 1
+                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
+                    required: false
+                    sortOrder: 2
+                name: Hero
+                sortOrder: 1
+              -
+                fields:
+                  94377b09-8631-4bdf-b0be-fe65c7f969c9:
+                    required: false
+                    sortOrder: 1
+                name: 'Onboarding Form HTML'
+                sortOrder: 2
         handle: amplifyOnboarding
         hasTitleField: false
         name: 'Amplify Onboarding'
         sortOrder: 1
         titleFormat: '{section.name|raw}'
-        titleLabel: null
+        titleLabel: ''
     handle: amplifyOnboarding
     name: 'Amplify Onboarding'
     previewTargets:
@@ -3440,7 +3493,7 @@ sections:
       c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: amplify-onboarding/_entry
         uriFormat: amplify-onboarding
     type: single
   d5a59813-4460-4df9-9650-818fe09690a5:
