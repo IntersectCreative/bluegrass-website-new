@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1609276453
+dateModified: 1610476000
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -36,6 +36,8 @@ fieldGroups:
     name: Hero
   d0828146-8abe-49b5-87cd-3e7f3b6bacdb:
     name: 'About Us'
+  d5eb13ef-9ebe-4773-9b43-9d0baa77b5d0:
+    name: Thanks
   ea910e7b-73e3-4f9b-9383-d7a62f7020f8:
     name: SEO
   ef21bb7c-0cae-421f-9c87-a14750432c60:
@@ -146,6 +148,19 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  2b5bfdc3-dc62-444f-a7d3-23ceade47a99:
+    contentColumnType: string(255)
+    fieldGroup: c58a5554-fc87-40ab-988c-a6ef8506fbec
+    handle: amplifyOnboardingForm
+    instructions: 'Form URL'
+    name: 'Amplify Onboarding Form'
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   32a35c2d-7747-4707-91f2-410f02d41a4d:
     contentColumnType: text
     fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
@@ -318,6 +333,24 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  40293d4e-c324-4225-adad-c7e4cccad8cf:
+    contentColumnType: text
+    fieldGroup: c58a5554-fc87-40ab-988c-a6ef8506fbec
+    handle: amplifyChannelHeading
+    instructions: 'This is the larger heading before the listing of channels on the left and description on the right.'
+    name: 'Amplify Channel Heading'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'Increase your results, not work'
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
@@ -610,6 +643,53 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
+  6f930ab4-34d9-4f16-9123-9da6ce59119c:
+    contentColumnType: string
+    fieldGroup: 636d19c7-1b45-4c83-bb80-ff9a370bc669
+    handle: heroVideo
+    instructions: ''
+    name: 'Hero Video'
+    searchable: true
+    settings:
+      allowSelfRelations: ''
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: 'Add hero video here.'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  73b55577-0fbb-4eb1-b3b5-14fee0151de0:
+    contentColumnType: text
+    fieldGroup: d5eb13ef-9ebe-4773-9b43-9d0baa77b5d0
+    handle: thankYouSubHead
+    instructions: ''
+    name: 'Thank You Sub-head'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   78e7d055-3c49-4cc3-9d6b-deed4930e3b8:
     contentColumnType: string(255)
     fieldGroup: 6c1296e7-716e-47a7-9c8a-f997715459ae
@@ -871,6 +951,19 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
+  92290d95-3682-47e4-a6da-8537ed0323d4:
+    contentColumnType: string(255)
+    fieldGroup: c58a5554-fc87-40ab-988c-a6ef8506fbec
+    handle: amplifyVideo
+    instructions: ''
+    name: 'Amplify Video'
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: 'enter the Amplify video url'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   94377b09-8631-4bdf-b0be-fe65c7f969c9:
     contentColumnType: text
     fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
@@ -1033,6 +1126,24 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  b17d2517-d326-4811-93db-8adf101b93a2:
+    contentColumnType: text
+    fieldGroup: c58a5554-fc87-40ab-988c-a6ef8506fbec
+    handle: amplifyChannelCopy
+    instructions: 'This is the smaller heading before the listing of channels on the left and description on the right.'
+    name: 'Amplify Channel copy'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'Why do extra work when one solution can handle it all? Amplify by Bluegrass does it all.'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   b36671aa-b061-49b0-bfdb-58c53137aa82:
     contentColumnType: string(255)
     fieldGroup: 6c1296e7-716e-47a7-9c8a-f997715459ae
@@ -1055,6 +1166,21 @@ fields:
     searchable: true
     settings:
       contentTable: '{{%matrixcontent_subserviceresourceblock}}'
+      maxBlocks: ''
+      minBlocks: ''
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  b5087270-0d69-4254-83db-03d8444d6b98:
+    contentColumnType: string
+    fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
+    handle: indiciaPermits
+    instructions: ''
+    name: 'Indicia Permits'
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_indiciapermits}}'
       maxBlocks: ''
       minBlocks: ''
       propagationMethod: all
@@ -1119,6 +1245,24 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: 'Hero Title'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c433d6a3-1327-40d9-aad8-94de1373d922:
+    contentColumnType: text
+    fieldGroup: d5eb13ef-9ebe-4773-9b43-9d0baa77b5d0
+    handle: thankYouHeading
+    instructions: ''
+    name: 'Thank You Heading'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
@@ -1212,6 +1356,29 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  df28545c-7fdd-4faf-89ce-aee49a09702d:
+    contentColumnType: text
+    fieldGroup: d5eb13ef-9ebe-4773-9b43-9d0baa77b5d0
+    handle: thankYouCopy
+    instructions: ''
+    name: 'Thank You Copy'
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
   e6b5a3fe-802c-4c2a-bcbc-fe2a1d7473d0:
     contentColumnType: string
     fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
@@ -1235,7 +1402,7 @@ fields:
     name: 'Service Line'
     searchable: true
     settings:
-      allowSelfRelations: ''
+      allowSelfRelations: '1'
       limit: '2'
       localizeRelations: false
       selectionLabel: ''
@@ -1398,6 +1565,19 @@ globalSets:
             sortOrder: 2
     handle: jobs
     name: Jobs
+  6a3510af-441c-42be-b37c-8e452ab029f9:
+    fieldLayouts:
+      68ff1c06-2008-49d3-87ab-e6a5aea706bc:
+        tabs:
+          -
+            fields:
+              e6b5a3fe-802c-4c2a-bcbc-fe2a1d7473d0:
+                required: false
+                sortOrder: 1
+            name: FAQs
+            sortOrder: 1
+    handle: frequentlyAskedQuestions
+    name: 'Frequently Asked Questions'
   d3bf2fdc-3e3d-4b42-8409-6f65ed0978ec:
     fieldLayouts:
       169e0d97-0e93-4a97-9f56-68207688df75:
@@ -2260,6 +2440,144 @@ matrixBlockTypes:
     handle: servicesDetail
     name: 'Services Detail'
     sortOrder: 1
+  f21cdeff-d401-4556-a383-b4077be69f10:
+    field: b5087270-0d69-4254-83db-03d8444d6b98
+    fieldLayouts:
+      86be5fc6-16b2-4940-a140-0eec40a399b0:
+        tabs:
+          -
+            fields:
+              38afbca8-292d-4f0d-9f6b-32dd884b101b:
+                required: true
+                sortOrder: 4
+              54aa6ed2-c281-4455-b23e-39abfc185818:
+                required: true
+                sortOrder: 2
+              8bc30be0-8f97-4f6e-b724-79b84cb404d5:
+                required: true
+                sortOrder: 3
+              ea79f4a5-281f-4169-81cb-39b0c66ca9a4:
+                required: true
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      38afbca8-292d-4f0d-9f6b-32dd884b101b:
+        contentColumnType: string
+        fieldGroup: null
+        handle: jpgPermit
+        instructions: ''
+        name: 'JPG Permit'
+        searchable: true
+        settings:
+          allowSelfRelations: ''
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+          singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources:
+            - 'volume:e3f57e1f-81b6-4a75-84ee-011f605c60d6'
+          targetSiteId: null
+          useSingleFolder: false
+          validateRelatedElements: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      54aa6ed2-c281-4455-b23e-39abfc185818:
+        contentColumnType: text
+        fieldGroup: null
+        handle: cityOrType
+        instructions: ''
+        name: 'City or Type'
+        searchable: true
+        settings:
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      8bc30be0-8f97-4f6e-b724-79b84cb404d5:
+        contentColumnType: string
+        fieldGroup: null
+        handle: pdfPermit
+        instructions: ''
+        name: 'PDF Permit'
+        searchable: true
+        settings:
+          allowSelfRelations: ''
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: 'Add pdf permit'
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+          singleUploadLocationSource: 'volume:9ad43390-a17b-4454-8f6f-0887b219539d'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources:
+            - 'volume:e3f57e1f-81b6-4a75-84ee-011f605c60d6'
+          targetSiteId: null
+          useSingleFolder: false
+          validateRelatedElements: ''
+          viewMode: list
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      ea79f4a5-281f-4169-81cb-39b0c66ca9a4:
+        contentColumnType: string
+        fieldGroup: null
+        handle: typeOfPermit
+        instructions: ''
+        name: 'Type of Permit'
+        searchable: true
+        settings:
+          optgroups: true
+          options:
+            -
+              __assoc__:
+                -
+                  - label
+                  - 'Presort Standard'
+                -
+                  - value
+                  - presortStandard
+                -
+                  - default
+                  - ''
+            -
+              __assoc__:
+                -
+                  - label
+                  - 'Non-profit Presort Standard'
+                -
+                  - value
+                  - nonProfitPresortStandard
+                -
+                  - default
+                  - ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\Dropdown
+    handle: permits
+    name: Permits
+    sortOrder: 1
   f9463bad-288e-4d7e-a514-103f9180311d:
     field: 96efe999-ece5-45ed-8a45-6258fbe04a27
     fieldLayouts:
@@ -2393,11 +2711,11 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
     settings:
-      allowUpScaledImageVariants: false
+      allowUpScaledImageVariants: true
       assetVolumeSubFolders: true
       autoSharpenScaledImages: true
       createColorPalette: true
-      createPlaceholderSilhouettes: false
+      createPlaceholderSilhouettes: true
       imageTransformTypeSettings:
         __assoc__:
           -
@@ -2509,16 +2827,19 @@ sections:
                 fields:
                   163dc09e-a95b-4e80-b2db-2d516f17ec5f:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 4
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
-                    sortOrder: 1
+                    sortOrder: 3
+                  6f930ab4-34d9-4f16-9123-9da6ce59119c:
+                    required: false
+                    sortOrder: 2
                   82184cef-9c88-4dd7-bc96-70aba2316059:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 5
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 1
                 name: Hero
                 sortOrder: 1
               -
@@ -2594,16 +2915,19 @@ sections:
                 fields:
                   163dc09e-a95b-4e80-b2db-2d516f17ec5f:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 4
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
-                    sortOrder: 1
+                    sortOrder: 3
+                  6f930ab4-34d9-4f16-9123-9da6ce59119c:
+                    required: false
+                    sortOrder: 2
                   82184cef-9c88-4dd7-bc96-70aba2316059:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 5
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 1
                 name: Hero
                 sortOrder: 1
               -
@@ -2666,16 +2990,19 @@ sections:
                 fields:
                   163dc09e-a95b-4e80-b2db-2d516f17ec5f:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 4
                   32a35c2d-7747-4707-91f2-410f02d41a4d:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 6
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                    required: false
+                    sortOrder: 3
+                  6f930ab4-34d9-4f16-9123-9da6ce59119c:
                     required: false
                     sortOrder: 2
                   82184cef-9c88-4dd7-bc96-70aba2316059:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 5
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
                     sortOrder: 1
@@ -2750,16 +3077,19 @@ sections:
                 fields:
                   163dc09e-a95b-4e80-b2db-2d516f17ec5f:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 4
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
-                    sortOrder: 1
+                    sortOrder: 3
+                  6f930ab4-34d9-4f16-9123-9da6ce59119c:
+                    required: false
+                    sortOrder: 2
                   82184cef-9c88-4dd7-bc96-70aba2316059:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 5
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 1
                 name: Hero
                 sortOrder: 1
               -
@@ -2835,16 +3165,19 @@ sections:
                 fields:
                   163dc09e-a95b-4e80-b2db-2d516f17ec5f:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 4
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
-                    sortOrder: 1
+                    sortOrder: 3
+                  6f930ab4-34d9-4f16-9123-9da6ce59119c:
+                    required: false
+                    sortOrder: 2
                   82184cef-9c88-4dd7-bc96-70aba2316059:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 5
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 1
                 name: Hero
                 sortOrder: 1
               -
@@ -2928,7 +3261,16 @@ sections:
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 1
-                name: Hero
+                  73b55577-0fbb-4eb1-b3b5-14fee0151de0:
+                    required: false
+                    sortOrder: 4
+                  c433d6a3-1327-40d9-aad8-94de1373d922:
+                    required: false
+                    sortOrder: 3
+                  df28545c-7fdd-4faf-89ce-aee49a09702d:
+                    required: false
+                    sortOrder: 2
+                name: Thanks
                 sortOrder: 1
         handle: thanks
         hasTitleField: false
@@ -3005,6 +3347,16 @@ sections:
     enableVersioning: true
     entryTypes:
       c8a0f55c-1d2f-462d-af56-0089e7c3cd13:
+        fieldLayouts:
+          5d601745-f6de-40c7-b341-c978481c1297:
+            tabs:
+              -
+                fields:
+                  94377b09-8631-4bdf-b0be-fe65c7f969c9:
+                    required: false
+                    sortOrder: 1
+                name: Unsubscribed
+                sortOrder: 1
         handle: unsubscribed
         hasTitleField: false
         name: Unsubscribed
@@ -3101,25 +3453,6 @@ sections:
     enableVersioning: true
     entryTypes:
       8a60c42c-6657-4519-bc52-dae47b5b073d:
-        fieldLayouts:
-          dfd98d18-74ec-4fdc-99fd-f0ef6999de6f:
-            tabs:
-              -
-                fields:
-                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
-                    required: false
-                    sortOrder: 1
-                  5c07e36c-fa81-4d9b-9894-4217e594a43f:
-                    required: false
-                    sortOrder: 4
-                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
-                    required: false
-                    sortOrder: 2
-                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
-                    required: false
-                    sortOrder: 3
-                name: Hero
-                sortOrder: 1
         handle: faq
         hasTitleField: false
         name: 'Frequently Asked Questions'
@@ -3358,19 +3691,28 @@ sections:
                 fields:
                   35e87cfa-1959-4c96-a8cb-32c051cbe692:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 6
+                  40293d4e-c324-4225-adad-c7e4cccad8cf:
+                    required: false
+                    sortOrder: 2
                   540ca61a-7022-43f9-92e4-0f79f663bb58:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 7
                   6910cd61-b9ed-4d47-bd95-14167fc3004c:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 8
                   8a9f767f-fb84-4577-a54d-cedda20bb65b:
+                    required: false
+                    sortOrder: 4
+                  92290d95-3682-47e4-a6da-8537ed0323d4:
                     required: false
                     sortOrder: 1
                   94377b09-8631-4bdf-b0be-fe65c7f969c9:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 5
+                  b17d2517-d326-4811-93db-8adf101b93a2:
+                    required: false
+                    sortOrder: 3
                 name: Amplify
                 sortOrder: 1
         handle: amplifyByBluegrass
@@ -3410,19 +3752,13 @@ sections:
             tabs:
               -
                 fields:
-                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
-                    required: false
-                    sortOrder: 1
-                  ae6a83f6-8d78-4932-9800-16ed3134e37b:
+                  b5087270-0d69-4254-83db-03d8444d6b98:
                     required: false
                     sortOrder: 2
                   b91f5c1a-62d8-4c4d-bb8a-4acdf7092a25:
                     required: false
-                    sortOrder: 4
-                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
-                    required: false
-                    sortOrder: 3
-                name: Hero
+                    sortOrder: 1
+                name: Indicia
                 sortOrder: 1
         handle: indicia
         hasTitleField: false
@@ -3453,21 +3789,11 @@ sections:
             tabs:
               -
                 fields:
-                  528ea79f-fca7-4ea4-a9af-f7b0c062878f:
+                  2b5bfdc3-dc62-444f-a7d3-23ceade47a99:
                     required: false
                     sortOrder: 1
-                  bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
-                    required: false
-                    sortOrder: 2
-                name: Hero
+                name: Onboarding
                 sortOrder: 1
-              -
-                fields:
-                  94377b09-8631-4bdf-b0be-fe65c7f969c9:
-                    required: false
-                    sortOrder: 1
-                name: 'Onboarding Form HTML'
-                sortOrder: 2
         handle: amplifyOnboarding
         hasTitleField: false
         name: 'Amplify Onboarding'
@@ -3500,6 +3826,16 @@ sections:
     enableVersioning: true
     entryTypes:
       f90c2926-efc4-4f20-b3f9-754319072d94:
+        fieldLayouts:
+          d96dcab9-2739-4f50-9ff5-5d798fa2c5ac:
+            tabs:
+              -
+                fields:
+                  94377b09-8631-4bdf-b0be-fe65c7f969c9:
+                    required: false
+                    sortOrder: 1
+                name: 'Signup Error'
+                sortOrder: 1
         handle: signupError
         hasTitleField: false
         name: 'Signup Error'
@@ -3704,6 +4040,25 @@ volumes:
     sortOrder: 1
     type: craft\volumes\Local
     url: '@web/images/bluegrass'
+  e3f57e1f-81b6-4a75-84ee-011f605c60d6:
+    fieldLayouts:
+      23cf8c78-3685-4fd0-b9e8-2aa11b0b5528:
+        tabs:
+          -
+            fields:
+              32a35c2d-7747-4707-91f2-410f02d41a4d:
+                required: false
+                sortOrder: 1
+            name: 'Tab 1'
+            sortOrder: 1
+    handle: indicia
+    hasUrls: true
+    name: Indicia
+    settings:
+      path: '@webroot/images/indicia'
+    sortOrder: 8
+    type: craft\volumes\Local
+    url: '@web/images/indicia'
   f9548784-bf22-4ca1-b237-52f3dd132432:
     fieldLayouts:
       d1e341f0-323f-4a07-b009-9707681401bd:

@@ -2,14 +2,13 @@
 
     {% block content %} 
 
-    {% include "/components/navigation.html" %}
+    {% include "/components/navbar-services.html" %}
 
-    {% include "/components/hero.html" %}
-
-    <div class="services-temporary-body container mt-5 mb-5">
-        <div>
-            {{ entry.bodyCopy }}
-        </div>
+    <div class="services-temporary-body container infoPage mb-5">
+        <h1 class="mb-5">{{ entry.title }}</h1>
+            <div>
+                {{ entry.bodyCopy }}
+            </div>
     </div>
 
     {% include "/components/footer.html" %}

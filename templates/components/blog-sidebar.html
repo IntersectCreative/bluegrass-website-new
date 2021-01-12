@@ -66,7 +66,7 @@
 
     {% for block in companyInfo.socialMedia.all() %}
 
-        <a href="{{ block.platformUrl }}" target="_blank"><img src="{{ block.platformIcon.one().getUrl() }}" alt="{{ block.platformName }}icon" class="mr-2"/></a>
+        <a href="{{ block.platformUrl }}" target="_blank"><img src="{{ block.platformIconBlue.one().getUrl() }}" alt="{{ block.platformName }}icon" class="mr-2" style="height: 32px; width: 32px;"/></a>
     
     {% endfor %}
 

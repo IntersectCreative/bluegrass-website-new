@@ -9,7 +9,7 @@
             {% for block in companyInfo.socialMedia.all() %}
     
             <div class="col mt-2 mb-2">
-                <a href="{{ block.platformUrl }}" target="_blank"><img src="{{ block.platformIcon.one().getUrl() }}" alt="{{ block.platformName }}icon" class="mt-2 mb-2" style="height: 32px; width: 32px;"/></a>
+                <a href="{{ block.platformUrl }}" target="_blank"><img src="{{ block.platformIconWhite.one().getUrl() }}" alt="{{ block.platformName }}icon" class="mt-2 mb-2" style="height: 32px; width: 32px;"/></a>
             </div>
     
             {% endfor %}

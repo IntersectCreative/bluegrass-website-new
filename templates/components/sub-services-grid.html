@@ -28,8 +28,16 @@
         {% for entry in entries %}
 
             <div class="col col-lg-4 col-12 mb-3">
+
+                {% if entry.subServiceImage | length %}
+
                 <img src="{{ entry.subServiceImage.one().getUrl() }}" class="img-responsive" width="300px" height="auto;"/>
-                <a href="{{entry.url}}" style="color: #4A4A4A;"><h3 class="mt-2">{{ entry.title }}</h3></a>
+                
+                {% else %}
+
+                {% endif %}
+
+                <a href="{{ entry.url }}" style="color: #4A4A4A;"><h3 class="mt-2">{{ entry.title }}</h3></a>
                 <p>
                     {{ entry.bodyCopy }}
                     <a href="{{ entry.url }}" style="color: {{ entry.serviceLineColor.getHex() }}; font-weight: bold;">MORE></a>

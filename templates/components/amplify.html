@@ -1,7 +1,7 @@
 <div style="height: 200px; background-color: white;"></div>
     <div class="container">
         <div style="background-color: white; text-align: center;">
-            <iframe height="315px" width="60%" src="https://www.youtube.com/embed/Wg8kEZRmppc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe height="315px" width="60%" src="{{ entry.amplifyVideo }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
     <div>{{ entry.bodyCopy }}</div>
@@ -11,8 +11,8 @@
 {% include "/components/amplifychannelsrow.html" %}
 
 <div class="mt-5 pb-5" style="background-color: #102542; color: white;">
-    <h4 class="text-center pt-5 pb-2">Increase your results, not work.</h4>
-    <p class="text-center pb-5">Why do extra work when one solution can handle it all? Amplify by Bluegrass does it all.</p>
+    <h4 class="text-center pt-5 pb-2">{{ entry.amplifyChannelHeading }}</h4>
+    <p class="text-center pb-5">{{ entry.amplifyChannelCopy }}</p>
     <div class="container">
 
 {% for block in entry.amplifyChannels.all() %}

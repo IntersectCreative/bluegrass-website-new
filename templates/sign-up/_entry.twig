@@ -2,12 +2,28 @@
 
     {% block content %} 
 
-        {% include "/components/navigation.html" %}
+        {% include "/components/navbar-services.html" %}
 
-        {% set headerTitle="Sign-Up" %}
-
-        {% include "/components/section-header.html" %}
-
+        <div class="container infoPage">
+            <h1>{{ entry.title }}</h1>
+            <h2>Sign up for our monthly newsletter!</h2>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="mt-5">
+                            <!--[if lte IE 8]>
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                            <![endif]-->
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                            <script>
+                            hbspt.forms.create({
+                                portalId: "8102511",
+                                formId: "92b288ae-e52f-4ddc-b48d-d7939f5bd2a4"
+                            });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+        </div>
         {% include "/components/footer.html" %}
         
     {% endblock %}

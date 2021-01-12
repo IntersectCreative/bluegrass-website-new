@@ -2,31 +2,41 @@
 
     {% block content %} 
 
-    {% include "/components/navigation.html" %}
+    {% include "/components/navbar-services.html" %}
 
-    {% include "/components/hero.html" %}
-
-<div class="container">
+<div class="container infoPage">
+    <h1>{{ entry.title }}</h1>
     <div class="row">
-
         <div class="col-lg-7 col-md-12">
         {% include "/components/services-temporary-body.html" %}
         </div>
-        <div class="col-lg-5 col-md-12 mt-5 mb-5" >
+        <div class="col-lg-5 col-md-12 mt-5 mb-5">
+
             <ul><h5>Presort Standard Permits</h5>
-                <li>Presort Standard - Lexington</li>
-                <li>Presort Standard - Louisville</li>
-                <li>Presort Standard - Cincinnati</li>
-                <li>Presort Standard - Corporate</li>
+
+            {% for block in entry.indiciaPermits.all() %}
+
+                {% if block.typeOfPermit == 'presortStandard' %}
+
+        <li>Presort Standard - {{ block.cityOrType }} <a href="{{ block.pdfPermit.one().getUrl() }}" target="_blank">PDF</a> or <a href="{{ block.jpgPermit.one().getUrl() }}" target="_blank">JPG</a></li>
+            
+                {% endif %}
+
+            {% endfor %}
             </ul>
-            <ul><h5>Non-profit Presort Standard Permits</h5>
-                <li>Non-profit Presort Standard - Lexington</li>
-                <li>Non-profitPresort Standard - Louisville</li>
-                <li>Non-profitPresort Standard - Cincinnati</li>
-                <li>Non-profitPresort Standard - Corporate</li>
+
+            <ul><h5>Non-Profit Presort Standard Permits</h5>
+
+            {% for block in entry.indiciaPermits.all() %}
+
+            {% if block.typeOfPermit == 'nonProfitPresortStandard' %}
+
+        <li>Non-Profit Presort Standard - {{ block.cityOrType }} <a href="{{ block.pdfPermit.one().getUrl() }}" target="_blank">PDF</a> or <a href="{{ block.jpgPermit.one().getUrl() }}" target="_blank">JPG</a></li>
+            
+            {% endif %}
+
+            {% endfor %}
             </ul>
-        
-        
         </div>
 
     </div>

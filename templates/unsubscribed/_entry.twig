@@ -2,12 +2,12 @@
 
     {% block content %} 
 
-    {% include "/components/navigation.html" %}
+    {% include "/components/navbar-services.html" %}
 
-    {% set headerTitle="Unsubscribed" %}
-
-    {% include "/components/section-header.html" %}
-
+        <div class="container infoPage mb-5">
+            <h1>{{ entry.title }}</h1>
+        {% include "/components/body-copy.html" %}
+        </div>  
     {% include "/components/footer.html" %}
     
     {% endblock %}

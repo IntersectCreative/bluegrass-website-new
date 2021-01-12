@@ -2,11 +2,18 @@
 
     {% block content %} 
 
-        {% include "/components/navigation.html" %}
+        {% include "/components/navbar-services.html" %}
 
-        {% set headerTitle="Sign-Up Error" %}
+        <div class="container infoPage">
+            <h1>{{ entry.title }}</h1>
+        
 
-        {% include "/components/section-header.html" %}
+        {% include "/components/body-copy.html" %}
+
+            <div class="mt-5 mb-5">
+                <a href="/sign-up" class="button lgsb">Try Again</a>
+            </div>  
+        </div>
 
         {% include "/components/footer.html" %}
         
