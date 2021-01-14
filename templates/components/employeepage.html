@@ -1,5 +1,94 @@
 <div class="container level2">
 
+    {% if craft.mobileDetect.isMobile %}
+
+    <div class="row d-flex" style="margin-top: 125px;">
+        <div class="col-5">
+
+            {% if entry.employeePicture | length %}
+
+            <img src="{{ entry.employeePicture.one().getUrl() }}" alt="{{ entry.title }}" class="img-fluid" style="height: 100px; width: 100px; border-radius: 50%;">
+            
+            {% else %}
+
+
+            {% endif %}
+        </div>
+        <div class="col-7">
+            <h1>{{ entry.title }}</h1>
+            <h4>{{ entry.department }}</h4>
+            <h2>{{ entry.employeeTitle }}</h2>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-block  btn-primary mt-3 mb-3 text-uppercase">Hire {{ entry.employeeName }} and Team</button>
+    
+    {% if entry.getToKnow|length %}
+
+    <h4 class="mb-4 font-weight-bold">Get to Know {{ entry.employeeName }}</h4>
+
+    {% for block in entry.getToKnow.all() %}
+
+    {% if block.favoritePart|length %}
+
+    <h4>What is your favorite part of working at Bluegrass?</h4>
+    <p>{{ block.favoritePart }}</p>
+
+    {% else %}
+
+    {% endif %}
+
+    {% if block.pets|length %}
+
+    <h4>Do you have any pets?</h4>
+    <p>{{ block.pets }}</p>
+    {% else %}
+
+    {% endif %}
+
+    {% if block.inspiration|length %}
+
+    <h4>Where do you find inspiration?</h4>
+    <p>{{ block.inspiration }}</p>
+    {% else %}
+
+    {% endif %}
+
+    {% if block.song|length %}
+
+    <h4>What is the most played song on your playlist?</h4>
+    <p>{{ block.song }}</p>
+
+    {% else %}
+
+    {% endif %}
+
+    {% if block.surprisingFact|length %}
+    
+    <h4>What is one fact about you that surprises people?</h4>
+    <p>{{ block.surprisingFact }}</p>
+
+    {% else %}
+
+    {% endif %}
+
+    {% if block.chooseBluegrass|length %}
+
+    <h4>Why do you think clients should choose to work with Bluegrass?</h4>
+    <p>{{ block.chooseBluegrass }}</p>
+    
+    {% else %}
+    
+    {% endif %}
+
+{% endfor %}
+
+{% endif %} 
+    
+    
+
+    {% else %}
+
     <div class="row d-flex" style="margin-top: 200px;">
         <div class="col-lg-8 col-sm-12 justify-content-center align-self-center text-md-left text-center">
             <h1>{{ entry.title }}</h1>
@@ -90,12 +179,6 @@
         </div>
         <div class="col-lg-4 col-sm-12">
 
-        {% if entry.interests | length %}
-
-            {% include "/components/employee-interest-block.html" %}
-        
-        {% endif %}
-
             <button type="button" class="btn btn-block btn-lg  btn-primary mt-5 text-uppercase">Hire {{ entry.employeeName }} and Team</button>
 
         </div>
@@ -104,6 +187,7 @@
     
 
     </div>
+{% endif %}
 
     {% set employeeBlogs = craft.entries.section('Blog').relatedTo(entry).all() %}
 
@@ -156,3 +240,4 @@
 
         {% endif %}
 </div>
+
