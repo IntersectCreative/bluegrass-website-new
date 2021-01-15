@@ -644,6 +644,7 @@ video {
   margin-top: 150px;
   text-align: left;
   align-items: center;
+  text-shadow: none;
 }
 
 .service-icon-row {
@@ -651,6 +652,7 @@ video {
   align-items: center;
   margin-top: 50px;
   margin-bottom: 300px;
+  text-shadow: none;
 }
 
 .icon-box {
