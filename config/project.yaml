@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1610476000
+dateModified: 1610656869
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -3480,16 +3480,19 @@ sections:
                 fields:
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
-                    sortOrder: 1
+                    sortOrder: 2
                   5c07e36c-fa81-4d9b-9894-4217e594a43f:
+                    required: false
+                    sortOrder: 4
+                  6f930ab4-34d9-4f16-9123-9da6ce59119c:
                     required: false
                     sortOrder: 3
                   ae6a83f6-8d78-4932-9800-16ed3134e37b:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 5
                   bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
                     required: false
-                    sortOrder: 2
+                    sortOrder: 1
                 name: Hero
                 sortOrder: 1
               -

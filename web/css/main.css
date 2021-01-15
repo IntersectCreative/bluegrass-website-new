@@ -396,6 +396,7 @@ footer .footer-input {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
+  object-fit: cover;
 }
 
 .hero-divider {
@@ -406,8 +407,9 @@ footer .footer-input {
 
 video {
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   height: inherit;
+  object-fit: cover;
 }
 
 .hero-copy {
