@@ -22,18 +22,22 @@ html, body {
 }
 .level1 h2 {
   font-size: 1.107em;
+  font-weight: bolder;
 }
 @media only screen and (max-width: 768px) {
   .level1 h2 {
     font-size: 1em;
+    font-weight: bolder;
   }
 }
 .level1 h3 {
   font-size: 1em;
+  font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
   .level1 h3 {
     font-size: 0.694em;
+    font-weight: bold;
   }
 }
 .level1 h4 {
@@ -336,6 +340,9 @@ footer .footer-input {
   border-radius: 18px;
   background-color: transparent;
 }
+footer a {
+  color: #464646 !important;
+}
 
 .footer-container {
   margin-top: 150px;
@@ -447,6 +454,10 @@ video {
   .hero-subtitle {
     display: none;
   }
+}
+
+.arrowDown {
+  color: white;
 }
 
 .partners {
@@ -691,12 +702,9 @@ video {
   color: white;
   font-size: 14px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+  padding: 20% 10%;
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 .home-about {

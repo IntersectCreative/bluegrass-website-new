@@ -9,15 +9,22 @@
 
 <!-- <img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};"> -->
 <video playsinline autoplay muted loop class="hero-image" id="myVideo" src="{{ entry.heroVideo.one().getUrl() }}" alt=" " type="video/mp4" style="background-color: {{ entry.serviceLineColor }};"></video>	
-<div class="hero-copy">
+	<div class="hero-copy">
 		<h1 class="hero-title text-white">{{ entry.heroTitle }}<br>{{ entry.heroTitle2 }}</h1>
 		<div class="row">
 			<div class="col-8">
-				<h2 class="hero-subtitle text-white">{{ entry.heroSubtitle }}</h2>
+				<p class="hero-subtitle text-white">{{ entry.heroSubtitle }}</p>
 			</div>
 			<div class="col-4"></div>
+			
+		</div>
+		<div class="text-center">
+
+		{% include "/components/arrow-down.html" with { heading: "What can we do for you?"} %}
+
 		</div>
 	</div>
+	
 </div>
 
 {% else %}
@@ -39,6 +46,11 @@
 					<h2 class="hero-subtitle">{{ entry.heroSubtitle }}</h2>
 				</div>
 				<div class="col-4"></div>
+			</div>
+			<div class="text-center" style="margin-top: 150px;">
+
+				{% include "/components/arrow-down.html" with { heading: "Discover Our Services"} %}
+		
 			</div>
 		</div>
 </div>

@@ -60,17 +60,21 @@ html, body {
 
 	h2 {
 		font-size: 1.107em;
+		font-weight:bolder;
 		
 		@media only screen and (max-width: 768px){
 			font-size: 1em;
+			font-weight: bolder;
 		}
 	}
 
 	h3 {
 		font-size: 1em;
+		font-weight: bold;
 
 		@media only screen and (max-width: 768px){
 			font-size: 0.694em;
+			font-weight: bold;
 		}
 	}
 
