@@ -5,7 +5,7 @@
 	display: inline-block;
 	justify-content: center;
  	align-items: center;
- 	text-shadow: $shadow;
+ 
 }
 
 .hero-image {
@@ -36,6 +36,7 @@ video {
 		// transform: translate(-25%, -65%) !important;
 		position: absolute;
 		color: white;
+		
 
 		@media only screen and (max-width: 768px) {
 			top: 65%;
@@ -50,6 +51,7 @@ video {
 		font-family: $sans-serif;
 		line-height: 90px;
 		margin-bottom: 30px;
+		text-shadow: $shadow;
 
 		@media only screen and (max-width: 768px) {
 			font-size: 50px;

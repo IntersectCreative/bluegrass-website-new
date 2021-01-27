@@ -1,6 +1,5 @@
 .cta-container {
-	height: auto;
-	background-color: gray;
+	height: 1000px;
 	color: #FFFFFF;
 	text-align: center;
 	display: flex;
@@ -10,7 +9,6 @@
 	.cta {
 		width: 500px;
 		height: auto; 
-		text-shadow: $shadow;
 	}
 }
 

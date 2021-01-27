@@ -1,12 +1,12 @@
 <div id="moreresources">
 <div class="container">
-	<h3 class="text-center mt-5 mb-5">{{ explainer }}</h3>
+	<h3 class="text-center mb-5">{{ explainer }}</h3>
 	<div class="row text-center">
 
 	{% for entry in craft.entries().section('blog').limit(3).id('not ' ~ entry.id).all() %}
 
 		<div class="col-lg-4 mb-4">
-			<div class="card h-100 mt-3">
+			<div class="card h-100 mt-3 border-0">
 				{% if entry.picture | length %}
 			<img srcset="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
 				{% else %}

@@ -7,9 +7,23 @@
 
 {% if entry.uri == "__home__" %}
 
-<!-- <img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};"> -->
+{% if craft.mobileDetect.isMobile %}
+
+<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
+
+{% endif %}
+
+{% if entry.heroVideo | length %}
+
 <video playsinline autoplay muted loop class="hero-image" id="myVideo" src="{{ entry.heroVideo.one().getUrl() }}" alt=" " type="video/mp4" style="background-color: {{ entry.serviceLineColor }};"></video>	
-	<div class="hero-copy">
+
+{% else %}
+
+<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
+
+{% endif %}
+
+<div class="hero-copy">
 		<h1 class="hero-title text-white">{{ entry.heroTitle }}<br>{{ entry.heroTitle2 }}</h1>
 		<div class="row">
 			<div class="col-8">
@@ -23,15 +37,31 @@
 		{% include "/components/arrow-down.html" with { heading: "What can we do for you?"} %}
 
 		</div>
-	</div>
+</div>
 	
 </div>
 
 {% else %}
 
 <div class="hero level1">
-	<video playsinline autoplay muted loop class="hero-image" id="myVideo" src="{{ entry.heroVideo.one().getUrl() }}" alt=" " type="video/mp4" style="background-color: {{ entry.serviceLineColor }};"></video>
-		<div class="hero-copy">
+
+	{% if craft.mobileDetect.isMobile %}
+
+	<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
+	
+	{% endif %}
+	
+	{% if entry.heroVideo | length %}
+	
+	<video playsinline autoplay muted loop class="hero-image" id="myVideo" src="{{ entry.heroVideo.one().getUrl() }}" alt=" " type="video/mp4" style="background-color: {{ entry.serviceLineColor }};"></video>	
+	
+	{% else %}
+	
+	<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
+	
+	{% endif %}
+	
+	<div class="hero-copy">
 
 			{% if entry.uri == "thanks" %}
 
@@ -54,6 +84,7 @@
 			</div>
 		</div>
 </div>
+
 {% endif %}
 
 

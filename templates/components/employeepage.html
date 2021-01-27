@@ -203,7 +203,7 @@
             {% for blog in employeeBlogs %}
 
                 <div class="col-lg-4 mb-4">
-                <div class="card mt-3 h-100">
+                <div class="card mt-3 h-100 border-0">
 
                     {% if blog.picture | length %}
                     <img src="{{ blog.picture.one().getUrl() }}" class="card-img-top" alt="...">

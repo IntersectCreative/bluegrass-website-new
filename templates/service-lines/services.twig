@@ -7,7 +7,22 @@
 
     {% include "/components/sub-service-line-hero.html" %}
 
+{# The following component is only to be included on Mailing Lists Page #}
+
+    {% if entry.title == "Mailing Lists" %}    
+
+        {% include "/components/copy-image-right.html" %}
+        {% include "/components/copy-image-left.html" %}
+    
+    {% endif %}
+
+{# The following component is to be included on every page but Search Engine Marketing #}
+
+    {% if entry.title != "Search Engine Marketing" %}
+
     {% include "/components/services-temporary-body.html" %}
+
+    {% endif %}
 
 {# The following component is only to be included on the Mailing Services Page. #}
 
@@ -21,6 +36,12 @@
     {% if entry.title == "Creative" %}
 
         {% include "/components/creative-decisions.html" %}
+
+    {% endif %}
+
+    {% if entry.title == "Search Engine Marketing" %}
+
+        {% include "/components/search-marketing.html" %}
 
     {% endif %}
 

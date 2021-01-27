@@ -1,8 +1,8 @@
 <div class="container mt-5 level2">
 
-{% if entry.children | length %}
+<!-- {% if entry.children | length %}
     <h2 class="text-center mb-5">Types of {{ entry.title }}</h2>
-{% endif %}
+{% endif %} -->
 
     <div class="row d-flex justify-content-center mb-5">
 
@@ -14,7 +14,7 @@
         
         <div class="col-lg-4 col-md-6 col-sm-6 text-center mb-3">
             <a href="{{ entry.url }}">
-            <img src="{{ entry.subServiceImage.one().getUrl() }}" class="img-fluid"/>
+            <img src="{{ entry.subServiceImage.one().getUrl() }}" width="200px" height="200px;"/>
             <h3 class="mt-2">{{ entry.title }}</h3>
         </a>
         </div>
@@ -31,7 +31,7 @@
 
                 {% if entry.subServiceImage | length %}
 
-                <img src="{{ entry.subServiceImage.one().getUrl() }}" class="img-responsive" width="300px" height="auto;"/>
+                <img src="{{ entry.subServiceImage.one().getUrl() }}" class="img-responsive" width="250px" height="250px;"/>
                 
                 {% else %}
 

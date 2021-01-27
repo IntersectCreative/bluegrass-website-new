@@ -34,7 +34,7 @@
 
     {% for entry in pageEntries %}
     <div class="col-lg-4 mb-4 mt-2">
-      <div class="card mt-3 h-100">
+      <div class="card mt-3 h-100 border-0">
         {% if entry.picture | length %}
       <img src="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
       {% else %}
