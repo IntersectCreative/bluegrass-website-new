@@ -1,0 +1,20 @@
+<div class="container level2 mt-5 mb-5">
+    <h2 class="text-center text-uppercase mt-5 mb-5">why direct mail?</h2>
+    <div class="row mt-5 mb-5">
+
+        {% for block in entry.directMailThreeAcross.all() %}
+
+        <div class="col-sm-12 col-md-4 mt-5 mb-5">
+            <h3>{{ block.heading }}</h3>
+            <p>{{ block.copy }}
+            </p>
+            <a href="{{ block.pageLink}}" class="btn text-white" style="border-radius: 40.5px; background-color: {{ entry.serviceLineColor }};">{{ block.buttonText }}</a>
+        </div>
+
+        {% endfor %}
+
+    </div>
+    <div class="text-center mb-5">
+        <a href="/blog/5-strengths-of-direct-mail" type="button" class="btn btn-primary mb-5" style="border-radius: 40.5px; padding-left: 50px; padding-right: 50px;">More Benefits of Direct Mail</a>
+    </div>
+</div>

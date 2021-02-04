@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1611940409
+dateModified: 1612372086
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -319,6 +319,21 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  3d0cd752-64ca-4e59-8e18-79e9fde418f6:
+    contentColumnType: string
+    fieldGroup: 20ce816e-90cc-47e8-b3ab-eabc0da82703
+    handle: directMailThreeAcross
+    instructions: 'This is the group of three blocks under "Why Direct Mail" on the Direct Mail page.'
+    name: 'Direct Mail three across'
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_directmailthreeacross}}'
+      maxBlocks: '3'
+      minBlocks: '3'
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   3eff2e71-eab9-465a-94be-8eaab3f561ce:
     contentColumnType: text
     fieldGroup: ef21bb7c-0cae-421f-9c87-a14750432c60
@@ -1704,6 +1719,103 @@ matrixBlockTypes:
     handle: interests
     name: interests
     sortOrder: 1
+  0fb97b27-0120-4c67-a9bc-d05d557be139:
+    field: 3d0cd752-64ca-4e59-8e18-79e9fde418f6
+    fieldLayouts:
+      8a547c9c-ea12-409d-af35-3babb1d89050:
+        tabs:
+          -
+            fields:
+              7140b08c-c8b9-4ba1-b528-aff67c8139ba:
+                required: false
+                sortOrder: 3
+              b52ec5ce-6c02-45a2-84c7-1b3e01d72590:
+                required: false
+                sortOrder: 4
+              e5b7a9eb-452f-4f0b-8f23-0f5bef952a0c:
+                required: false
+                sortOrder: 1
+              f7019b40-258f-4585-b8c2-232dfaabd10d:
+                required: false
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      7140b08c-c8b9-4ba1-b528-aff67c8139ba:
+        contentColumnType: text
+        fieldGroup: null
+        handle: buttonText
+        instructions: 'enter what the button below should say'
+        name: 'button text'
+        searchable: true
+        settings:
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: 'Learn More About...'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      b52ec5ce-6c02-45a2-84c7-1b3e01d72590:
+        contentColumnType: string(255)
+        fieldGroup: null
+        handle: pageLink
+        instructions: 'url where button should go to.'
+        name: 'page link'
+        searchable: true
+        settings:
+          maxLength: '255'
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\Url
+      e5b7a9eb-452f-4f0b-8f23-0f5bef952a0c:
+        contentColumnType: text
+        fieldGroup: null
+        handle: heading
+        instructions: 'The heading above the paragraph.'
+        name: heading
+        searchable: true
+        settings:
+          byteLimit: null
+          charLimit: null
+          code: ''
+          columnType: null
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      f7019b40-258f-4585-b8c2-232dfaabd10d:
+        contentColumnType: text
+        fieldGroup: null
+        handle: copy
+        instructions: 'Enter paragraph copy here.'
+        name: copy
+        searchable: true
+        settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: true
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
+          removeEmptyTags: '1'
+          removeInlineStyles: '1'
+          removeNbsp: '1'
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: false
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\redactor\Field
+    handle: directMailService
+    name: 'Direct Mail Service'
+    sortOrder: 1
   1c24204e-628f-44a0-944b-ef2b8b346dbb:
     field: c5405c57-c331-45dd-bb73-59075c4bd47e
     fieldLayouts:
@@ -3032,13 +3144,13 @@ sections:
                 fields:
                   163dc09e-a95b-4e80-b2db-2d516f17ec5f:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 4
                   32a35c2d-7747-4707-91f2-410f02d41a4d:
                     required: false
-                    sortOrder: 7
+                    sortOrder: 6
                   4c4394e8-8f8e-4df0-acbb-1e6abbfbbeb2:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 3
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 2
@@ -3047,7 +3159,7 @@ sections:
                     sortOrder: 1
                   82184cef-9c88-4dd7-bc96-70aba2316059:
                     required: false
-                    sortOrder: 6
+                    sortOrder: 5
                 name: Hero
                 sortOrder: 1
               -
@@ -3077,6 +3189,9 @@ sections:
                   1f051357-163f-4bd4-9cb7-56b11296636d:
                     required: false
                     sortOrder: 1
+                  3d0cd752-64ca-4e59-8e18-79e9fde418f6:
+                    required: false
+                    sortOrder: 6
                   9ef27649-5aa6-4863-9500-c630405c5822:
                     required: false
                     sortOrder: 5

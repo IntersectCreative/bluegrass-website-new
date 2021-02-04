@@ -8,7 +8,8 @@
 		<div class="col-lg-4 mb-4">
 			<div class="card h-100 mt-3 border-0">
 				{% if entry.picture | length %}
-			<img srcset="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
+					<img srcset="{{ entry.picture.one().getUrl() }}" class="card-img-top" alt="...">
+
 				{% else %}
 				<img src="/images/blog/Stocksy_txp5f38c8e57MT000_Original_315051.jpg" class="card-img-top" alt="...">
 				{% endif %}
