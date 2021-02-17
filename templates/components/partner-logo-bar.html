@@ -3,8 +3,15 @@
 
     {% for block in companyInfo.partners.all() %}
 
-    <div class="col text-center"><img src="{{ block.icon.one().getUrl() }}" alt="{{ block.partnerName }}"></div>
+    {% if craft.mobileDetect.isMobile %}
 
+    <div class="col col-sm-4 text-center"><img src="{{ block.icon.one().getUrl() }}" alt="{{ block.partnerName }}" width="50px" height="auto"></div>
+    
+    {% else %}
+    
+    <div class=" col col-lg-2 col-sm-4 text-center"><img src="{{ block.icon.one().getUrl() }}" alt="{{ block.partnerName }}"></div>
+    
+    {% endif %}
 
     {% endfor %}
   </div>

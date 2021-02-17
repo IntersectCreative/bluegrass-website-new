@@ -425,11 +425,9 @@ video {
 }
 @media only screen and (max-width: 768px) {
   .hero-copy {
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -65%);
+    top: 55%;
     position: absolute;
-    text-align: center;
+    margin-left: 15px;
   }
 }
 
@@ -437,47 +435,33 @@ video {
   font-family: proxima-nova;
   line-height: 90px;
   margin-bottom: 30px;
-  text-shadow: 0px 2px 4px #000000;
 }
 @media only screen and (max-width: 768px) {
   .hero-title {
     font-size: 50px;
-    line-height: 60px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
   }
 }
 
 .hero-subtitle {
   font-family: proxima-nova;
-  text-shadow: 0px 2px 4px #000000;
-}
-@media only screen and (max-width: 768px) {
-  .hero-subtitle {
-    display: none;
-  }
 }
 
 .arrowDown {
   color: white;
+  bottom: 0;
+}
+
+.arrow-no-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 
 .partners {
   background-color: #006ea4;
-  height: 156px;
-}
-@media only screen and (max-width: 1049px) {
-  .partners {
-    height: 312px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .partners {
-    height: 468px;
-  }
-}
-@media only screen and (max-width: 329px) {
-  .partners {
-    height: 936px;
-  }
 }
 
 .partners .row {
@@ -645,10 +629,7 @@ video {
 @media only screen and (max-width: 768px) {
   .service-line-hero-copy {
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     position: absolute;
-    text-align: center;
   }
 }
 

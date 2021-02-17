@@ -9,7 +9,8 @@
 
 	{% if craft.mobileDetect.isMobile %}
 
-		<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
+		<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};" style="-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);">
 
 	{% else %}
 
@@ -37,7 +38,7 @@
 			</div>
 			<div class="text-center">
 
-			{% include "/components/arrow-down.html" with { heading: "What can we do for you?"} %}
+			{% include "/components/arrow-down.html" with { heading: "WHAT CAN WE DO FOR YOU?"} %}
 
 			</div>
 	</div>
@@ -85,7 +86,7 @@
 			</div>
 			<div class="text-center" style="margin-top: 150px;">
 
-				{% include "/components/arrow-down.html" with { heading: "Discover Our Services"} %}
+				{% include "/components/arrow-down.html" with { heading: "DISCOVER OUR SERVICES"} %}
 		
 			</div>
 		</div>

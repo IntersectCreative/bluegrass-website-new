@@ -6,11 +6,19 @@
 
     {% include "/components/hero.html" %}
 
-     {% include "/components/home-about.html" %}
+    {% if craft.mobileDetect.isMobile %}
+
+    {% include "/components/service-line-row.html" %}
+
+    {% else %}
+
+    {% include "/components/home-about.html" %}
 
     {% include "/components/service-line-row.html" %}
 
     {% include "/components/day-at-bluegrass.html" %}
+
+    {% endif %}
 
     {% include "/components/slider.html" %}
 
