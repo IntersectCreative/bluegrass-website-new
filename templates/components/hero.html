@@ -7,21 +7,24 @@
 
 {% if entry.uri == "__home__" %}
 
-{% if craft.mobileDetect.isMobile %}
+	{% if craft.mobileDetect.isMobile %}
 
-<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
+		<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
+
+	{% else %}
+
+		{% if entry.heroVideo | length %}
+
+		<video playsinline autoplay muted loop class="hero-image" id="myVideo" src="{{ entry.heroVideo.one().getUrl() }}" alt=" " type="video/mp4" style="background-color: {{ entry.serviceLineColor }};"></video>	
+
+		{% else %}
+
+		<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
+
+	{% endif %}
 
 {% endif %}
 
-{% if entry.heroVideo | length %}
-
-<video playsinline autoplay muted loop class="hero-image" id="myVideo" src="{{ entry.heroVideo.one().getUrl() }}" alt=" " type="video/mp4" style="background-color: {{ entry.serviceLineColor }};"></video>	
-
-{% else %}
-
-<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
-
-{% endif %}
 <div class="container">
 	<div class="hero-copy">
 			<h1 class="hero-title text-white">{{ entry.heroTitle }}<br>{{ entry.heroTitle2 }}</h1>
@@ -48,18 +51,21 @@
 	{% if craft.mobileDetect.isMobile %}
 
 	<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
-	
-	{% endif %}
-	
+
+{% else %}
+
 	{% if entry.heroVideo | length %}
-	
+
 	<video playsinline autoplay muted loop class="hero-image" id="myVideo" src="{{ entry.heroVideo.one().getUrl() }}" alt=" " type="video/mp4" style="background-color: {{ entry.serviceLineColor }};"></video>	
-	
+
 	{% else %}
-	
+
 	<img class="hero-image" src="{{ entry.heroImage.one().getUrl() }}" alt=" " style="background-color: {{ entry.serviceLineColor }};">
-	
+
 	{% endif %}
+
+{% endif %}
+
 <div class="container">
 	<div class="hero-copy">
 

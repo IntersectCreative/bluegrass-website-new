@@ -8,10 +8,20 @@
 
             {% if entry.currentlyEmployedByBluegrass %}
 
-            <div class="col-lg-2 col-md-4 col-sm-6 text-center">
-                <a href="{{ entry.url }}"><img src="{{ entry.employeePicture.one().getUrl() }}" alt="{{ entry.title }}" style="width: 150px; height: 150px; border-radius: 50%;"></a>
-                <a href="{{ entry.url }}" style="text-decoration: none; color: black;"><p class="mt-3">{{ entry.title }}</p></a>
-            </div>
+                {% if craft.mobileDetect.isMobile %}
+
+                <div class="col-4 text-center">
+                    <a href="{{ entry.url }}"><img src="{{ entry.employeePicture.one().getUrl() }}" alt="{{ entry.title }}" style="width: 75px; height: 75px; border-radius: 50%;"></a>
+                    <a href="{{ entry.url }}" style="text-decoration: none; color: black;"><p class="mt-3">{{ entry.title }}</p></a>
+                </div>
+
+                {% else %}
+
+                <div class="col-lg-2 col-md-3 col-sm-4 text-center">
+                    <a href="{{ entry.url }}"><img src="{{ entry.employeePicture.one().getUrl() }}" alt="{{ entry.title }}" style="width: 150px; height: 150px; border-radius: 50%;"></a>
+                    <a href="{{ entry.url }}" style="text-decoration: none; color: black;"><p class="mt-3">{{ entry.title }}</p></a>
+                </div>
+                {% endif %}
 
             {% else %}
 

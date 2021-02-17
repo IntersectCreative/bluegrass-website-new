@@ -88,5 +88,40 @@
       {% endfor %}
 
     </div>
+
   </div>
+
+  <!-- testing hubspot connector -->
+
+  {% for blog in craft.hubspot.blogs %}
+
+  {% for post in  craft.hubspot.blogPosts(blog.id) %}
+      <hr>
+      <article>
+        <img src="{{ post.featured_image }}" alt="{{ post.featured_image_alt_text }}" width="300px" height="auto">
+          <h5>
+              <a href="{{ post.published_url }}">
+                  {{ post.html_title }} - {{ post.author_name }} - {{ post.publish_date|date('long') }}
+              </a>
+          </h5>
+      </article>
+  {% endfor %}
+{% endfor %}
+
+{% for blog in craft.hubspot.blogs %}
+
+  {% for post in  craft.hubspot.blogPosts(blog.id) %}
+    <div class="col-lg-4 mb-4">
+      <div class="card h-100 mt-3 border-0">
+        <img src="{{ post.featured_image }}" alt="{{ post.featured_image_alt_text }}" class="card-img-top" width="300px" height="auto">
+        <div class="card-body">
+          <p class="card-subtitle bodyText">{{ post.html_title|upper }}</p>
+          <h3 class="card-title mb-2"><a href="{{ post.published_url }}" style="color: inherit; text-decoration: inherit;">{{ post.html_title }}</a></h3>
+          <p class="card-subtitle bodyText">{{ post.publish_date|date('long')}}</p>
+        </div>
+        <a href=""<p class="bodyText"><img src="" alt="{{ post.author_name }}" class="ml-3 mr-3" style="width: 75px; height: 75px; border-radius: 50%;">{{ post.author_name|upper }}</p></a>		
+      </div>
+    </div>
+{% endfor %}
+{% endfor %}
 </div>
