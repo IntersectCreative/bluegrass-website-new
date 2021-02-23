@@ -38,7 +38,6 @@ html, body {
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden; 
-	overflow: visible;
 }
 
 /* Below are the CSS typography styles for the various sections of the site: */
@@ -302,7 +301,24 @@ ul.mailing-services {
 	position: absolute;
 	margin-left: -20px;
   }
+.hs-input {
+	border-radius: 50px;
+	width: 100%;
+	margin-bottom: 5px;
 
+}
+
+.hs-button {
+	border-radius: 50px;
+	background-color: $bluegrass;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right:20px;
+	margin-top: 10px;
+	border: none;
+}
 
 
 

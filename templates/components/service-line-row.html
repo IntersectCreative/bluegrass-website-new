@@ -1,7 +1,42 @@
 <div id="service-line-row" class="container mt-5 level1">
+
+  {% if craft.mobileDetect.isMobile %}
+
+  <div class="container" >
+  </div>  
+  <h2 class="text-uppercase">Discover Our Services</h2>
+  <div class="row icon-row">
+
+
+    <!-- Iterates over the entries within the Services section to output the service lines -->
+
+    {% for entry in craft.entries.section('Services').level(1).all() %}
+
+    <div class="col">
+      <div class="card ">
+        <a href="{{ entry.url }}"><img src="{{ entry.serviceLineIcon.one().getUrl() }}" class="card-img-top" alt="{{ entry.title }} Icon" style="height: 100px; width: auto;"></a>
+      </div>
+    </div>
+      
+    <div class="col my-auto text-left">
+      <h3 class="card-text">{{ entry.title }}</h3>
+
+      {% for entry in craft.entries.descendantOf(entry).descendantDist(1).keywordPage(false).all() %}
+
+      <a href="{{ entry.url }}">{{ entry.title }}</a><br>
+
+      {% endfor %}
+
+    </div>
+      
+    {% endfor %}
+
+</div>
+  {% else %}
+
   <div class="row">
     <div class="col discover">
-      <h2>Discover Our Services</h2>
+      <h2 class="uppercase">Discover Our Services</h2>
     </div>
   </div>
   <div class="row icon-row">
@@ -13,7 +48,7 @@
 
     <div class="col d-flex justify-content-center">
       <div class="card">
-        <a href="{{ entry.url }}"><img src="{{ entry.serviceLineIcon.one().getUrl() }}" class="card-img-top" alt="{{ entry.title }} Icon"></a>
+        <a href="{{ entry.url }}"><img src="{{ entry.serviceLineIcon.one().getUrl() }}" class="card-img-top" alt="{{ entry.title }} Icon" style="height: 150px; width: auto;"></a>
         <div class="card-body">
           <h3 class="card-text text-center">{{ entry.title }}</h3>
         </div>
@@ -23,4 +58,6 @@
     {% endfor %}
 
   </div>
+
+  {% endif %}
 </div>

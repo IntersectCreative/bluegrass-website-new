@@ -1,6 +1,23 @@
-{% switch entry.level %}
-    {% case 1 %}
-        {% include 'jobs/index.html' %}
-    {% default %}
-        {% include 'jobs/apply.html' %}
-{% endswitch %}
+{% extends "_layout" %}
+
+
+{% block content %}
+
+{% include "/components/navigation.html" %}
+
+{% include "/components/hero-jobs.html" %}
+
+<div class="container">  
+    <div class="mt-5 mb-5">
+        <h2>Culture:</h2>
+        <p>{{ jobs.bodyCopy }}</p>
+    </div>
+    <div>
+        <p>Apply now to work at Bluegrass!</p>
+        <script type="text/javascript" src="https://form.jotform.com/jsform/210125546209145"></script>
+    </div>
+</div>
+
+{% include "/components/footer.html" %}
+
+{% endblock %}

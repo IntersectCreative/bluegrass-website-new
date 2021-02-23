@@ -14,9 +14,17 @@
                         
                         <div class="text"><span style="font-size: 16px;">{{ entry.title }}</span><br>{{ entry.hoverCopy }}</div>
                     </div>
+
+                    {% if craft.mobileDetect.isMobile %}
+
+                    <p class="text-left ml-5 mr-5">{{ entry.hoverCopy }}</p>
+
+                    {% endif %}
+                    
                 </div>
             </a>
         </div>
+
 
         {% endfor %}
 

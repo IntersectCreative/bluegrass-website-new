@@ -32,6 +32,14 @@
 
     {% endif %}
 
+{# The following components is to be included on Direct Mail page #}
+
+    {% if entry.title == "Direct Mail" %}    
+
+        {% include "/components/direct-mail-deep-dive.html" %}
+    
+    {% endif %}
+
 {# The following component is only to be included on the Mailing Services Page. #}
 
     {% if entry.title == "Mailing Services" %}    

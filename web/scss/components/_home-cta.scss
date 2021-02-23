@@ -1,4 +1,11 @@
 .home-cta {
     color: #006ea4;
     background: white !important;
+
+    button {
+        background-color: $bluegrass;
+        color: white;
+        border-radius: 50px;
+    }
 }
+

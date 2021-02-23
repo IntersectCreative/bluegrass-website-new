@@ -8,7 +8,6 @@ html, body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  overflow: visible;
 }
 
 /* Below are the CSS typography styles for the various sections of the site: */
@@ -241,6 +240,24 @@ ul.mailing-services li:before {
   margin-left: -20px;
 }
 
+.hs-input {
+  border-radius: 50px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.hs-button {
+  border-radius: 50px;
+  background-color: #006ea4;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  border: none;
+}
+
 .navbar-toggler {
   background-color: #006ea4 !important;
 }
@@ -291,6 +308,7 @@ ul.mailing-services li:before {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  width: 100vw;
 }
 
 .nav-phone {
@@ -349,11 +367,11 @@ footer a {
 }
 
 .mobile-footer-link {
-  color: white;
+  color: white !important;
 }
 
 .mobile-footer-link:visited {
-  color: white;
+  color: white !important;
 }
 
 .btn {
@@ -366,7 +384,7 @@ footer a {
   background-color: #FFFFFF;
   border: 1px solid #979797;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 18px;
+  border-radius: 50px;
   color: #006ea4;
   min-width: 150px;
   padding: 10px 10px;
@@ -377,10 +395,10 @@ footer a {
 
 /* Let's get started blue button*/
 .lgsb {
-  background-image: linear-gradient(180deg, #006EA4 0%, #006EA4 48%, #006EA4 100%);
+  background-color: #006ea4;
   border: 1px solid #006EA4;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
+  border-radius: 50px;
   color: white;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -568,6 +586,12 @@ video {
   height: auto;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+#generalContact button .btn .btn-primary {
+  border-radius: 50px;
+  background-color: white;
+  color: #006ea4;
 }
 
 #moreresources {
@@ -837,6 +861,11 @@ video {
 .home-cta {
   color: #006ea4;
   background: white !important;
+}
+.home-cta button {
+  background-color: #006ea4;
+  color: white;
+  border-radius: 50px;
 }
 
 /*!
