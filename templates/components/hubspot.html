@@ -1,5 +1,5 @@
 <div class="container">
-{% for blog in craft.hubspot.blogs %}
+{% for blog in craft.hubspot.blogs.limit(3) %}
 {% for post in  craft.hubspot.blogPosts(blog.id) %}
     <article>
         <h5>
@@ -8,7 +8,6 @@
                 {{ post.html_title }} - {{ post.author_name }}
             </a>
         </h5>
-
     </article>
 {% endfor %}
 {% endfor %}

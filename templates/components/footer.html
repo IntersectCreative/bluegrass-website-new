@@ -1,49 +1,72 @@
 {% if craft.mobileDetect.isMobile %}
-<footer class="text-white" style="background-color: #615C59;">
-  <div class="container">
+<footer>
+  <div class="container ml-2">
     <div class="text-center">
-    <img class="mt-5 mb-5" src="/images/branding/BIC_Logo_WhiteRGB_200.png" alt="Bluegrass Integrated Communications Logo"/>
+      <img class="mt-5 mb-5" src="/images/branding/BIC_Logo_BlueRGB_200.jpg" alt="Bluegrass Integrated Communications Logo"/>
     </div>
-    <div class="row">
-    <div class="col">
-      <h5>COMPANY</h5>
-      <p class="mb-0"><a class="mobile-footer-link" href="/about-us">About Us</a></p>
-      <p><a class="mobile-footer-link"href="/jobs">Careers</a></p>
-    </div>
-    <div class="col">
-      <h5>CONTACT</h5>
+
+    <h5>CONTACT US</h5>
       <p class="mb-0"><a class="mobile-footer-link" href="tel:1-800-928-6245">800.928.6245</a></p>
       <p><a class="mobile-footer-link" href="tel:859-231-7272">859.231.7272</a></p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <h5>SERVICES</h5>
+  
+      <h5>COMPANY</h5>
+      <p class="mb-0"><a class="mobile-footer-link" href="/about-us">About</a></p>
+      <p class="mb-0"><a class="mobile-footer-link"href="/jobs">Careers</a></p>
+      <p class="mb-0"><a class="mobile-footer-link"href="/frequently-asked-questions">FAQ</a></p>
+      <p><a class="mobile-footer-link"href="/your-privacy">Your Privacy</a></p>
 
+      <h5>SERVICES</h5>
+      <p class="mb-0"><a class="mobile-footer-link" href="/amplify">Integrated Marketing</a></p>
       {% for entry in craft.entries.section('Services').level(1).all() %}
 
         <p class="mb-0"><a class="mobile-footer-link" href="{{ entry.url }}">{{ entry.title }}</a></p>
 
       {% endfor %}
+      
 
-    </div>
-    <div class="col">
-      <h5>RESOURCES</h5>
+      <h5 style="margin-top: 8px;">RESOURCES</h5>
       <p class="mb-0"><a class="mobile-footer-link" href="/blog">Blog</a></p>
+      <!-- <p class="mb-0"><a class="mobile-footer-link" href="">eBooks</a></p> -->
       <p><a class="mobile-footer-link" href="/indicia">Indicia</a></p>
-      <h5>CONNECT</h5>
+      <!-- <p class="mb-0"><a class="mobile-footer-link" href="">Client Logins</a></p> -->
+
+      <h5>NEWSLETTER</h5>
+      <p class="mb-0">
+        Join over 1,500 professionals who receive monthly marketing updates
+        and tips.
+      </p>
+      <!-- {{ craft.freeform.form("newsletter").render() }} -->
+      <!--[if lte IE 8]>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <![endif]-->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+        portalId: "8102511",
+        formId: "20b69615-bbcd-4fad-a8fb-fe2ce1a1554e"
+      });
+      </script>
+
+      <div class="text-center mt-5">
       {% for block in companyInfo.socialMedia.all() %}
 
-        <a href="{{ block.platformUrl }}" target="_blank"><img src="{{ block.platformIconWhite.one().getUrl() }}" alt="{{ block.platformName }}icon" class="mr-1" style="height: 32px; width: 32px;"/></a>
+        <a href="{{ block.platformUrl }}" target="_blank"><img src="{{ block.platformIconBlue.one().getUrl() }}" alt="{{ block.platformName }}icon" class="mr-1" style="height: 32px; width: 32px;"/></a>
     
       {% endfor %}
     </div>
-  </div>
-  <div class="row">
-    <div class="col text-center mt-5 text-secondary">
-      <p class="text-white" style="font-size: 10px">Copyright {{ "now"|date("Y") }}, All Rights Reserved</p>
+    <div class="text-center mt-3 mb-3">
+      <a href="/privacy-policy" style="font-size: 10px;">Privacy Policy</a>
     </div>
-  </div>
+    <div class="text-center text-secondary">
+      <p style="font-size: 10px">Copyright {{ "now"|date("Y") }}, All Rights Reserved</p>
+    </div>
+</div>
+<div class="footer-contents">
+  <img
+    src="/images/branding/iStock-9518703_KO_burnedroots_crop.png"
+    alt="grass with roots"
+    style="width: 100%;"
+  />
 </div>
 </footer>
 

@@ -1,63 +1,56 @@
-<div id="slider" class="carousel slide level1" data-ride="carousel">
-  <div class="carousel-inner">
-
-    {% for entry in craft.entries.section('Blog').limit(3).all() %}
-    
 <!-- The first carousel item has to have a class of active assigned to it. This finds the first item in the loop and assigns active to it 
     and everything else just gets carousel-item. -->
+  <div id="blog-slider" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#blog-slider" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="width: 200px;"></li>
+      <li data-target="#blog-slider" data-slide-to="1" aria-label="Slide 2" style="width: 200px;"></li>
+      <li data-target="#blog-slider" data-slide-to="2" aria-label="Slide 3" style="width: 200px;"></li>
+    </ol>
+    <div class="carousel-inner">
 
-    {% if loop.first %}
+  {% for blog in craft.hubspot.blogs %}
 
-    <div class="carousel-item active">
-      {% if entry.picture | length %}
-      <div class="row mt-5" style="background: url('{{ entry.picture.one().getUrl() }}') center /cover no-repeat; height: 575px;">
-        {% else %}
-      <div class="row mt-5" style="background-image: url('/images/blog/Stocksy_txp5f38c8e57MT000_Original_315051.jpg'); background-color: grey;"></div>
-      {% endif %}
-        <div class="col-8">
-        </div>
-        <div class="col-3">
-            <div class="card" style="background-color: #006EA4; height: 300px; width: 300px; top: -45px; border-radius: 10px;">
+  {% for post in  craft.hubspot.blogPosts(blog.id, {limit: 3,}) %}
+  
+  {% if loop.first %}
+
+  <div class="carousel-item active">
+        <div class="row mt-5" style="background: url('{{ post.featured_image }}') center /cover no-repeat; height: 575px;">
+          <div class="col-10"></div>
+          <div class="col-2">
+            <div class="card" style="background-color: #006EA4; height: 300px; width: 300px; top: -45px; border-radius: 10px; right: 200px;">
               <div class="card-body">
                 <h2 class="card-text text-white">NEW FROM BLUEGRASS</h2>
                 <br>
-                <a href="{{ entry.url }}" style="text-decoration: none;"><p class="card-text text-white" style="font-size: 25px;">{{ entry.title }}</p></a>
+                <a href="{{ post.published_url }}" style="text-decoration: none;"><p class="card-text text-white" style="font-size: 25px;">{{ post.html_title }}</p></a>
               </div>
-          </div>
-        </div>
-        <div class="col-1">
-        </div>
-      </div>
-      </div>
-
-      {% else %}
-
-      <div class="carousel-item">
-        {% if entry.picture | length %}
-      <div class="row mt-5" style="background: url('{{ entry.picture.one().getUrl() }}') center /cover no-repeat; height: 575px;">
-        {% else %}
-      <div class="row mt-5" style="background-image: url('/images/blog/Stocksy_txp5f38c8e57MT000_Original_315051.jpg'); background-color: grey;"></div>
-      {% endif %}
-          <div class="col-8">
-          </div>
-          <div class="col-3">
-              <div class="card" style="background-color: #006EA4; height: 300px; width: 300px; top: -45px; border-radius: 10px;">
-                <div class="card-body">
-                  <h2 class="card-text text-white">NEW FROM BLUEGRASS</h2>
-                  <br>
-                  <a href="{{ entry.url }}" style="text-decoration: none;"><p class="card-text text-white" style="font-size: 25px;">{{ entry.title }}</p></a>
-                </div>
             </div>
           </div>
-          <div class="col-1">
+        </div>
+    </div> 
+
+    {% else %}
+
+    <div class="carousel-item">
+      <div class="row mt-5" style="background: url('{{ post.featured_image }}') center /cover no-repeat; height: 575px;">
+        <div class="col-10"></div>
+        <div class="col-2">
+          <div class="card" style="background-color: #006EA4; height: 300px; width: 300px; top: -45px; border-radius: 10px; right: 200px;">
+            <div class="card-body">
+              <h2 class="card-text text-white">NEW FROM BLUEGRASS</h2>
+              <br>
+              <a href="{{ post.published_url }}" style="text-decoration: none;"><p class="card-text text-white" style="font-size: 25px;">{{ post.html_title }}</p></a>
+            </div>
           </div>
         </div>
-        </div>
+      </div>
+    </div> 
 
-    {% endif %}
+    {% endif %}   
 
-    {% endfor %}
+  {% endfor %}
 
+  {% endfor %}
+  
   </div>
 </div>
-

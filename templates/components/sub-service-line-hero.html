@@ -33,9 +33,9 @@
 
 {% else %}
 
-<div class="service-line-hero" style="background-image:url({{ entry.heroImage.one().getUrl() }}); height: 100vh; width: 100vw; background-size: cover; background-position: center center; background-repeat: no-repeat;">
+<div class="service-line-hero" style="background-image:url({{ entry.heroImage.one().getUrl() }}); height: 105vh; width: 100vw; background-size: cover; background-position: center center; background-repeat: no-repeat;">
     <div class="container">
-        <div class="service-line-hero-copy">
+        <div class="service-line-hero-copy" style="margin-left: 100px;">
           <h4 class="text-uppercase">{{ entry.parent }}</h4>
           <h1>{{ entry.title }} 
             <img src="{{ entry.icon.one().getUrl() }}" class="service-line-icon img-fluid cursor ml-2" alt="{{ entry.title }} icon" />
@@ -49,6 +49,7 @@
       </div>
       {% include "/components/arrow-no-text.html" %}
     </div>
+
 {% endif %} 
     
     <!-- <img src="/images/art--hero-L-bluegrass.jpg" alt="BIC logo" class="widgetLogo img-fluid" /> -->

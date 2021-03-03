@@ -16,6 +16,39 @@
     
     {% endif %}
 
+{# The following component is only to be included on Printing Page #}
+
+    {% if entry.title == "Printing" %}
+
+    <div class="container">
+        <div class="ml-5 mr-5">
+            <h2 class="text-center mt-5 mb-5">Why Print with Bluegrass?</h2>
+            <div class="row mb-5">
+                <div class="col-md-8 flex-column-reverse order-1 flex-md-row">
+                    <h2>Direct Mail on Demand</h2>
+                    <p class="text-justify">
+                        Your mailing list forms the foundation of your direct mail marketing campaign, and its quality and relevance to your message is the difference between success and failure. All other aspects of your campaign are reliant on the quality and relevant targeting of your mailing list – if you don’t know who’s going to be receiving your mail it is that much harder to create a compelling message that speaks directly to your audience, meaning more time and money spent for less results.
+                    </p>
+                </div>
+                <div class="col-md-4 order-md-1">
+                    <img src="/images/bluegrass/iStock_000063103917_Large.png" alt="dart board" class="img-fluid mb-3">
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-4 ">
+                    <img src="/images/bluegrass/istockphoto-1151221495-2048x2048.png" alt="map" class="img-fluid mb-3">
+                </div>
+                    <div class="col-md-8 text-md-justify">
+                    <h2>Speed</h2>
+                    <p class="text-justify">
+                        The best way to fast-track your direct mail campaign is to use a targeted mailing list, compiled by detailed and accurate demographic, geographic and psychographic data. Whether you’re looking for consumer leads, business leads, or need to reach out to a specific demographic for any reason, a targeted mailing list can make your campaign affordable and effective – reducing the amount of mail you need to send, while heightening the impact of your message through comprehensive demographic insight into your audience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
 {# The following component is only to be included on Direct Mail Page #}
 
     {% if entry.title == "Direct Mail" %}    

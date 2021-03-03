@@ -11,32 +11,6 @@
       
       </div>
     </div>
-    <div class="mt-5">
-      <div class="row">
-        <div class="col">
-          <p>Industry</p>
-
-          {% for entry in craft.entries.section('Services').level(1).all() %}
-
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="i" value="{{ entry.title }}" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              {{ entry.title }}
-            </label>
-          </div>
-
-          {% endfor %}
-
-        </div>
-        <div class="col">
-          <p>Type</p>
-          <p>Blog</p>
-        </div>
-        <div class="col">
-          <p>Topic</p>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 </form>

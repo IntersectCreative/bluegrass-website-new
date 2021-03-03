@@ -5,6 +5,21 @@
 
         {% for entry in entries %}
 
+        {% if craft.mobileDetect.isMobile %}
+
+        <div class="col-2 text-right">
+            <a href="{{ entry.url }}" style="text-decoration: none; color: black;"><img class="image img-fluid" src="{{ entry.icon.one().getUrl() }}" alt="" style="height: 50px; width: 50px;"></a>
+        </div>
+        <div class="col-8">
+            <a href="{{ entry.url }}" style="text-decoration: none; color: black;"><p class="mt-4 text-left">{{ entry.title }}</p></a>
+            <p class="text-left">{{ entry.hoverCopy }}</p>
+        </div>
+        <div class="col-2">
+            <a href="{{ entry.url }}" style="text-decoration: none; color: black;"><img src="/images/feature/arrowdown1_bluegrass_medium.png"/></a>
+        </div>
+
+        {% else %}
+
         <div class="col-sm-6 col-lg-3 mb-3">
             <a href="{{ entry.url }}" style="text-decoration: none; color: black;">
                 <div class="icon-box">
@@ -14,17 +29,11 @@
                         
                         <div class="text"><span style="font-size: 16px;">{{ entry.title }}</span><br>{{ entry.hoverCopy }}</div>
                     </div>
-
-                    {% if craft.mobileDetect.isMobile %}
-
-                    <p class="text-left ml-5 mr-5">{{ entry.hoverCopy }}</p>
-
-                    {% endif %}
-                    
                 </div>
             </a>
         </div>
 
+        {% endif %}
 
         {% endfor %}
 

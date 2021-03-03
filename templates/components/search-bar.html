@@ -58,7 +58,7 @@
 {% if query|length and query.search %}
     {% set entries = craft.entries.search(query.search) %}
 
-    <aside>
+    <!-- <aside>
         {% if entries.section('blog')|length %}
 
         <h2 class="mt-5 mb-3">Your results ({{ entries|length }}):</h2>
@@ -101,6 +101,6 @@
 
         {% endif %}
         
-    </aside>
+    </aside> -->
 {% endif %}
 </div>

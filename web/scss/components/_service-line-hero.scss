@@ -8,12 +8,14 @@
 }
 
 .service-line-hero-copy {
-	// text-align: left;
+	text-align: left;
     position: absolute;
 	color: white;
 	top: 50%;
-	// left: 40%;
-	// transform: translate(-40%, -40%);
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+
 
 	@media only screen and (max-width: 768px) {
 		top: 50%;

@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1612884041
+dateModified: 1614182487
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -3764,62 +3764,6 @@ sections:
         template: privacy-policy/_entry
         uriFormat: privacy-policy
     type: single
-  930458e2-2fee-4767-9b32-9764f29f5441:
-    enableVersioning: true
-    entryTypes:
-      cd825013-bd1c-4c4b-a169-65f85973f92e:
-        fieldLayouts:
-          3bb1af9c-6c1c-4399-bb1a-be792610bf62:
-            tabs:
-              -
-                fields:
-                  690c44b8-6960-4311-b5b2-2e43266c1a37:
-                    required: false
-                    sortOrder: 6
-                  6f780888-e048-43cc-ab34-a9a0de59acee:
-                    required: false
-                    sortOrder: 5
-                  7a43bd01-e0b4-421b-8574-e3be1b2fb5b9:
-                    required: false
-                    sortOrder: 4
-                  819a02e8-d990-4209-a4a6-fbe645886d75:
-                    required: false
-                    sortOrder: 3
-                  ec549621-6d25-4376-acc1-332b2fa1a9ad:
-                    required: false
-                    sortOrder: 1
-                  f54f9341-be0d-4841-8d88-649150159747:
-                    required: false
-                    sortOrder: 2
-                name: Blog
-                sortOrder: 1
-              -
-                fields:
-                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
-                    required: false
-                    sortOrder: 1
-                name: SEO
-                sortOrder: 2
-        handle: blog
-        hasTitleField: true
-        name: Blog
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Title
-    handle: blog
-    name: Blog
-    previewTargets:
-      -
-        label: 'Primary entry page'
-        urlFormat: '{url}'
-    propagationMethod: all
-    siteSettings:
-      c8b1fd6f-f0b7-4bf6-a80e-afabf7fba986:
-        enabledByDefault: true
-        hasUrls: true
-        template: blog/_entry.twig
-        uriFormat: 'blog/{slug}'
-    type: channel
   a1fbadb8-8656-4a59-aeb2-0ac97118f84a:
     enableVersioning: true
     entryTypes:
