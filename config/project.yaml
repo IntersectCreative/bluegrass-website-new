@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1615229481
+dateModified: 1615404989
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -185,6 +185,12 @@ fields:
             - '*'
           -
             - employeePictures
+            - '*'
+          -
+            - blogImages
+            - '*'
+          -
+            - indicia
             - '*'
       variants:
         -
@@ -1129,6 +1135,117 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\redactor\Field
+  89a32891-e210-4c2e-a517-76b69684bb98:
+    contentColumnType: text
+    fieldGroup: a6a4dfd7-85ec-4401-9660-83f696085bf7
+    handle: heroImage2
+    instructions: ''
+    name: 'Hero Image Optimized'
+    searchable: true
+    settings:
+      displayDominantColorPalette: '1'
+      displayLazyLoadPlaceholderImages: '1'
+      displayOptimizedImageVariants: '1'
+      variants:
+        -
+          __assoc__:
+            -
+              - width
+              - '1200'
+            -
+              - useAspectRatio
+              - '1'
+            -
+              - aspectRatioX
+              - '16'
+            -
+              - aspectRatioY
+              - '9'
+            -
+              - retinaSizes
+              -
+                - '1'
+            -
+              - quality
+              - '82'
+            -
+              - format
+              - jpg
+        -
+          __assoc__:
+            -
+              - width
+              - '992'
+            -
+              - useAspectRatio
+              - '1'
+            -
+              - aspectRatioX
+              - '16'
+            -
+              - aspectRatioY
+              - '9'
+            -
+              - retinaSizes
+              -
+                - '1'
+            -
+              - quality
+              - '82'
+            -
+              - format
+              - jpg
+        -
+          __assoc__:
+            -
+              - width
+              - '768'
+            -
+              - useAspectRatio
+              - '1'
+            -
+              - aspectRatioX
+              - '4'
+            -
+              - aspectRatioY
+              - '3'
+            -
+              - retinaSizes
+              -
+                - '1'
+            -
+              - quality
+              - '60'
+            -
+              - format
+              - jpg
+        -
+          __assoc__:
+            -
+              - width
+              - '576'
+            -
+              - useAspectRatio
+              - '1'
+            -
+              - aspectRatioX
+              - '4'
+            -
+              - aspectRatioY
+              - '3'
+            -
+              - retinaSizes
+              -
+                - '1'
+            -
+              - quality
+              - '60'
+            -
+              - format
+              - jpg
+    translationKeyFormat: null
+    translationMethod: none
+    type: nystudio107\imageoptimize\fields\OptimizedImages
   8a9f767f-fb84-4577-a54d-cedda20bb65b:
     contentColumnType: string
     fieldGroup: c58a5554-fc87-40ab-988c-a6ef8506fbec
@@ -3900,8 +4017,11 @@ sections:
                     sortOrder: 2
                   5c07e36c-fa81-4d9b-9894-4217e594a43f:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 5
                   6f930ab4-34d9-4f16-9123-9da6ce59119c:
+                    required: false
+                    sortOrder: 4
+                  89a32891-e210-4c2e-a517-76b69684bb98:
                     required: false
                     sortOrder: 3
                   bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
