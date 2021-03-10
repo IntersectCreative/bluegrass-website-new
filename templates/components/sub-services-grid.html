@@ -4,7 +4,7 @@
     <h2 class="text-center mb-5">Types of {{ entry.title }}</h2>
 {% endif %} -->
 
-    <div class="row d-flex justify-content-center mt-5 mb-5">
+    <div class="row d-flex justify-content-center mt-5 mb-5 ml-5 mr-5">
 
     {% if entry.title == "Mailing Lists" %}    
 
@@ -37,7 +37,6 @@
         {% for entry in entries %}
 
             <div class="col col-lg-4 col-12 mb-3">
-
                 {% if entry.subServiceImage | length %}
 
                 <img src="{{ entry.subServiceImage.one().getUrl() }}" class="img-responsive" width="250px" height="250px;"/>

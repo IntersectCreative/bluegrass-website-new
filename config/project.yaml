@@ -10,7 +10,7 @@ categoryGroups:
     structure:
       maxLevels: null
       uid: 7d26fcf6-458a-4440-813a-c296723b8161
-dateModified: 1614182487
+dateModified: 1615229481
 email:
   fromEmail: mayme.clayton@wearebluegrass.com
   fromName: wearebluegrass
@@ -837,6 +837,7 @@ fields:
     name: Department
     searchable: true
     settings:
+      optgroups: true
       options:
         -
           __assoc__:
@@ -945,6 +946,160 @@ fields:
             -
               - value
               - Receptionist
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Creative
+            -
+              - value
+              - Creative
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Data
+            -
+              - value
+              - Data
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Driver
+            -
+              - value
+              - Driver
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Engineering and Maintenance'
+            -
+              - value
+              - 'Engineering and Maintenance'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Housekeeping
+            -
+              - value
+              - Housekeeping
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - I.T.
+            -
+              - value
+              - I.T.
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Inserting
+            -
+              - value
+              - Inserting
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Laser
+            -
+              - value
+              - Laser
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Management
+            -
+              - value
+              - Management
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Pre-Sort
+            -
+              - value
+              - Pre-Sort
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Production
+            -
+              - value
+              - Production
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Project Management'
+            -
+              - value
+              - 'Project Management'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - 'Quality Control'
+            -
+              - value
+              - 'Quality Control'
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Security
+            -
+              - value
+              - Security
             -
               - default
               - ''
@@ -1090,16 +1245,40 @@ fields:
     searchable: true
     settings:
       elementDisplayPreviewType: google
-      facebookTabEnabled: ''
+      facebookEnabledFields:
+        - seoPreview
+        - ogType
+        - ogTitle
+        - ogSiteNamePosition
+        - ogDescription
+        - ogImage
+        - ogImageTransform
+        - ogImageTransformMode
+        - ogImageDescription
+      facebookTabEnabled: '1'
       generalEnabledFields:
         - seoPreview
         - seoTitle
         - seoDescription
+        - seoKeywords
         - seoImage
+        - seoImageTransform
+        - seoImageTransformMode
         - seoImageDescription
       generalTabEnabled: '1'
       sitemapTabEnabled: ''
-      twitterTabEnabled: ''
+      twitterEnabledFields:
+        - seoPreview
+        - twitterCardType
+        - twitterCreator
+        - twitterTitle
+        - twitterSiteNamePosition
+        - twitterDescription
+        - twitterImage
+        - transformTwitterImage
+        - twitterImageTransformMode
+        - twitterImageDescription
+      twitterTabEnabled: '1'
     translationKeyFormat: null
     translationMethod: none
     type: nystudio107\seomatic\fields\SeoSettings
@@ -2916,6 +3095,46 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.9
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '&#x1f6a7;⚙ '
+      devModeTitlePrefix: '&#x1f6a7; '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: live
+      generatorEnabled: true
+      headersEnabled: true
+      lowercaseCanonicalUrl: '1'
+      manuallySetEnvironment: true
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 'null'
+      pluginName: SEOmatic
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - facebook
+      siteGroupsSeparate: '1'
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
   sprout-forms:
     enabled: true
     settings:
@@ -3429,6 +3648,13 @@ sections:
                     sortOrder: 2
                 name: Thanks
                 sortOrder: 1
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
         handle: thanks
         hasTitleField: false
         name: Thanks
@@ -3514,6 +3740,13 @@ sections:
                     sortOrder: 1
                 name: Unsubscribed
                 sortOrder: 1
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
         handle: unsubscribed
         hasTitleField: false
         name: Unsubscribed
@@ -3541,15 +3774,22 @@ sections:
                 fields:
                   4c4394e8-8f8e-4df0-acbb-1e6abbfbbeb2:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 2
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 1
                   bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 3
                 name: Hero
                 sortOrder: 1
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
         handle: reachUs
         hasTitleField: false
         name: 'Reach Us'
@@ -3581,15 +3821,22 @@ sections:
                 fields:
                   4c4394e8-8f8e-4df0-acbb-1e6abbfbbeb2:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 2
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 1
                   bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 3
                 name: Hero
                 sortOrder: 1
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
         handle: search
         hasTitleField: false
         name: Search
@@ -3610,6 +3857,16 @@ sections:
     enableVersioning: true
     entryTypes:
       8a60c42c-6657-4519-bc52-dae47b5b073d:
+        fieldLayouts:
+          c055de24-91c3-490a-a61e-c749f21c5fbf:
+            tabs:
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 1
         handle: faq
         hasTitleField: false
         name: 'Frequently Asked Questions'
@@ -3697,18 +3954,25 @@ sections:
                 fields:
                   4c4394e8-8f8e-4df0-acbb-1e6abbfbbeb2:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 2
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 1
                   94377b09-8631-4bdf-b0be-fe65c7f969c9:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 4
                   bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 3
                 name: Hero
                 sortOrder: 1
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
         handle: yourPrivacy
         hasTitleField: false
         name: 'Your Privacy'
@@ -3736,18 +4000,25 @@ sections:
                 fields:
                   4c4394e8-8f8e-4df0-acbb-1e6abbfbbeb2:
                     required: false
-                    sortOrder: 3
+                    sortOrder: 2
                   528ea79f-fca7-4ea4-a9af-f7b0c062878f:
                     required: false
                     sortOrder: 1
                   94377b09-8631-4bdf-b0be-fe65c7f969c9:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 4
                   bc16ce5d-3e71-441b-9e68-0ad14bcec74b:
                     required: false
-                    sortOrder: 4
+                    sortOrder: 3
                 name: Hero
                 sortOrder: 1
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
         handle: privacyPolicy
         hasTitleField: false
         name: 'Privacy Policy'
@@ -3768,6 +4039,16 @@ sections:
     enableVersioning: true
     entryTypes:
       9aefb316-19d2-4fbb-bccf-12d308614599:
+        fieldLayouts:
+          c8c5ef20-1a8a-44ad-a3db-decc94725685:
+            tabs:
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 1
         handle: signUp
         hasTitleField: false
         name: 'Sign Up'
@@ -3819,6 +4100,13 @@ sections:
                     sortOrder: 3
                 name: Amplify
                 sortOrder: 1
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
         handle: amplifyByBluegrass
         hasTitleField: false
         name: 'Amplify By Bluegrass'
@@ -3864,6 +4152,13 @@ sections:
                     sortOrder: 1
                 name: Indicia
                 sortOrder: 1
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
         handle: indicia
         hasTitleField: false
         name: Indicia
@@ -3940,6 +4235,13 @@ sections:
                     sortOrder: 1
                 name: 'Signup Error'
                 sortOrder: 1
+              -
+                fields:
+                  9e8302b4-a171-42a3-ac02-fb0349878eb8:
+                    required: false
+                    sortOrder: 1
+                name: SEO
+                sortOrder: 2
         handle: signupError
         hasTitleField: false
         name: 'Signup Error'

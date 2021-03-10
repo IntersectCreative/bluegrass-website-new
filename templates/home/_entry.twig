@@ -16,23 +16,24 @@
 
     {% include "/components/service-line-row.html" %}
 
-    {% include "/components/day-at-bluegrass.html" %}
+    {# {% include "/components/day-at-bluegrass.html" %} #}
 
     {% endif %}
 
     {% include "/components/slider.html" %}
 
-    {% include "/components/partner-intro.html" %}
-
-    {% include "/components/partner-logo-bar.html" %}
 
     {% if craft.mobileDetect.isMobile %}
 
         {% include "/components/mobile-cta.html" %}
-
+        {% include "/components/partner-intro.html" %}
+        {% include "/components/partner-logo-bar.html" %}
+        
         {% else %}
         
         {% include "/components/home-cta.html" %}
+        {% include "/components/partner-intro.html" %}
+        {% include "/components/partner-logo-bar.html" %}
 
     {% endif %}
 

@@ -24,11 +24,11 @@
         <h5 class="text-uppercase">{{ entry.parent }}</h5>
         <span id="service-header" class="serviceHeader typer" data-typer-targets="{{ entry.title }}" style="color: #000000; font-size: 3.495em; font-weight: 500;"></span>
           <img src="{{ entry.icon.one().getUrl() }}" class="service-line-icon img-fluid cursor ml-5 mb-5" alt="{{ entry.title }} icon" />
-        <p class="text-secondary">
-        {{ entry.heroSubtitle }}
-        </p>
+          <p class="text-secondary">
+          {{ entry.heroSubtitle }}
+          </p>
         <div style="margin-top: -15px;">
-        {% include "/components/arrow-down.html" with { heading: "Discover Our Services"} %}
+        <!-- {% include "/components/arrow-down.html" with { heading: "Discover Our Services"} %} -->
       </div>
       </div>
   </div>

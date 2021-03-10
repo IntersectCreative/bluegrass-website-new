@@ -258,14 +258,6 @@ ul.mailing-services li:before {
   border: none;
 }
 
-.navbar-toggler {
-  background-color: #006ea4 !important;
-}
-
-.navbar-toggler-scrolled {
-  background-color: #006ea4 !important;
-}
-
 .nav-link {
   text-transform: uppercase;
   color: white;
@@ -301,6 +293,10 @@ ul.mailing-services li:before {
 
 .nav-link.blog {
   color: #006ea4;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
 }
 
 .header {
@@ -412,7 +408,6 @@ footer a {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  object-fit: cover;
 }
 
 .hero-divider {
@@ -640,14 +635,18 @@ video {
   text-align: left;
   position: absolute;
   color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  margin-left: 100px;
+  margin-right: 300px;
 }
 @media only screen and (max-width: 768px) {
   .service-line-hero-copy {
     top: 50%;
     position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 

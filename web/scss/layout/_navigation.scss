@@ -1,10 +1,10 @@
 .navbar-toggler {
-	background-color: #006ea4!important;
+	
 	
 }
 
-.navbar-toggler-scrolled {
-	background-color: #006ea4 !important;
+.navbar-toggler-icon-scrolled {
+	
 }
 
 .nav-link {
@@ -43,6 +43,16 @@
 .nav-link.blog {
 	color: #006ea4;
 }
+
+.navbar-toggler-icon {
+	background-image: none !important;
+}
+
+.navbar-toggler-icon .custom-toggle {
+	
+}
+
+
 
 
 
